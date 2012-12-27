@@ -1,6 +1,8 @@
 
-var generateThumbs = true;
+
+var generateThumbs = false;
 var generateGridHTML = 'simple'; // false, 'info', 'simple'
+var generateJSON = true;
 	
 var width = 24;   // Höhe der Thumbnails
 var height = 18;  // Breite der Thumbnails
@@ -26,6 +28,10 @@ if (generateThumbs) {
 		child.stdin.write(s);
 	}
 	child.stdin.end();
+}
+
+if (generateJSON) {
+	fs.writeFileSync('../html/data/data.js', 'var data = '+JSON.stringify(list), 'utf8');
 }
 
 if (generateGridHTML) {
