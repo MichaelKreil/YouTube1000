@@ -1,12 +1,12 @@
-// https:// gdata.youtube.com/feeds/api/videos?orderby=viewCount&max-results=50&restriction=US&v=2&alt=json&start-index=1
 
 var generateThumbs = true;
 var generateGridHTML = 'simple'; // false, 'info', 'simple'
 	
-var width = 24;
-var height = 18;
-var f = 1.6;
-var columns = 40;
+var width = 24;   // Höhe der Thumbnails
+var height = 18;  // Breite der Thumbnails
+var f = 1.6;      // Ausschnitt, um die 16:9-Ränder zu verhindern. 1 = nicht ausschneiden
+var columns = 40; // Wieviele Spalten hat das Ding
+
 
 var fs = require('fs');
 var sys = require('sys')
