@@ -1,5 +1,8 @@
 // https:// gdata.youtube.com/feeds/api/videos?orderby=viewCount&max-results=50&restriction=US&v=2&alt=json&start-index=1
 
+var downloadThumbs = true;
+var downloadReason = true;
+
 var fs = require('fs');
 var downloader = require('./modules/downloader.js');
 
@@ -34,6 +37,7 @@ for (var i = 0; i < entries.length; i++) {
 	
 	var restriction = entry.media$group.media$restriction;
 	var restrictionCountries = [];
+	
 	if (restriction === undefined) {
 		restriction = false;
 	} else {
@@ -59,16 +63,20 @@ for (var i = 0; i < entries.length; i++) {
 		category: entry.media$group.media$category[0].label
 	};
 	
-	downloadThumb(entry.image, i);
+	if (downloadThumbs) downloadThumb(entry.image, i);
 	
-	if (restriction) {
-		queued++;
-		maxQueued++;
-		getReason(entry.url, entry);
+	if (downloadReason) {
+		if (restriction) {
+			queued++;
+			maxQueued++;
+			getReason(entry.url, entry);
+		}
 	}
 	
 	entries[i] = entry;
 }
+
+check();
 
 var lastPercent = -1;
 
