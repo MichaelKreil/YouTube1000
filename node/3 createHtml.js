@@ -1,6 +1,6 @@
 
 
-var generateThumbs = false;
+var generateThumbs = true;
 var generateGridHTML = 'simple'; // false, 'info', 'simple'
 var generateJSON = true;
 	
@@ -9,12 +9,16 @@ var height = 18;  // Breite der Thumbnails
 var f = 1.6;      // Ausschnitt, um die 16:9-Ränder zu verhindern. 1 = nicht ausschneiden
 var columns = 40; // Wieviele Spalten hat das Ding
 
+ 
+
 
 var fs = require('fs');
 var sys = require('sys')
 var spawn = require('child_process').spawn;
 
 var list = JSON.parse(fs.readFileSync('../data/top1000.json', 'utf8'));
+
+var rows = list.length/columns;
 
 if (generateThumbs) {
 	var child = spawn('bash', [], {cwd: '../images', stdio: [null, process.stdout, process.stderr]});
@@ -40,24 +44,24 @@ if (generateGridHTML) {
 		columns = Math.round(1000/columns);
 	};
 	
-	var rows = [];
+	var html = [];
 	
 	for (var i = 0; i < list.length; i++) {
-		var x = (i % columns);
-		var y = Math.floor(i/columns);
+		var x = Math.floor(i/rows);
+		var y = (i % rows);
 	
 		var className = '';
 		if (list[i].restriction) {
 			className = ' restricted';
 		}
 		if (generateGridHTML == 'info') {
-			rows.push('<div class="img'+className+'" style="top:'+(height*x)+'px;left:'+(width*y)+'px"><img src="thumbs/thumb'+i+'.png"></div>');
+			html.push('<div class="img'+className+'" style="top:'+(height*x)+'px;left:'+(width*y)+'px"><img src="thumbs/thumb'+i+'.png"></div>');
 		} else {
-			rows.push('<img src="thumbs/thumb'+i+'.png" style="top:'+(height*y)+'px;left:'+(width*x)+'px">');
+			html.push('<img src="thumbs/thumb'+i+'.png" style="top:'+(height*y)+'px;left:'+(width*x)+'px">');
 		}
 	}
 	
-	var html = rows.join('');
+	html = html.join('');
 	
 	var style = '';
 	if (generateGridHTML == 'info') {
