@@ -41,7 +41,7 @@ function Canvas(options) {
 			indexes[i].sortBy = options.callback(indexes[i].entry);
 		}
 		
-		indexes.sort(function (a, b) { return (a.sortBy == b.sortBy) ? (b.viewCount - a.viewCount) : ((a.sortBy < b.sortBy) ? -1 :  1); });
+		indexes.sort(function (a, b) { return (a.sortBy == b.sortBy) ? (b.entry.viewCount - a.entry.viewCount) : ((a.sortBy < b.sortBy) ? -1 :  1); });
 		
 		var image = imageNode[0];
 		for (var i = 0; i < indexes.length; i++) {
