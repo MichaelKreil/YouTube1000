@@ -55,7 +55,8 @@ for (var i = 0; i < entries.length; i++) {
 		thumbnail: "http://i.ytimg.com/vi/"+id+"/default.jpg",
 		image: "http://i.ytimg.com/vi/"+id+"/hqdefault.jpg",
 		rating: (entry.gd$rating === undefined) ? -1 : parseFloat(entry.gd$rating.average),
-		viewCount: entry.viewCount
+		viewCount: entry.viewCount,
+		category: entry.media$group.media$category[0].label
 	};
 	
 	downloadThumb(entry.image, i);
