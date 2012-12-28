@@ -42,21 +42,10 @@ function updateCanvas(options) {
 	var callback;
 	var sortDesc = false;
 	switch (sortType) {
-		case 'views':
-			callback = function (entry) { return -entry.viewCount };
-		break;
-		case 'title':
-			callback = function (entry) { return entry.title.toLowerCase() };
-		break;
-		case 'category':
-			callback = function (entry) { return entry.category.toLowerCase() };
-		break;
-		case 'date':
-			callback = function (entry) { return entry.published };
-		break;
-		case 'rating':
-			callback = function (entry) { return -entry.rating };
-		break;
+		case 'views':    callback = function (entry) { return -entry.viewCount }; break;
+		case 'category': callback = function (entry) { return  entry.category.toLowerCase() }; break;
+		case 'date':     callback = function (entry) { return  entry.published }; break;
+		case 'rating':   callback = function (entry) { return -entry.rating }; break;
 	};
 	
 	canvas.sort({
