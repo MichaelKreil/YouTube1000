@@ -9,7 +9,7 @@ $(function () {
 	for (var i = 0; i < data.length; i++) {
 		var entry = data[i];
 		entry.publishedTS = (new Date(entry.published)).getTime();
-		entry.updatedTS   = (new Date(entry.updated)).getTime();
+		entry.updatedTS   = (new Date(entry.updated  )).getTime();
 	}
 	
 	canvas = new Canvas({
@@ -31,7 +31,6 @@ $(function () {
 	})
 	
 	updateCanvas();
-	//$('#gridContainer a[href="#blocked_in_germany"]').click();
 });
 
 function updateCanvas(options) {
@@ -39,17 +38,30 @@ function updateCanvas(options) {
 	options = options || {};
 	var sortType = options.sortType || $('#gridSort .active').attr('value');
 	
-	var callback;
+	var callback, hint;
 	var sortDesc = false;
 	switch (sortType) {
-		case 'views':    callback = function (entry) { return -entry.viewCount }; break;
-		case 'category': callback = function (entry) { return  entry.category.toLowerCase() }; break;
-		case 'date':     callback = function (entry) { return  entry.published }; break;
-		case 'rating':   callback = function (entry) { return -entry.rating }; break;
+		case 'views':
+			callback = function (entry) { return -entry.viewCount };
+			hint     = function (entry) { return 'views: '+formatInteger(entry.viewCount) };
+		break;
+		case 'category':
+			callback = function (entry) { return  entry.category.toLowerCase() };
+			hint     = function (entry) { return 'Kategorie: '+entry.category };
+		break;
+		case 'date':
+			callback = function (entry) { return  entry.publishedTS };
+			hint     = function (entry) { return 'Datum: '+formatDate(entry.published) };
+		break;
+		case 'rating':
+			callback = function (entry) { return -entry.rating };
+			hint     = function (entry) { return 'Bewertung: '+entry.rating.toFixed(2).replace(/\./, ',') };
+		break;
 	};
 	
 	canvas.sort({
 		callback: callback,
+		hint: hint
 	});
 	
 	
@@ -69,4 +81,20 @@ function updateCanvas(options) {
 			colors: [colorWhite, colorRed]
 		});
 	}
+}
+
+function formatInteger(value) {
+	var t = value.toFixed(0);
+	for (var i = t.length-3; i > 0; i -= 3) {
+		t = t.substr(0, i) + '.' + t.substr(i); 
+	}
+	return t;
+}
+
+function formatDate(value) {
+	value = new Date(value);
+	var day   = value.getDate();
+	var month = value.getMonth() + 1;
+	var year  = value.getFullYear();
+	return day + '.' + month + '.' + year;
 }

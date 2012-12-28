@@ -6,6 +6,19 @@
 	<title>YouTube 1000</title>
 	
 	<link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		#tooltip {
+			position: absolute;
+			display: none;
+			background: #000;
+			padding: 1px 5px 3px 5px;
+			color: #FFF;
+			font-size: 10px;
+			line-height: 12px;
+			max-width: 200px;
+			pointer-events: none;
+		}
+	</style>
 	
 	<script src="libraries/jquery-1.8.3.min.js"></script>
 	<script src="data/data.js"></script>
@@ -43,7 +56,7 @@
 				</tr>
 			</table>
 			
-			<div id="grid" style="width:960px;height:450px;position:relative">
+			<div id="grid" style="width:960px;height:450px;position:relative;overflow:visible">
 				<img src="images/grid.jpg" id="gridImage" style="width:960px;height:450px;position:absolute;left:0;top:0">
 				<canvas id="gridCanvas" width="960" height="450" style="width:960px;height:450px;position:absolute;left:0;top:0"></canvas>
 				<canvas id="gridCanvasOverlay" width="960" height="450" style="width:960px;height:450px;position:absolute;left:0;top:0;cursor:pointer"></canvas>

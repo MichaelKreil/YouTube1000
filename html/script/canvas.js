@@ -21,16 +21,80 @@ function Canvas(options) {
 	var projectY  = [];
 	var projectX2 = [];
 	var projectY2 = [];
+	var deproject2 = [];
 	
 	var indexes = [];
 	for (var i = 0; i < data.length; i++) {
 		data[i].id = i;
 		indexes[i] = { entry:data[i], sortBy:i, id:i };
+		
 		projectX[i] = (i % columns)*thumbWidth;
 		projectY[i] = Math.floor(i/columns)*thumbHeight;
-		projectX2[i] = Math.floor(i/rows)*thumbWidth;
-		projectY2[i] = (i % rows)*thumbHeight;
+		
+		var x = Math.floor(i/rows), y = (i % rows);
+		projectX2[i] = x*thumbWidth;
+		projectY2[i] = y*thumbHeight;
+		if (deproject2[x] === undefined) deproject2[x] = [];
+		deproject2[x][y] = i;
 	}
+	
+	nodeOverlay.mouseenter(function (e) { me.toolTip.show(e.offsetX, e.offsetY) });
+	nodeOverlay.mousemove( function (e) { me.toolTip.show(e.offsetX, e.offsetY) });
+	nodeOverlay.mouseleave(function (e) { me.toolTip.hide() });
+	
+	me.toolTip = new (function () {
+		var me = this;
+		var status = {};
+		
+		var tooltip = $('<div id="tooltip"></div>');
+		$('#grid').after(tooltip);
+		var marker = $('<img src="images/marker.png" style="display:none; position:absolute; pointer-events:none">');
+		$('#grid').after(marker);
+		
+		
+		me.hide = function () {
+			if (status.shown) {
+				tooltip.hide();
+				marker.hide();
+			}
+			status.shown = false;
+		}
+		
+		me.show = function (x, y) {
+			if (!status.shown) {
+				tooltip.show();
+				marker.show();
+			}
+			status.shown = true;
+			
+			var offset = $('#grid').offset();
+			
+			var xi = clamp(Math.floor(x/thumbWidth ), 0, columns-1);
+			var yi = clamp(Math.floor(y/thumbHeight), 0, rows   -1); 
+			var index = deproject2[xi][yi];
+			var id = index.id
+			var entry = indexes[index].entry;
+			var html = '<b>'+entry.title+'</b><br>'+entry.hint;
+			var content = html+xi+'_'+yi;
+			if (status.content != content) {
+				tooltip.html(html);
+				
+				var tx = xi*thumbWidth  + offset.left;
+				var ty = yi*thumbHeight + offset.top;
+				
+				tooltip.css({
+					left: tx + thumbWidth/2 - tooltip.width()/2,
+					top:  ty + thumbHeight
+				});
+				
+				marker.css({
+					left: tx-3,
+					top:  ty-3
+				});
+			}
+			status.content = content;
+		}
+	})();
 
 	me.reset = function () {
 		context.clearRect(0, 0, width, height);
@@ -39,6 +103,7 @@ function Canvas(options) {
 	me.sort = function (options) {
 		for (var i = 0; i < data.length; i++) {
 			indexes[i].sortBy = options.callback(indexes[i].entry);
+			indexes[i].entry.hint = options.hint(indexes[i].entry);
 		}
 		
 		indexes.sort(function (a, b) { return (a.sortBy == b.sortBy) ? (b.entry.viewCount - a.entry.viewCount) : ((a.sortBy < b.sortBy) ? -1 :  1); });
@@ -78,6 +143,12 @@ function Canvas(options) {
 	
 	function generateRGBA(array) {
 		return 'rgba('+array.join(',')+')';
+	}
+	
+	function clamp(value, min, max) {
+		if (value < min) value = min;
+		if (value > max) value = max;
+		return value; 
 	}
 	
 	return me;
