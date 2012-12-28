@@ -16,37 +16,38 @@
 	<div class="container" style="width:960px">
 		<h1>Hallo Welt</h1>
 		<div id="gridContainer">
-			<div class="navbar navbar-static-top">
-				<div class="navbar-inner">
-					<div class="container">
-						<div class="nav-collapse collapse navbar-responsive-collapse">
-							<ul class="nav">
-								<li class="active"><a href="#alle">Alle</a></li>
-								<li class="dropdown">
-									<a href="#gesperrt" class="dropdown-toggle" data-toggle="dropdown">gesperrt <b class="caret"></b></a>
-									<ul class="dropdown-menu">
-										<li><a href="#">in Deutschland</a></li>
-										<li><a href="#">vorsorglich wegen GEMA</a></li>
-										<li class="divider"></li>
-										<li class="nav-header">Nav header</li>
-										<li><a href="#">Separated link</a></li>
-										<li><a href="#">One more separated link</a></li>
-									</ul>
-								</li>
-								<li><a href="#">Link</a></li>
-							</ul>
-							<form class="navbar-search pull-right" action="">
-								<input type="text" class="search-query span2" placeholder="Suche">
-							</form>
-						</div><!-- /.nav-collapse -->
-					</div>
-				</div>
-			</div>
+			<table style="width:100%; margin-bottom:20px">
+				<tr>
+					<td>Markiere:</td>
+					<td>
+						<div class="btn-group" data-toggle="buttons-radio" id="gridFlag">
+							<button class="btn" value="none">Keine</button>
+							<button class="btn active" value="germany">Gesperrt in Deutschland</button>
+							<button class="btn" value="precautionary">Vorsorglich gesperrt wegen GEMA</button>
+						</div>
+						<form class="navbar-search pull-right">
+							<input type="text" class="search-query" placeholder="Search">
+						</form>
+					</td>
+				</tr>
+				<tr>
+					<td>Sortiere nach:</td>
+					<td>
+						<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
+							<button class="btn active" value="views">Popularität</button>
+							<button class="btn" value="title">Name</button>
+							<button class="btn" value="category">Kategorie</button>
+							<button class="btn" value="date">Datum</button>
+							<button class="btn" value="rating">Bewertung</button>
+						</div>
+					</td>
+				</tr>
+			</table>
 			
-			<h4 style="text-align:center">gesperrt in Deutschland</h4>
-			<div id="grid" style="background-image:url(images/grid.jpg);width:960px;height:450px">
-				<canvas id="gridCanvas" width="960" height="450"></canvas>
-				<canvas id="gridCanvasOverlay" width="960" height="450"></canvas>
+			<div id="grid" style="width:960px;height:450px;position:relative">
+				<img src="images/grid.jpg" id="gridImage" style="width:960px;height:450px;position:absolute;left:0;top:0">
+				<canvas id="gridCanvas" width="960" height="450" style="width:960px;height:450px;position:absolute;left:0;top:0"></canvas>
+				<canvas id="gridCanvasOverlay" width="960" height="450" style="width:960px;height:450px;position:absolute;left:0;top:0;cursor:pointer"></canvas>
 			</div>
 		</div>
 	</div>
