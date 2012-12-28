@@ -59,8 +59,11 @@ for (var k = 0; k < countries.length; k++) {
 					data = data.feed.entry;
 					for (var i = 0; i < data.length; i++) {
 						var entry = data[i];
-						var id = entry.media$group.yt$videoid.$t;
-						results['_'+id] = entry;
+						var viewCount = parseInt(entry.yt$statistics.viewCount, 10);
+						if (viewCount > 20000000) {
+							var id = entry.media$group.yt$videoid.$t;
+							results['_'+id] = entry;
+						}
 					}
 					
 					// Wenn alles gescraped ist, dann als JSON auswerfen
