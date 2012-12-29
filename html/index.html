@@ -42,16 +42,22 @@
 </head>
 <body>
 	<div class="container" style="width:960px">
-		<h1>Hallo Welt</h1>
+		<h1>Die Top 1000 YouTube-Videos</h1>
+		<p class="lead">
+			Ein großer Teil der 1000 meistgesehenden YouTube-Videos sind nicht überall verfügbar.
+			Z.B. sind etwa 14% davon irgendwo im Ausland gesperrt.
+			Deutschland ist jedoch einsamer Spitzenreiter! Ganze 42% der Top 1000 sind hier nicht verfügbar.</p>
 		<div id="gridContainer">
 			<table style="width:100%; margin-bottom:20px">
 				<tr>
-					<td>Markiere:</td>
+					<td>Markiere gesperrte:</td>
 					<td>
 						<div class="btn-group" data-toggle="buttons-radio" id="gridFlag">
-							<button class="btn" value="none">Keine</button>
-							<button class="btn active" value="germany">Gesperrt in Deutschland</button>
-							<button class="btn" value="precautionary">Vorsorglich gesperrt wegen GEMA</button>
+							<button class="btn" value="none">Nein</button>
+							<button class="btn" value="precautionary">Vorsorglich wegen GEMA</button>
+							<button class="btn active" value="germany">in Deutschland</button>
+							<button class="btn" value="foreign">im Ausland</button>
+							<button class="btn" value="somewhere">Irgendwo</button>
 						</div>
 					</td>
 				</tr>
@@ -59,14 +65,17 @@
 					<td>Sortiere nach:</td>
 					<td>
 						<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
-							<button class="btn active" value="views">Popularität</button>
+							<button class="btn active" value="restrictions">gesperrten Ländern</button>
+							<button class="btn" value="views">Popularität</button>
 							<button class="btn" value="rating">Bewertung</button>
 							<button class="btn" value="category">Kategorie</button>
 							<button class="btn" value="date">Datum</button>
 						</div>
+						<!--
 						<form class="navbar-search pull-right">
 							<input type="text" class="search-query" placeholder="Search">
 						</form>
+						-->
 					</td>
 				</tr>
 			</table>
@@ -104,6 +113,8 @@
 					</div>
 				</div>
 			</div>
+			<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none">
+			<div id="tooltip"></div>
 		</div>
 	</div>
 	<script src="libraries/bootstrap/js/bootstrap.min.js"></script>

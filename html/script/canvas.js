@@ -50,10 +50,8 @@ function Canvas(options) {
 		var status = {};
 		var markedEntry;
 		
-		var tooltip = $('<div id="tooltip"></div>');
-		$('#grid').after(tooltip);
-		var marker = $('<img src="images/marker.png" style="display:none; position:absolute; pointer-events:none">');
-		$('#grid').after(marker);
+		var tooltip = $('#tooltip');
+		var marker = $('#marker');
 		var infobox = $('#infobox');
 		var infoboxContent = $('#infoboxContent');
 		var infoboxTemplate = infoboxContent.html();
