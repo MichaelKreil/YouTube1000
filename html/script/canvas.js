@@ -41,16 +41,24 @@ function Canvas(options) {
 	nodeOverlay.mouseenter(function (e) { me.toolTip.show(e.offsetX, e.offsetY) });
 	nodeOverlay.mousemove( function (e) { me.toolTip.show(e.offsetX, e.offsetY) });
 	nodeOverlay.mouseleave(function (e) { me.toolTip.hide() });
+	nodeOverlay.click(function (e) {
+		me.toolTip.showInfobox();
+	});
 	
 	me.toolTip = new (function () {
 		var me = this;
 		var status = {};
+		var markedEntry;
 		
 		var tooltip = $('<div id="tooltip"></div>');
 		$('#grid').after(tooltip);
 		var marker = $('<img src="images/marker.png" style="display:none; position:absolute; pointer-events:none">');
 		$('#grid').after(marker);
+		var infobox = $('#infobox');
+		var infoboxContent = $('#infoboxContent');
+		var infoboxTemplate = infoboxContent.html();
 		
+		$('#infobox .close').click(function () { infobox.hide() });
 		
 		me.hide = function () {
 			if (status.shown) {
@@ -76,6 +84,7 @@ function Canvas(options) {
 			var entry = indexes[index].entry;
 			var html = '<b>'+entry.title+'</b><br>'+entry.hint;
 			var content = html+xi+'_'+yi;
+			
 			if (status.content != content) {
 				tooltip.html(html);
 				
@@ -92,7 +101,49 @@ function Canvas(options) {
 					top:  ty-3
 				});
 			}
+			
 			status.content = content;
+			markedEntry = entry;
+		}
+		
+		function replace(text, regexp, value) {
+			value = value.replace(/%/g, '&#37;');
+			return text.replace(regexp, value);
+		}
+		
+		me.showInfobox = function () {
+			infobox.show();
+			
+			var c = markedEntry.restrictionCountries;
+			var countries = [];
+			for (var i = 0; i < c.length; i++) countries.push('<span title="'+countryCodes[c[i]]+'">'+c[i]+'</span>');
+			if (countries.length == 0) {
+				countries = 'Nirgends \\o/';
+			} else {
+				countries = countries.join(', ');
+			}
+			
+			var html = infoboxTemplate;
+			
+			html = replace(html, /%title%/g,                   markedEntry.title);
+			html = replace(html, /%published%/g,    formatDate(markedEntry.published));
+			html = replace(html, /%url%/g,                     markedEntry.url);
+			html = replace(html, /%author%/g,                  markedEntry.author);
+			html = replace(html, /%description%/g,             markedEntry.description);
+			html = replace(html, /%restriction%/g,             markedEntry.restriction ? 'Ja' : 'Nein');
+			html = replace(html, /%restrictionCountries%/g,    countries);
+			html = replace(html, /%reason%/g,                  markedEntry.reason);
+			html = replace(html, /%thumbnail%/g,               markedEntry.thumbnail);
+			html = replace(html, /%rating%/g,     formatRating(markedEntry.rating));
+			html = replace(html, /%viewCount%/g, formatInteger(markedEntry.viewCount));
+			html = replace(html, /%category%/g,                markedEntry.category);
+			
+			if (!markedEntry.restriction) html = replace(html, /%de%.*?%\/de%/g, '');
+			
+			html = replace(html, /%.*?%/g, '');
+			
+			infoboxContent.html(html);
+			$('#infoboxContent span').tooltip();
 		}
 	})();
 
