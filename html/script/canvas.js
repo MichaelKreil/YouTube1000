@@ -90,7 +90,7 @@ function Canvas(options) {
 				var ty = yi*thumbHeight + offset.top;
 				
 				tooltip.css({
-					left: tx + thumbWidth/2 - tooltip.width()/2,
+					left: tx + thumbWidth/2 - tooltip.outerWidth()/2,
 					top:  ty + thumbHeight
 				});
 				
