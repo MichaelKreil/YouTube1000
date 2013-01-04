@@ -179,13 +179,16 @@ function Canvas(options) {
 	}
 	
 	me.flag = function (options) {
+		/*
 		var colorTrue  = generateRGBA(options.colors[1]);
 		var colorFalse = generateRGBA(options.colors[0]);
+		*/
 		for (var i = 0; i < indexes.length; i++) {
 			var entry = indexes[i].entry;
-			var show = options.callback(entry);
+			var color = options.callback(entry);
+			color = generateRGBA(color);
 			
-			context.fillStyle = show ? colorTrue : colorFalse;
+			context.fillStyle = color;
 			context.fillRect(projectX2[i], projectY2[i], thumbWidth, thumbHeight);
 		}
 	}
