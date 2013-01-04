@@ -59,7 +59,13 @@ for (var k = 0; k < countries.length; k++) {
 					data = data.feed.entry;
 					for (var i = 0; i < data.length; i++) {
 						var entry = data[i];
-						var viewCount = parseInt(entry.yt$statistics.viewCount, 10);
+						var viewCount;
+						
+						try {
+							viewCount = parseInt(entry.yt$statistics.viewCount, 10);
+						} catch (e) {
+						}
+						
 						if (viewCount > 20000000) {
 							var id = entry.media$group.yt$videoid.$t;
 							results['_'+id] = entry;
@@ -75,7 +81,3 @@ for (var k = 0; k < countries.length; k++) {
 		}
 	}
 }
-
-function getUrl(pageNo, mode, country) {
-}
-
