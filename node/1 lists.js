@@ -1,12 +1,6 @@
 
 var minViewCount = 40000000;
 
-var fs = require('fs');
-var downloader = require('./modules/downloader.js');
-var results = {};
-var queued = 0;
-var finished = 0;
-
 // Die YouTube-API ist ein bisschen wackelig. Z.B. kommt in der normalen mostviewd-Liste nicht "Gangnam Style" vor.
 // Deswegen mal systematisch zusätzliche Suchbegriffe und Kategorien ausprobieren:
 var modes = [
@@ -39,13 +33,36 @@ var countries = [
 	'US', 'DE', 'ET', 'CH', 'LU', 'TV'
 ];
 
+var endless = (process.argv[2] !== undefined);
 
-// Alle Kombinationen aus Ländern und Suchvarianten durchprobieren
-for (var i = 0; i < countries.length; i++) {
-	for (var j = 0; j < modes.length; j++) {
-		var country = countries[i];
-		var mode = modes[j] 
-		download(0, country, mode);
+var results = {};
+var queued = 0;
+var finished = 0;
+var lastProgress = 0;
+
+var fs = require('fs');
+var downloader = require('./modules/downloader.js');
+
+if (endless) {
+	setInterval(run, 15*60*1000);
+} else {
+	run();
+}
+
+	
+function run() {
+	results = {};
+	queued = 0;
+	finished = 0;
+	lastProgress = 0;
+	
+	// Alle Kombinationen aus Ländern und Suchvarianten durchprobieren
+	for (var i = 0; i < countries.length; i++) {
+		for (var j = 0; j < modes.length; j++) {
+			var country = countries[i];
+			var mode = modes[j] 
+			download(0, country, mode);
+		}
 	}
 }
 
@@ -91,8 +108,13 @@ function download(pageId, country, mode) {
 	
 
 function check() {
+	progress = Math.floor(10*finished/queued)*10;
+	if (progress > lastProgress) {
+		console.log(progress.toFixed(1)+'%');
+		lastProgress = progress;
+	}
+	
 	// Wenn alles gescraped ist, dann als JSON auswerfen
-	console.log(queued, finished, (100*finished/queued).toFixed(1)+'%');
 	if (queued == finished) {
 		var listUrl = '../data/list.json';
 		var list;
