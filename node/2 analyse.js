@@ -1,13 +1,13 @@
 
 var downloadDetail = true;
 var downloadThumbs = true;
-var downloadReason = true;
+var downloadReason = false;
 
 var fs = require('fs');
 var downloader = require('./modules/downloader.js');
 var queuedIn = 0;
 var queuedOut = 0;
-
+var allCountries = ['AD','AE','AF','AG','AI','AL','AM','AN','AO','AQ','AR','AS','AT','AU','AW','AX','AZ','BA','BB','BD','BE','BF','BG','BH','BI','BJ','BL','BM','BN','BO','BQ','BR','BS','BT','BU','BV','BW','BY','BZ','CA','CC','CD','CE','CF','CG','CH','CI','CK','CL','CM','CN','CO','CP','CR','CS','CS','CU','CV','CW','CX','CY','CZ','DE','DG','DJ','DK','DM','DO','DZ','EA','EC','EE','EG','EH','ER','ES','ET','EU','FI','FJ','FK','FM','FO','FR','FX','GA','GB','GD','GE','GF','GG','GH','GI','GL','GM','GN','GP','GQ','GR','GS','GT','GU','GW','GY','HK','HM','HN','HR','HT','HU','IC','ID','IE','IL','IM','IN','IO','IQ','IR','IS','IT','JE','JM','JO','JP','KE','KG','KH','KI','KM','KN','KP','KR','KW','KY','KZ','LA','LB','LC','LI','LK','LR','LS','LT','LU','LV','LY','MA','MC','MD','ME','MF','MG','MH','MK','ML','MM','MN','MO','MP','MQ','MR','MS','MT','MU','MV','MW','MX','MY','MZ','NA','NC','NE','NF','NG','NI','NL','NO','NP','NR','NT','NU','NZ','OM','PA','PE','PF','PG','PH','PK','PL','PM','PN','PR','PS','PT','PW','PY','QA','RE','RO','RS','RU','RW','SA','SB','SC','SD','SE','SG','SH','SI','SJ','SK','SL','SM','SN','SO','SR','SS','ST','SU','SV','SX','SY','SZ','TA','TC','TD','TF','TG','TH','TJ','TK','TL','TM','TN','TO','TR','TT','TV','TW','TZ','UA','UG','UM','US','UY','UZ','VA','VC','VE','VG','VI','VN','VU','WF','WS','YE','YT','YU','ZA','ZM','ZR','ZW'];
 
 
 console.log('Lese "list.json"');
@@ -48,12 +48,34 @@ if (downloadDetail) {
 						data = data.entry;
 		
 						var restrictions = data.media$group.media$restriction;
+						//console.log(entry.id, restrictions);
 						var restrictedInDE  = false
 						var restrictionsAll = [];
 						
 						if (restrictions !== undefined) {
-							restrictionsAll = restrictions[0].$t.split(' ');
-							restrictedInDE  = (restrictions[0].$t.indexOf('DE') >= 0);
+							if (restrictions.length != 1) console.error('Erwarte Länge = 1');
+							restrictions = restrictions[0];
+							
+							if (restrictions.type != 'country') console.error('Erwarte type = country');
+							
+							var t = restrictions.$t;
+							switch (restrictions.relationship) {
+								case 'allow':
+									restrictionsAll = [];
+									for (var i = 0; i < allCountries.length; i++) {
+										if (t.indexOf(allCountries[i]) < 0) restrictionsAll.push(allCountries[i]);
+									}
+									restrictionsAll.sort();
+									restrictedInDE  = (t.indexOf('DE') < 0);
+								break;
+								case 'deny':
+									restrictionsAll = t.split(' ');
+									restrictionsAll.sort();
+									restrictedInDE  = (t.indexOf('DE') >= 0);
+								break;
+								default:
+									console.error('Unbekannte Beziehung: '+restrictions.relationship)
+							}
 						}
 						
 						entry.published       = data.published.$t;
@@ -71,7 +93,8 @@ if (downloadDetail) {
 					}
 					
 					check();
-				}
+				},
+				true
 			);
 		})();
 	}
