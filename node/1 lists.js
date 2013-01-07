@@ -1,5 +1,5 @@
 
-var minViewCount = 38000000;
+var minViewCount = 40000000;
 
 var fs = require('fs');
 var downloader = require('./modules/downloader.js');
@@ -103,9 +103,8 @@ function check() {
 			list = {};
 		}
 		
-		for (var i in results) {
-			list[i] = results[i];
-		}
+		for (var i in results) list[i] = results[i];
+		for (var i in list) if (list[i] < minViewCount) list[i] = undefined;
 		
 		fs.writeFileSync('../data/list.json', JSON.stringify(list, null, '\t'), 'utf8');
 	}
