@@ -18,6 +18,7 @@ var modes = [
 	'q=song',
 	'q=pop',
 	'q=rock',
+	'q=girl',
 	'category=Music',
 	'category=Entertainment',
 	'category=Comedy',
