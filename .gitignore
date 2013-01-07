@@ -2,3 +2,5 @@
 images/originals/*.jpg
 images/thumbs/*.png
 .project
+
+data/top1000.json
