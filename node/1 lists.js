@@ -1,5 +1,5 @@
 
-var minViewCount = 40000000;
+var minViewCount = 42000000;
 
 // Die YouTube-API ist ein bisschen wackelig. Z.B. kommt in der normalen mostviewd-Liste nicht "Gangnam Style" vor.
 // Deswegen mal systematisch zusätzliche Suchbegriffe und Kategorien ausprobieren:
