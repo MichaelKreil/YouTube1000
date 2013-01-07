@@ -31,7 +31,7 @@ for (var i in list) {
 	});
 }
 
-//entries.length = 10;
+//entries.length = 1;
 
 if (downloadDetail) {
 	for (var i = 0; i < entries.length; i++) {
@@ -48,24 +48,24 @@ if (downloadDetail) {
 						data = data.entry;
 		
 						var restrictions = data.media$group.media$restriction;
-						var restrictionDE = false
-						var restrictionAll = [];
+						var restrictedInDE  = false
+						var restrictionsAll = [];
 						
 						if (restrictions !== undefined) {
-							restrictionAll = restrictions[0].$t.split(' ');
-							restrictionDE = (restrictions[0].$t.indexOf('DE') >= 0);
+							restrictionsAll = restrictions[0].$t.split(' ');
+							restrictedInDE  = (restrictions[0].$t.indexOf('DE') >= 0);
 						}
 						
-						entry.published      = data.published.$t;
-						entry.updated        = data.updated.$t;
-						entry.title          = data.title.$t;
-						entry.author         = data.author[0].name.$t;
-						entry.description    = data.media$group.media$description.$t;
-						entry.restrictionDE  = restrictionDE;
-						entry.restrictionAll = restrictionAll;
-						entry.rating         = (data.gd$rating === undefined) ? -1 : parseFloat(data.gd$rating.average);
-						entry.viewCount      = data.viewCount;
-						entry.category       = data.media$group.media$category[0].label;
+						entry.published       = data.published.$t;
+						entry.updated         = data.updated.$t;
+						entry.title           = data.title.$t;
+						entry.author          = data.author[0].name.$t;
+						entry.description     = data.media$group.media$description.$t;
+						entry.restrictedInDE  = restrictedInDE;
+						entry.restrictionsAll = restrictionsAll;
+						entry.rating          = (data.gd$rating === undefined) ? -1 : parseFloat(data.gd$rating.average);
+						entry.viewCount       = parseInt(data.yt$statistics.viewCount, 10);
+						entry.category        = data.media$group.media$category[0].label;
 					} else {
 						entry.use = false;
 					}
@@ -144,7 +144,7 @@ var lastPercent = -1;
 
 function check() {
 	var percent = 100*queuedOut/queuedIn;
-	percent = Math.round(percent/20)*20;
+	percent = Math.floor(percent/5)*5;
 	percent = percent.toFixed(0)+'%';
 	if (percent != lastPercent) {
 		console.log(percent);
@@ -168,7 +168,11 @@ function check() {
 			var line = [];
 			for (var j = 0; j < keys.length; j++) {
 				var key = keys[j];
-				line.push(entry[key]);
+				var value = entry[key].toString();
+				value = value.replace(/\t/g, '\\t');
+				value = value.replace(/\n/g, '\\n');
+				value = value.replace(/\r/g, '\\r');
+				line.push(value);
 			}
 			lines.push(line.join('\t'));
 		}
