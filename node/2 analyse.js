@@ -1,7 +1,7 @@
 
 var downloadDetail = true;
 var downloadThumbs = true;
-var downloadReason = false;
+var downloadReason = true;
 
 var fs = require('fs');
 var downloader = require('./modules/downloader.js');
