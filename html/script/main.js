@@ -63,8 +63,8 @@ function updateCanvas(options) {
 			hint     = function (entry) { return 'Bewertung: '+formatRating(entry.rating) };
 		break;
 		case 'restrictions':
-			callback = function (entry) { return -entry.restrictionCountries.length };
-			hint     = function (entry) { return 'gesperrt in '+entry.restrictionCountries.length+(entry.restrictionCountries.length == 1 ? 'Land' : ' Ländern') };
+			callback = function (entry) { return -entry.restrictionsAll.length - entry.restrictedInDE };
+			hint     = function (entry) { return 'gesperrt in '+entry.restrictionsAll.length+(entry.restrictionsAll.length == 1 ? ' Land' : ' Ländern') };
 		break;
 	};
 	
@@ -81,9 +81,9 @@ function updateCanvas(options) {
 			callback = function (entry) {
 				if (entry.reason.indexOf('möglicherweise') >= 0) {
 					return colorRed; //GEMA
-				} else if (entry.restriction) {
+				} else if (entry.restrictedInDE > 1) {
 					return colorDarkRed; // Deutschland
-				} else if (entry.restrictionCountries.length > 0) {
+				} else if (entry.restrictionsAll.length > 0) {
 					return colorYellow; // Ausland
 				} else {
 					return colorWhite; // Niemand
@@ -92,17 +92,17 @@ function updateCanvas(options) {
 		break;
 		case 'germany':
 			callback = function (entry) {
-				return entry.restriction ? colorRed : colorWhite
+				return (entry.restrictedInDE > 1) ? colorRed : colorWhite
 			};
 		break;
 		case 'precautionary':
 			callback = function (entry) { return (entry.reason.indexOf('möglicherweise') >= 0) ? colorRed : colorWhite };
 		break;
 		case 'somewhere':
-			callback = function (entry) { return (entry.restrictionCountries.length > 0) ? colorRed : colorWhite };
+			callback = function (entry) { return (entry.restrictionsAll.length > 0) ? colorRed : colorWhite };
 		break;
 		case 'foreign':
-			callback = function (entry) { return (entry.restrictionCountries.length > (entry.restriction ? 1 : 0)) ? colorRed : colorWhite };
+			callback = function (entry) { return (entry.restrictionsAll.length > ((entry.restrictedInDE > 1) ? 1 : 0)) ? colorRed : colorWhite };
 		break;
 	};
 	

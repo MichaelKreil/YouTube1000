@@ -111,11 +111,15 @@ function Canvas(options) {
 		me.showInfobox = function () {
 			infobox.show();
 			
-			var c = markedEntry.restrictionCountries;
+			var c = markedEntry.restrictionsAll;
 			var countries = [];
-			for (var i = 0; i < c.length; i++) countries.push('<span title="'+countryCodes[c[i]]+'">'+c[i]+'</span>');
+			for (var i = 0; i < c.length; i++) {
+				var countryName = countryCodes[c[i]];
+				if (countryName === undefined) console.error('Unbekannter Code: '+c[i]);
+				countries.push('<span title="'+countryName+'">'+c[i]+'</span>');
+			}
 			if (countries.length == 0) {
-				countries = 'Nirgends \\o/';
+				countries = 'Keinem Land';
 			} else {
 				countries = countries.join(', ');
 			}
@@ -126,8 +130,7 @@ function Canvas(options) {
 			html = replace(html, /%published%/g,    formatDate(markedEntry.published));
 			html = replace(html, /%url%/g,                     markedEntry.url);
 			html = replace(html, /%author%/g,                  markedEntry.author);
-			html = replace(html, /%description%/g,             markedEntry.description);
-			html = replace(html, /%restriction%/g,             markedEntry.restriction ? 'Ja' : 'Nein');
+			html = replace(html, /%restriction%/g,             markedEntry.restrictedInDE ? 'Ja' : 'Nein');
 			html = replace(html, /%restrictionCountries%/g,    countries);
 			html = replace(html, /%reason%/g,                  markedEntry.reason);
 			html = replace(html, /%thumbnail%/g,               markedEntry.thumbnail);
