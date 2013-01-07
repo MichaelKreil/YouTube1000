@@ -1,2 +1,4 @@
-# data/* -diff
+
 html/data/* -diff
+data/top1000.json -diff
+data/top1000.tsv -diff
