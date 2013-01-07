@@ -41,10 +41,11 @@ var finished = 0;
 var lastProgress = 0;
 
 var fs = require('fs');
+var util = require('util');
 var downloader = require('./modules/downloader.js');
 
 if (endless) {
-	setInterval(run, 15*60*1000);
+	setInterval(run, 5*60*1000);
 } else {
 	run();
 }
@@ -108,9 +109,10 @@ function download(pageId, country, mode) {
 	
 
 function check() {
-	progress = Math.floor(10*finished/queued)*10;
+	progress = Math.floor(10*finished/queued);
 	if (progress > lastProgress) {
-		console.log(progress.toFixed(1)+'%');
+		//util.print((progress-1).toFixed(0)+' ');
+		util.print('.');
 		lastProgress = progress;
 	}
 	
@@ -125,9 +127,15 @@ function check() {
 			list = {};
 		}
 		
-		for (var i in results) list[i] = results[i];
+		var newVideos = 0;
+		for (var i in results) {
+			if (list[i] === undefined) newVideos++;
+			list[i] = results[i];
+		}
+		
 		for (var i in list) if (list[i] < minViewCount) list[i] = undefined;
 		
 		fs.writeFileSync('../data/list.json', JSON.stringify(list, null, '\t'), 'utf8');
+		console.log(' - new videos: '+newVideos);
 	}
 }
