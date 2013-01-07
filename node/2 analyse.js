@@ -1,79 +1,141 @@
-// https:// gdata.youtube.com/feeds/api/videos?orderby=viewCount&max-results=50&restriction=US&v=2&alt=json&start-index=1
 
+var downloadDetail = true;
 var downloadThumbs = true;
 var downloadReason = true;
 
 var fs = require('fs');
 var downloader = require('./modules/downloader.js');
+var queuedIn = 0;
+var queuedOut = 0;
+
+
 
 console.log('Lese "list.json"');
-var results = JSON.parse(fs.readFileSync('../data/list.json', 'utf8'));
+var list = JSON.parse(fs.readFileSync('../data/list.json', 'utf8'));
+
+
+
 console.log('Beginne Analyse');
 
 var entries = [];
+for (var i in list) {
+	var id = i.substr(1);
+	entries.push({
+		id:        id,
+		viewCount: list[i],
+		reason:    '',
+		thumbnail: 'http://i.ytimg.com/vi/'+id+'/default.jpg',
+		image:     'http://i.ytimg.com/vi/'+id+'/hqdefault.jpg',
+		url:       'http://www.youtube.com/watch?v='+id,
+		use:       true
+	});
+}
 
-for (var i in results) {
-	var entry = results[i];
+//entries.length = 10;
 
-	if (entry.yt$statistics) {
-		entry.viewCount = parseInt(entry.yt$statistics.viewCount, 10);
-		entry.id = entry.media$group.yt$videoid.$t;
-		entries.push(entry);
+if (downloadDetail) {
+	for (var i = 0; i < entries.length; i++) {
+		(function () {
+			var entry = entries[i];
+			queuedIn++;
+			downloader.download(
+				'http://gdata.youtube.com/feeds/api/videos/'+entry.id+'?alt=json&key=AI39si6r5kwUQTFCnTgPIyn10GRX_L5LtaPW7Rs4HJUCSXmQmmeJJZ2g7L62NOhpWkF4H1p4AJCo51Q_R7TjQENATfasT7NkXA&v=2',
+				function (data, ok) {
+					queuedOut++;
+					
+					if (ok) {
+						data = JSON.parse(data);
+						data = data.entry;
+		
+						var restrictions = data.media$group.media$restriction;
+						var restrictionDE = false
+						var restrictionAll = [];
+						
+						if (restrictions !== undefined) {
+							restrictionAll = restrictions[0].$t.split(' ');
+							restrictionDE = (restrictions[0].$t.indexOf('DE') >= 0);
+						}
+						
+						entry.published      = data.published.$t;
+						entry.updated        = data.updated.$t;
+						entry.title          = data.title.$t;
+						entry.author         = data.author[0].name.$t;
+						entry.description    = data.media$group.media$description.$t;
+						entry.restrictionDE  = restrictionDE;
+						entry.restrictionAll = restrictionAll;
+						entry.rating         = (data.gd$rating === undefined) ? -1 : parseFloat(data.gd$rating.average);
+						entry.viewCount      = data.viewCount;
+						entry.category       = data.media$group.media$category[0].label;
+					} else {
+						entry.use = false;
+					}
+					
+					check();
+				}
+			);
+		})();
 	}
 }
 
-entries.sort(function (a, b) {
-	return b.viewCount - a.viewCount;
-});
 
-entries.length = 1000;
-
-var queued = 0;
-var maxQueued = 0;
-
-for (var i = 0; i < entries.length; i++) {
-	var entry = entries[i];
-	var id = entry.id;
-	
-	var restriction = entry.media$group.media$restriction;
-	var restrictionCountries = [];
-	
-	if (restriction === undefined) {
-		restriction = false;
-	} else {
-		restrictionCountries = restriction[0].$t.split(' ');
-		restriction = (restriction[0].$t.indexOf('DE') >= 0);
+if (downloadThumbs) {
+	for (var i = 0; i < entries.length; i++) {
+		(function () {
+			var url = entries[i].image;
+			var id  = entries[i].id;
+			var filename = '../images/originals/thumb_'+id+'.jpg';
+			if (!fs.existsSync(filename)) {
+				queuedIn++;
+				downloader.download(
+					url,
+					function (data) {
+						queuedOut++;
+						
+						console.log('Downloaded Thumb '+id);
+						fs.writeFileSync(filename, data, 'binary');
+						
+						check();
+					},
+					false,
+					true
+				);
+			}
+		})();
 	}
-	
-	entry = {
-		published: entry.published.$t,
-		updated: entry.updated.$t,
-		title: entry.title.$t,
-		id: entry.id,
-		url: 'http://www.youtube.com/watch?v='+id,
-		author: entry.author[0].name.$t,
-		description: entry.media$group.media$description.$t,
-		restriction: restriction,
-		restrictionCountries: restrictionCountries,
-		reason: '',
-		thumbnail: "http://i.ytimg.com/vi/"+id+"/default.jpg",
-		image: "http://i.ytimg.com/vi/"+id+"/hqdefault.jpg",
-		rating: (entry.gd$rating === undefined) ? -1 : parseFloat(entry.gd$rating.average),
-		viewCount: entry.viewCount,
-		category: entry.media$group.media$category[0].label
-	};
-	
-	if (downloadThumbs) downloadThumb(entry.image, i);
-	
-	if (downloadReason) {
-		if (restriction) {
-			queued++;
-			maxQueued++;
-			getReason(entry.url, entry);
-		}
+}
+
+if (downloadReason) {
+	for (var i = 0; i < entries.length; i++) {
+		(function () {
+			var entry = entries[i];
+			
+			queuedIn++;
+			downloader.download(
+				entry.url,
+				function (html, ok) {
+					queuedOut++;
+					if (ok) {
+						html = html.replace(/[\r\n]/g, ' ');
+						text = html.match(/\<div\s*class\=\"content\"\>.*?\<\/h1\>/i);
+						if (text == null) {
+							text = html.match(/\<div\s*class\=\"yt\-alert\-message\"\>.*?\<\/div\>/i)[0];
+						} else {
+							text = text[0];
+						}
+						text = text.replace(/\<.*?>/g, ' ');
+						text = text.replace(/[ \s\t]*>/g, ' ');
+						text = trim(text);
+						//console.log(text);
+						entry.reason = text;
+					} else {
+						entry.use = false;
+					}
+					check();
+				},
+				true
+			);
+		})();
 	}
-	
-	entries[i] = entry;
 }
 
 check();
@@ -81,23 +143,28 @@ check();
 var lastPercent = -1;
 
 function check() {
-	var percent = 100*queued/maxQueued;
-	percent = Math.round(percent/10)*10;
+	var percent = 100*queuedOut/queuedIn;
+	percent = Math.round(percent/20)*20;
 	percent = percent.toFixed(0)+'%';
 	if (percent != lastPercent) {
 		console.log(percent);
 		lastPercent = percent;
 	}
 	
-	if (queued == 0) {
+	if (queuedOut == queuedIn) {
 		
-		fs.writeFileSync('../data/top1000.json', JSON.stringify(entries, null, '\t'), 'utf8');
+		var result = [];
+		for (var i = 0; i < entries.length; i++) {
+			if (entries[i].use) result.push(entries[i]);
+		}
+		
+		fs.writeFileSync('../data/top1000.json', JSON.stringify(result, null, '\t'), 'utf8');
 		
 		var keys = [];
-		for (var key in entries[0]) keys.push(key);
+		for (var key in result[0]) keys.push(key);
 		var lines = [keys.join('\t')];
-		for (var i = 0; i < entries.length; i++) {
-			var entry = entries[i];
+		for (var i = 0; i < result.length; i++) {
+			var entry = result[i];
 			var line = [];
 			for (var j = 0; j < keys.length; j++) {
 				var key = keys[j];
@@ -107,45 +174,6 @@ function check() {
 		}
 		fs.writeFileSync('../data/top1000.tsv', lines.join('\r'), 'utf8');
 	}
-}
-
-
-function getReason(url, entry) {
-	//console.log('Start "'+entry.url+'"');
-	
-	downloader.download(
-		url,
-		function (html) {
-			queued--;
-			html = html.replace(/[\r\n]/g, ' ');
-			text = html.match(/\<div\s*class\=\"content\"\>.*?\<\/h1\>/i);
-			if (text == null) {
-				text = html.match(/\<div\s*class\=\"yt\-alert\-message\"\>.*?\<\/div\>/i)[0];
-			} else {
-				text = text[0];
-			}
-			text = text.replace(/\<.*?>/g, ' ');
-			text = text.replace(/[ \s\t]*>/g, ' ');
-			text = trim(text);
-			console.log(text);
-			entry.reason = text;
-			check();
-		},
-		true
-	);
-}
-
-
-function downloadThumb(url, id) {
-	downloader.download(
-		url,
-		function (data) {
-			console.log('Downloaded Thumb '+id);
-			fs.writeFileSync('../images/originals/thumb'+id+'.jpg', data, 'binary');
-		},
-		false,
-		true
-	);
 }
 
 /* Why is always this fucking */function/* missing to */trim/* a fucking */(text)/* ??? */ { return text.replace(/^\s*|\s*$/g, ''); }

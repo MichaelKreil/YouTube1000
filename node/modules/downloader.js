@@ -24,7 +24,9 @@ exports.download = function (url, callback, german, binary) {
 
 			var code = res.statusCode;
 			if (code != 200) {
-				console.error('ERROR: HTTP code = '+code);
+				console.error('ERROR: HTTP code = ' + code + ' (' + url + ')');
+				callback(data, false);
+				return;
 			}
 			
 			var data = '';
@@ -34,7 +36,7 @@ exports.download = function (url, callback, german, binary) {
 			res.on('data', function (chunk) { data += chunk });
 			
 			res.on('end', function () {
-				callback(data);
+				callback(data, true);
 			});
 
 			res.on('error', function (e) {
