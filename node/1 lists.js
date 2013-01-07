@@ -69,7 +69,7 @@ function run() {
 }
 
 function getPageUrl(pageId, country, mode) {
-	var parameters = ['alt=json', 'start-index='+(pageId*50+1), 'max-results=50', 'orderby=viewCount', 'restriction=' + country, 'region=' + country, mode, 'v=2'];
+	var parameters = ['alt=json', 'start-index='+(pageId*50+1), 'max-results=50', 'orderby=viewCount', 'restriction=' + country, 'region=' + country, mode, 'key=AI39si6r5kwUQTFCnTgPIyn10GRX_L5LtaPW7Rs4HJUCSXmQmmeJJZ2g7L62NOhpWkF4H1p4AJCo51Q_R7TjQENATfasT7NkXA', 'v=2'];
 	return 'http://gdata.youtube.com/feeds/api/videos?' + parameters.join('&');
 }
 
