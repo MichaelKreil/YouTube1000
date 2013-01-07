@@ -109,9 +109,8 @@ function download(pageId, country, mode) {
 	
 
 function check() {
-	progress = Math.floor(10*finished/queued);
+	progress = Math.floor(30*finished/queued);
 	if (progress > lastProgress) {
-		//util.print((progress-1).toFixed(0)+' ');
 		util.print('.');
 		lastProgress = progress;
 	}
@@ -127,20 +126,24 @@ function check() {
 			list = {};
 		}
 		
+		// Aktualisiere Werte
 		var newVideos = 0;
 		for (var i in results) {
 			if (list[i] === undefined) newVideos++;
 			list[i] = results[i];
 		}
 		
+		// Entferne unbedeutende Werte
 		for (var i in list) if (list[i] < minViewCount) list[i] = undefined;
 		
+		// Sortiere Werte
 		var entries = [];
 		for (var i in list) entries.push({id:i, value:list[i]});
 		entries.sort(function (a,b) { return b.value - a.value; });
 		list = {};
 		for (var i = 0; i < entries.length; i++) list[entries[i].id] = entries[i].value;
 		
+		// Gebe Werte aus
 		fs.writeFileSync('../data/list.json', JSON.stringify(list, null, '\t'), 'utf8');
 		console.log(' - new videos: '+newVideos);
 	}
