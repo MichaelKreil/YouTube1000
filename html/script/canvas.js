@@ -19,23 +19,22 @@ function Canvas(options) {
 	
 	var projectX  = [];
 	var projectY  = [];
-	var projectX2 = [];
-	var projectY2 = [];
-	var deproject2 = [];
+	var deproject = [];
 	
 	var indexes = [];
 	for (var i = 0; i < data.length; i++) {
 		data[i].id = i;
 		indexes[i] = { entry:data[i], sortBy:i, id:i };
 		
-		projectX[i] = (i % columns)*thumbWidth;
-		projectY[i] = Math.floor(i/columns)*thumbHeight;
+		var x = (i % columns);
+		var y = Math.floor(i/columns);
 		
-		var x = Math.floor(i/rows), y = (i % rows);
-		projectX2[i] = x*thumbWidth;
-		projectY2[i] = y*thumbHeight;
-		if (deproject2[x] === undefined) deproject2[x] = [];
-		deproject2[x][y] = i;
+		projectX[i] = x*thumbWidth;
+		projectY[i] = y*thumbHeight;
+		
+		if (deproject[x] === undefined) deproject[x] = [];
+		
+		deproject[x][y] = i;
 	}
 	
 	nodeOverlay.mouseenter(function (e) { me.toolTip.show(e.offsetX, e.offsetY) });
@@ -75,9 +74,9 @@ function Canvas(options) {
 			
 			var offset = $('#grid').offset();
 			
-			var xi = clamp(Math.floor(x/thumbWidth ), 0, columns-1);
-			var yi = clamp(Math.floor(y/thumbHeight), 0, rows   -1); 
-			var index = deproject2[xi][yi];
+			var xi = clamp(Math.floor(x/thumbWidth ), 0, columns - 1);
+			var yi = clamp(Math.floor(y/thumbHeight), 0, rows    - 1); 
+			var index = deproject[xi][yi];
 			var id = index.id
 			var entry = indexes[index].entry;
 			var html = '<b>'+entry.title+'</b><br>'+entry.hint;
@@ -166,12 +165,12 @@ function Canvas(options) {
 			
 			context.drawImage(
 				image,
-				projectX2[id],
-				projectY2[id],
+				projectX[id],
+				projectY[id],
 				thumbWidth,
 				thumbHeight,
-				projectX2[i],
-				projectY2[i],
+				projectX[i],
+				projectY[i],
 				thumbWidth,
 				thumbHeight
 			);
@@ -189,7 +188,7 @@ function Canvas(options) {
 			color = generateRGBA(color);
 			
 			context.fillStyle = color;
-			context.fillRect(projectX2[i], projectY2[i], thumbWidth, thumbHeight);
+			context.fillRect(projectX[i], projectY[i], thumbWidth, thumbHeight);
 		}
 	}
 	
