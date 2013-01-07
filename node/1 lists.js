@@ -135,6 +135,12 @@ function check() {
 		
 		for (var i in list) if (list[i] < minViewCount) list[i] = undefined;
 		
+		var entries = [];
+		for (var i in list) entries.push({id:i, value:list[i]});
+		entries.sort(function (a,b) { return b.value - a.value; });
+		list = {};
+		for (var i = 0; i < entries.length; i++) list[entries[i].id] = entries[i].value;
+		
 		fs.writeFileSync('../data/list.json', JSON.stringify(list, null, '\t'), 'utf8');
 		console.log(' - new videos: '+newVideos);
 	}
