@@ -7,6 +7,13 @@
 	
 	<link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	<style>
+		#gridImage, #gridCanvas, #gridCanvasOverlay {
+			width: 400px;
+			height: 480px;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
 		#tooltip {
 			position: absolute;
 			display: none;
@@ -81,9 +88,9 @@
 			</table>
 			
 			<div id="grid" style="width:960px;height:450px;position:relative;overflow:visible">
-				<img src="images/grid.jpg" id="gridImage" style="width:960px;height:450px;position:absolute;left:0;top:0">
-				<canvas id="gridCanvas" width="960" height="450" style="width:960px;height:450px;position:absolute;left:0;top:0"></canvas>
-				<canvas id="gridCanvasOverlay" width="960" height="450" style="width:960px;height:450px;position:absolute;left:0;top:0;cursor:pointer"></canvas>
+				<img src="images/grid.jpg" id="gridImage">
+				<canvas id="gridCanvas" width="400" height="480"></canvas>
+				<canvas id="gridCanvasOverlay" width="400" height="480" style="cursor:pointer"></canvas>
 				<div id="infobox" style="padding:3px 10px 10px 10px">
 					<button class="close">&times;</button>
 					<div id="infoboxContent">
