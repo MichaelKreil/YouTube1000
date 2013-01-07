@@ -108,6 +108,17 @@ function Canvas(options) {
 			return text.replace(regexp, value);
 		}
 		
+		var highlightCountries = {
+			// Deutschland
+			'DE':4,
+			// deutschsprachig
+			'CH':3,'AT':3,
+			// EU
+			'FR':2,'BE':2,'BG':2,'DK':2,'EE':2,'FI':2,'GR':2,'IE':2,'IT':2,'LV':2,'LT':2,'LU':2,'MT':2,'NL':2,'PL':2,'PT':2,'RO':2,'SE':2,'SK':2,'SI':2,'ES':2,'CZ':2,'HU':2,'GB':2,'CY':2,
+			// westliche Staaten
+			'US':1
+		};
+		
 		me.showInfobox = function () {
 			infobox.show();
 			
@@ -116,7 +127,15 @@ function Canvas(options) {
 			for (var i = 0; i < c.length; i++) {
 				var countryName = countryCodes[c[i]];
 				if (countryName === undefined) console.error('Unbekannter Code: '+c[i]);
-				countries.push('<span title="'+countryName+'">'+c[i]+'</span>');
+				
+				var style = 'color:#888';
+				switch (highlightCountries[c[i]]) {
+					case 1:
+					case 2:
+					case 3: style = 'color:#000'; break; 
+					case 4: style = 'color:#000;font-weight:bold'; break;
+				} 
+				countries.push('<span title="'+countryName+'" style="'+style+'">'+c[i]+'</span>');
 			}
 			if (countries.length == 0) {
 				countries = 'Keinem Land';
