@@ -63,14 +63,16 @@ if (downloadDetail) {
 							switch (restrictions.relationship) {
 								case 'allow':
 									restrictionsAll = [];
-									for (var i = 0; i < allCountries.length; i++) {
-										if (t.indexOf(allCountries[i]) < 0) restrictionsAll.push(allCountries[i]);
+									for (var j = 0; j < allCountries.length; j++) {
+										if (t.indexOf(allCountries[j]) < 0) restrictionsAll.push(allCountries[j]);
 									}
 									restrictionsAll.sort();
 									restrictedInDE  = (t.indexOf('DE') < 0);
 								break;
 								case 'deny':
-									restrictionsAll = t.split(' ');
+									var temp = t.split(' ');
+									restrictionsAll = [];
+									for (var j = 0; j < temp.length; j++) if (usedCountries[temp[j]]) restrictionsAll.push(temp[j]);
 									restrictionsAll.sort();
 									restrictedInDE  = (t.indexOf('DE') >= 0);
 								break;
