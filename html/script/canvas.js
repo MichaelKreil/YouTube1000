@@ -23,11 +23,17 @@ function Canvas(options) {
 	
 	var indexes = [];
 	for (var i = 0; i < data.length; i++) {
-		data[i].id = i;
-		indexes[i] = { entry:data[i], sortBy:i, id:i };
+		entry = data[i];
+		entry.id = i;
+		indexes[i] = { entry:entry, sortBy:i, id:i };
 		
 		var x = (i % columns);
 		var y = Math.floor(i/columns);
+			
+		entry.oldPos = i;
+		entry.newPos = i;
+		entry.oldColor = [0,0,0,0];
+		entry.newColor = [0,0,0,0];
 		
 		projectX[i] = x*thumbWidth;
 		projectY[i] = y*thumbHeight;
@@ -171,10 +177,6 @@ function Canvas(options) {
 			$('#infoboxContent span').tooltip();
 		}
 	})();
-
-	me.reset = function () {
-		context.clearRect(0, 0, width, height);
-	}
 	
 	me.sort = function (options) {
 		for (var i = 0; i < data.length; i++) {
@@ -184,44 +186,92 @@ function Canvas(options) {
 		
 		indexes.sort(function (a, b) { return (a.sortBy == b.sortBy) ? (b.entry.viewCount - a.entry.viewCount) : ((a.sortBy < b.sortBy) ? -1 :  1); });
 		
-		var image = imageNode[0];
 		for (var i = 0; i < indexes.length; i++) {
 			var entry = indexes[i].entry;
 			var id = entry.id;
 			var x = i % columns;
 			var y = Math.floor(i/columns);
 			
-			context.drawImage(
-				image,
-				projectX[id],
-				projectY[id],
-				thumbWidth,
-				thumbHeight,
-				projectX[i],
-				projectY[i],
-				thumbWidth,
-				thumbHeight
-			);
+			entry.oldPos = entry.newPos;
+			entry.newPos = i;
 		}
+		
 	}
 	
 	me.flag = function (options) {
-		/*
-		var colorTrue  = generateRGBA(options.colors[1]);
-		var colorFalse = generateRGBA(options.colors[0]);
-		*/
+		//contextOverlay.clearRect(0,0,width,height);
 		for (var i = 0; i < indexes.length; i++) {
 			var entry = indexes[i].entry;
 			var color = options.callback(entry);
-			color = generateRGBA(color);
+			//color = generateRGBA(color);
+			entry.oldColor = entry.newColor;
+			entry.newColor = color
 			
-			context.fillStyle = color;
-			context.fillRect(projectX[i], projectY[i], thumbWidth, thumbHeight);
+			//contextOverlay.fillStyle = color;
+			//contextOverlay.fillRect(projectX[i], projectY[i], thumbWidth, thumbHeight);
 		}
 	}
 	
-	function generateRGBA(array) {
-		return 'rgba('+array.join(',')+')';
+	me.makeItSo = function () {
+		var image = imageNode[0];
+
+		var frame = 1;
+		var frameNumber = 10;
+		
+		var interval = setInterval(function () {
+			var a = frame/frameNumber;
+			a = (1-Math.cos(a*Math.PI))/2;
+			if (frame >= frameNumber) a = 1;
+
+			context.fillStyle = '#FFF';
+			context.fillRect(0,0,width,height);
+			for (var i = 0; i < indexes.length; i++) {
+				var entry = indexes[i].entry;
+				var id = entry.id;
+				
+				var x0 = projectX[entry.oldPos];
+				var y0 = projectY[entry.oldPos];
+				var x1 = projectX[entry.newPos];
+				var y1 = projectY[entry.newPos];
+				
+				var x = Math.round((1-a)*x0 + a*x1);
+				var y = Math.round((1-a)*y0 + a*y1);
+				
+				context.drawImage(
+					image,
+					projectX[id],
+					projectY[id],
+					thumbWidth,
+					thumbHeight,
+					x,
+					y,
+					thumbWidth,
+					thumbHeight
+				);
+				
+				var color = [
+					(1-a)*entry.oldColor[0] + a*entry.newColor[0],
+					(1-a)*entry.oldColor[1] + a*entry.newColor[1],
+					(1-a)*entry.oldColor[2] + a*entry.newColor[2],
+					(1-a)*entry.oldColor[3] + a*entry.newColor[3] 
+				];
+			
+				color = generateRGBA(color);
+				//console.log(color);
+				context.fillStyle = color;
+				context.fillRect(x, y, thumbWidth, thumbHeight);
+				
+			}
+			if (frame >= frameNumber) {
+				clearInterval(interval);
+				for (var i = 0; i < indexes.length; i++) indexes[i].entry.oldPos = indexes[i].entry.newPos;
+			}
+			frame++; 
+		}, 40);
+	}
+	
+	function generateRGBA(a) {
+		return 'rgba('+Math.round(a[0])+','+Math.round(a[1])+','+Math.round(a[2])+','+Math.round(a[3]*100)/100+')';
 	}
 	
 	function clamp(value, min, max) {

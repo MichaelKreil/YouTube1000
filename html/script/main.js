@@ -36,7 +36,6 @@ $(function () {
 });
 
 function updateCanvas(options) {
-	canvas.reset();
 	options = options || {};
 	var flagType = options.flagType || $('#gridFlag .active').attr('value');
 	var sortType = options.flagType || $('#gridSort .active').attr('value');
@@ -116,6 +115,8 @@ function updateCanvas(options) {
 	canvas.flag({
 		callback: flag
 	});
+	
+	canvas.makeItSo();
 }
 
 function formatRating(value) {
