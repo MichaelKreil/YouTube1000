@@ -120,12 +120,46 @@ function updateCanvas(options) {
 		callback: flag
 	});
 	
-	$('#display-number-content').text((value/10).toFixed(1).replace(/\./, ',')+'%');
+	setCounter(value);
 	
 	if (options.initialize) {
 		canvas.makeItFast();
 	} else {
 		canvas.makeItSo();
+	}
+}
+
+var oldValue, newValue, counterInterval;
+function setCounter(value) {
+	function setValue(value) {
+		value = (value/10).toFixed(1).replace(/\./, ',')+'%';
+		if (value.length < 5) value = '&nbsp;&nbsp;'+value;
+		$('#display-number-content').html(value);
+	}
+	if (oldValue === undefined) {
+		setValue(value);
+		oldValue = value;
+	} else {
+		clearInterval(counterInterval);
+		(function () {
+			var frame = 1;
+			var frameNumber = 40;
+			counterInterval = setInterval(
+				function () {
+					if (frame >= frameNumber) {
+						setValue(value);
+						oldValue = value;
+						clearInterval(counterInterval);
+					} else {
+						var a = frame/frameNumber;
+						a = (1-Math.cos(a*Math.PI))/2;
+						var v = (1-a)*oldValue + a*value;
+						setValue(v);
+						frame++
+					}
+				}, 10
+			);
+		})();
 	}
 }
 
