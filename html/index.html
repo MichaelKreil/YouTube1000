@@ -65,6 +65,7 @@
 					<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none;">
 					<div id="tooltip"></div>
 				</div>
+<<<<<<< HEAD
 			<div id="display-number">
 				<div class="well" id="display-number-content">
 					96,2%
@@ -77,15 +78,30 @@
 						<button class="btn btn-large active" value="germany">Alle in Deutschland gesperrten Videos</button>
 						<button class="btn btn-large" value="gema">Wegen GEMA gesperrte Videos</button>
 						<button class="btn btn-large" value="other">Sonstige gesperrte Videos</button>
+=======
+				<div id="display-number">
+					<div class="well" id="display-number-content">
+						96,2%
+>>>>>>> fixing micho sein stuff
 					</div>
-					<h3>Gesperrt in anderen Ländern</h3>
-					<button class="btn btn-large btn-full" value="foreign">In anderen Staaten gesperrt</button>
 				</div>
-				<h3 style="margin-top:60px">Sortieren nach</h3>
-				<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
-					<button class="btn btn-large active" value="rank">Klicks</button>
-					<button class="btn btn-large" value="rating">Bewertung</button>
-					<button class="btn btn-large" value="blocked">Sperrung</button>
+				<div id="controller-navigation">
+					<div data-toggle="buttons-radio" id="gridFlag">
+						<h3 style="margin-top:30px">Gesperrt in Deutschland</h3>
+						<div class="btn-group btn-group-vertical">
+							<button class="btn btn-large active" value="germany">Alle in Deutschland gesperrten Videos</button>
+							<button class="btn btn-large" value="gema">Durch die GEMA gesperrte Videos</button>
+							<button class="btn btn-large" value="other">Sonstige gesperrte Videos</button>
+						</div>
+						<h3>Gesperrt in anderen Ländern</h3>
+						<button class="btn btn-large btn-full" value="foreign">In anderen Staaten gesperrt</button>
+					</div>
+					<h3 style="margin-top:60px">Sortieren nach</h3>
+					<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
+						<button class="btn btn-large active" value="rank">Klicks</button>
+						<button class="btn btn-large" value="rating">Bewertung</button>
+						<button class="btn btn-large" value="blocked">Sperrung</button>
+					</div>
 				</div>
 			</div>
 			<div id="branding">
