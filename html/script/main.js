@@ -48,22 +48,22 @@ function updateCanvas(options) {
 	
 	switch (flagType) {
 		case 'germany':
-			flag = function (entry) { return (entry.restrictedInDE > 1) ? colorRed : colorWhite };
+			flag = function (entry) { return (entry.restrictedInDE > 1) };
 			sort = function (entry) { return -entry.restrictedInDE };
 			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'gema':
-			flag = function (entry) { return (entry.restrictedInDE >= 3) ? colorRed : colorWhite };
+			flag = function (entry) { return (entry.restrictedInDE >= 3) };
 			sort = function (entry) { return -entry.restrictedInDE };
 			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'other':
-			flag = function (entry) { return ((entry.restrictedInDE > 1) && (entry.restrictedInDE < 3)) ? colorRed : colorWhite };
+			flag = function (entry) { return ((entry.restrictedInDE > 1) && (entry.restrictedInDE < 3)) };
 			sort = function (entry) { return -entry.restrictedInDE };
 			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'foreign':
-			flag = function (entry) { return  (entry.restrictionsAll.length > ((entry.restrictedInDE > 1) ? 1 : 0)) ? colorRed : colorWhite };
+			flag = function (entry) { return  (entry.restrictionsAll.length > ((entry.restrictedInDE > 1) ? 1 : 0)) };
 			sort = function (entry) {
 				var inDE = (entry.restrictedInDE > 1) ? 1 : 0;
 				var onlyForeign = entry.restrictionsAll.length - inDE;
@@ -101,7 +101,7 @@ function updateCanvas(options) {
 	
 	switch (sortType) {
 		case 'rank':
-			sort = function (entry) { return -entry.rank	};
+			sort = function (entry) { return entry.rank	};
 		break;
 		case 'rating':
 			sort = function (entry) { return -entry.rating	};
@@ -116,9 +116,11 @@ function updateCanvas(options) {
 		hint: hint
 	});
 	
-	canvas.flag({
+	var value = canvas.flag({
 		callback: flag
 	});
+	
+	$('#display-number-content').text((value/10).toFixed(1).replace(/\./, ',')+'%');
 	
 	canvas.makeItSo();
 }

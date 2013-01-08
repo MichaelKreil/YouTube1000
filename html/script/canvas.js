@@ -199,17 +199,17 @@ function Canvas(options) {
 	}
 	
 	me.flag = function (options) {
-		//contextOverlay.clearRect(0,0,width,height);
+		var count = 0;
 		for (var i = 0; i < indexes.length; i++) {
 			var entry = indexes[i].entry;
-			var color = options.callback(entry);
-			//color = generateRGBA(color);
-			entry.oldColor = entry.newColor;
-			entry.newColor = color
+			var flagged = options.callback(entry);
+			var color = flagged ? [237,  28,  36, 0.6] : [255, 255, 255, 0.8];
+			if (flagged) count++;
 			
-			//contextOverlay.fillStyle = color;
-			//contextOverlay.fillRect(projectX[i], projectY[i], thumbWidth, thumbHeight);
+			entry.oldColor = entry.newColor;
+			entry.newColor = color;
 		}
+		return count;
 	}
 	
 	me.makeItSo = function () {
