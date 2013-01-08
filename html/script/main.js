@@ -36,7 +36,7 @@ $(function () {
 		updateCanvas({ sortType:$(e.target).attr('value') });
 	})
 	
-	updateCanvas();
+	updateCanvas({initialize:true});
 });
 
 function updateCanvas(options) {
@@ -122,7 +122,11 @@ function updateCanvas(options) {
 	
 	$('#display-number-content').text((value/10).toFixed(1).replace(/\./, ',')+'%');
 	
-	canvas.makeItSo();
+	if (options.initialize) {
+		canvas.makeItFast();
+	} else {
+		canvas.makeItSo();
+	}
 }
 
 function formatRating(value) {

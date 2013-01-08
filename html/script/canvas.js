@@ -257,7 +257,7 @@ function Canvas(options) {
 				];
 			
 				color = generateRGBA(color);
-				//console.log(color);
+
 				context.fillStyle = color;
 				context.fillRect(x, y, thumbWidth, thumbHeight);
 				
@@ -268,6 +268,20 @@ function Canvas(options) {
 			}
 			frame++; 
 		}, 40);
+	}
+	
+	me.makeItFast = function () {
+		for (var i = 0; i < indexes.length; i++) {
+			var entry = indexes[i].entry;
+			var id = entry.id;
+			
+			var x = projectX[entry.newPos];
+			var y = projectY[entry.newPos];			
+			var color = generateRGBA(entry.newColor);
+
+			context.fillStyle = color;
+			context.fillRect(x, y, thumbWidth, thumbHeight);
+		}
 	}
 	
 	function generateRGBA(a) {
