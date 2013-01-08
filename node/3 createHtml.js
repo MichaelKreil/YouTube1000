@@ -1,12 +1,12 @@
 
 
-var generateThumbs = false;
+var generateThumbs = true;
 var generateGridHTML = 'simple'; // false, 'info', 'simple'
 var generateJSON = true;
 	
-var width = 16;   // Höhe der Thumbnails
-var height = 12;  // Breite der Thumbnails
-var f = 1.6;      // Ausschnitt, um die 16:9-Ränder zu verhindern. 1 = nicht ausschneiden
+var width = 20;   // Höhe der Thumbnails
+var height = 15;  // Breite der Thumbnails
+var f = 1.4;      // Ausschnitt, um die 16:9-Ränder zu verhindern. 1 = nicht ausschneiden
 var columns = 25; // Wieviele Spalten hat das Ding
 
 

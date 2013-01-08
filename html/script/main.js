@@ -21,8 +21,8 @@ $(function () {
 		imageNode: $('#gridImage'),
 		node: $('#gridCanvas'),
 		nodeOverlay: $('#gridCanvasOverlay'),
-		thumbWidth: 16,
-		thumbHeight: 12,
+		thumbWidth: 20,
+		thumbHeight: 15,
 		columns: 25,
 		data: data
 	});
