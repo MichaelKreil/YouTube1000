@@ -1,141 +1,92 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	
 	<title>YouTube 1000</title>
-	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 	<link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<style>
-		#gridImage, #gridCanvas, #gridCanvasOverlay {
-			width: 500px;
-			height: 600px;
-			position: absolute;
-			left: 0;
-			top: 0;
-		}
-		#tooltip {
-			position: absolute;
-			display: none;
-			margin-right: -300px;
-			background: #000;
-			padding: 1px 5px 3px 5px;
-			color: #FFF;
-			font-size: 10px;
-			line-height: 12px;
-			max-width: 200px;
-			pointer-events: none;
-		}
-		#infobox {
-			display: none;
-			background: #FFF;
-			position: absolute;
-			top: 0px;
-			left: 520px;
-			right: -340px;
-			border-radius: 5px;
-			box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.6)
-		}
-		#infobox p {
-			line-height: 1.2em;
-			font-size: 12px;
-			margin: 5px 0;
-		}
-		.gridButton {
-			text-align:left;
-			margin: 0;
-		}
-		.gridDesc {
-			text-align: justify;
-			font-size: 12px;
-			color: #888;
-			margin-bottom: 20px;
-			margin-top: 0;
-		}
-	</style>
-	
+	<link href="assets/style.css" rel="stylesheet">
+
 	<script src="libraries/jquery-1.8.3.min.js"></script>
 	<script src="data/data.js"></script>
 	<script src="script/main.js"></script>
 	<script src="script/canvas.js"></script>
+	<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
 </head>
-<body style="background:#F5F5F5 url(http://www.spiegel.de/static/sys/v9/bg/bg_wrapper.png) repeat-y top left">
-	<div style="width:900px; background:#FFF">
-		<div style="width:860px; margin-left:20px">
-			<h1 style="margin-top:50px">Die Top 1000 YouTube-Videos</h1>
-			<p class="lead" style="margin-top:20px">
-				Ein großer Teil der Top 1000 YouTube-Videos sind nicht überall zu sehen.<br>
-				Etwa 14% von ihnen sind im Ausland gesperrt.<br>
-				Aber Deutschland ist einsamer Spitzenreiter! Ganze 42% der Top 1000 sind hier nicht verfügbar.</p>
-			<div id="gridContainer" style="margin-top:50px">
-				<table style="width:860px">
-					<tr>
-						<td style="width:500px; overflow: visible">
-							<div id="grid" style="width:520px;height:600px;position:relative;overflow:visible">
-								<img src="images/grid.jpg" id="gridImage">
-								<canvas id="gridCanvas" width="500" height="600"></canvas>
-								<canvas id="gridCanvasOverlay" width="500" height="600" style="cursor:pointer"></canvas>
-								<div id="infobox" style="padding:3px 10px 10px 10px">
-									<button class="close">&times;</button>
-									<div id="infoboxContent">
-										<table style="width:100%" border="0" style="padding:20px">
-											<tr>
-												<td colspan="2">
-													<p style="font-size: 16px; font-weight: bold">%title%</p>
-												</td>
-											</tr>
-											<tr>
-												<td style="width:150px;height:90px;background:url(%thumbnail%) no-repeat 10px center">									
-												</td>
-												<td style="padding-right:10px">
-													<p>Platz: %rank%</p>
-													<p>Aufrufe: %viewCount%</p>
-													<p>Nutzer: %author%</p>
-													<p>Veröffentlicht: %published%</p>
-													<p>Bewertung: %rating%</p>
-													<p>Kategorie: %category%</p>
-													<p><a href="%url%" target="_blank">Link zu YouTube</a></p>
-													
-												</td>
-											</tr>
-											<tr>
-												<td style="padding:10px 10px 10px 10px" colspan="2">
-													<p>gesperrt in: %restrictionCountries%</p>
-													<p>gesperrt in Deutschland: <b>%restriction%</b></p>
-													%de%<p>Sperrgrund in Deutschland: <b>&bdquo;%reason%&rdquo;</b></p>%/de%
-												</td>
-											</tr>
-										</table>
-									</div>
-								</div>
-								<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none;">
-								<div id="tooltip"></div>
-							</div>
-						</td>
-						<td>
-							<div data-toggle="buttons-radio" id="gridFlag">
-								<p class="gridButton"><button class="btn active" value="top1000">Die Top 1000.</button></p>
-								<p class="gridDesc">Fast 60% der Top 1000 sind in Deutschland gesperrt</p>
-								<p class="gridButton"><button class="btn" value="germany">In Deutschland gesperrt.</button></p>
-								<p class="gridDesc">Fast 60% der Top 1000 sind in Deutschland gesperrt</p>
-								<p class="gridButton"><button class="btn" value="gema">Wegen GEMA gesperrt.</button></p>
-								<p class="gridDesc">Größten</p>
-								<p class="gridButton"><button class="btn" value="other">Aus anderen Gründen gesperrt</button></p>
-								<p class="gridDesc"></p>
-								<p class="gridButton"><button class="btn" value="foreign">Im Ausland gesperrt</button></p>
-								<p class="gridDesc"></p>
-								<p class="gridButton"><button class="btn" value="category">Sperrung nach Kategorie</button></p>
-								<p class="gridDesc"></p>
-								<p class="gridButton"><button class="btn" value="rating">Sperrung nach Beliebtheit</button></p>
-								<p class="gridDesc"></p>
-							</div>
-						</td>
-					</tr>
-				</table>
+<body>
+	<div id="container">
+		<h1>Die Top 1000 YouTube-Videos</h1>
+		<p class="lead">
+			Ein großer Teil der Top 1000 YouTube-Videos sind nicht überall zu sehen.<br />
+			Etwa 14% von ihnen sind im Ausland gesperrt.<br />
+			Aber Deutschland ist einsamer Spitzenreiter! Ganze 42% der Top 1000 sind hier nicht verfügbar.
+		</p>
+		<div id="content">
+			<div id="grid">
+				<img src="images/grid.jpg" id="gridImage" />
+				<canvas id="gridCanvas" width="500" height="600"></canvas>
+				<canvas id="gridCanvasOverlay" width="500" height="600" style="cursor:pointer"></canvas>
+				<div id="infobox">
+					<button class="close">&times;</button>
+					<div id="infoboxContent">
+						<table style="width:100%" border="0" style="padding:20px">
+							<tr>
+								<td colspan="2">
+									<p style="font-size: 16px; font-weight: bold">%title%</p>
+								</td>
+							</tr>
+							<tr>
+								<td style="width:150px;height:90px;background:url(%thumbnail%) no-repeat 10px center">									
+								</td>
+								<td style="padding-right:10px">
+									<p>Platz: %rank%</p>
+									<p>Aufrufe: %viewCount%</p>
+									<p>Nutzer: %author%</p>
+									<p>Veröffentlicht: %published%</p>
+									<p>Bewertung: %rating%</p>
+									<p>Kategorie: %category%</p>
+									<p><a href="%url%" target="_blank">Link zu YouTube</a></p>
+								
+								</td>
+							</tr>
+							<tr>
+								<td style="padding:10px 10px 10px 10px" colspan="2">
+									<p>gesperrt in: %restrictionCountries%</p>
+									<p>gesperrt in Deutschland: <b>%restriction%</b></p>
+									%de%<p>Sperrgrund in Deutschland: <b>&bdquo;%reason%&rdquo;</b></p>%/de%
+								</td>
+							</tr>
+						</table>
+						<button id="close" class="btn btn-danger btn-small" onclick="$('#infobox').fadeOut('fast');">Schließen</button>
+					</div>
+				</div>
+				<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none;">
+				<div id="tooltip"></div>
+			</div>
+			<div id="display-number">
+				<div class="well" id="display-number-content">
+					96,2%
+				</div>
+			</div>
+			<div id="controller-navigation">
+				<div data-toggle="buttons-radio" id="gridFlag">
+					<h3>Gesperrt in Deutschland</h3>
+					<div class="btn-group btn-group-vertical">
+						<button class="btn btn-large active" value="germany">Alle in Deutschland gesperrten Videos</button>
+						<button class="btn btn-large" value="gema">Durch die GEMA gesperrte Videos</button>
+						<button class="btn btn-large" value="other">Sonstige gesperrte Videos</button>
+					</div>
+					<h3>Gesperrt in anderen Ländern</h3>
+					<button class="btn btn-large btn-full" value="foreign">Alle im Ausland gesperrten Videos</button>
+				</div>
+				<h3>Sortieren nach</h3>
+				<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
+					<button class="btn btn-large active" value="rank">Klicks</button>
+					<button class="btn btn-large" value="rating">Bewertung</button>
+					<button class="btn btn-large" value="blocked">Sperrung</button>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div style="height:200px"></div>
-	<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
 </body>
 </html>
