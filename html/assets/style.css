@@ -58,14 +58,21 @@ body {
 						
 					}
 					
-						#infobox #close {
-							
-							display: block;
-							position: absolute;
-							right: 10px;
-							bottom: 10px;
-							
-						}
+					#infobox .scroll {
+						
+						max-height: 340px;
+						overflow-y: auto;
+						
+					}
+				
+					#infobox #close {
+						
+						display: block;
+						position: absolute;
+						right: 10px;
+						bottom: 10px;
+						
+					}
 						
 				#tooltip {
 					
