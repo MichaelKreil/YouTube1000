@@ -8,7 +8,7 @@ body {
 		
 		width: 860px; 
 		background: #fff;
-		padding: 50px 20px 200px;
+		padding: 50px 20px 50px;
 		
 	}
 	
@@ -51,10 +51,38 @@ body {
 				}
 
 					#infobox p {
+						
 						line-height: 1.2em;
 						font-size: 12px;
 						margin: 5px 0;
+						
 					}
+					
+						#infobox #close {
+							
+							display: block;
+							position: absolute;
+							right: 10px;
+							bottom: 10px;
+							
+						}
+						
+				#tooltip {
+					
+					position: absolute;
+					display: none;
+					margin-right: -300px;
+					background: rgba(0,0,0,0.8);
+					padding: 5px 10px 5px 10px;
+					color: #FFF;
+					font-size: 12px;
+					line-height: 14px;
+					max-width: 220px;
+					pointer-events: none;
+					border-radius: 5px;
+					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+					
+				}
 			
 			#display-number {
 				
@@ -101,18 +129,6 @@ body {
 	position: absolute;
 	left: 0;
 	top: 0;
-}
-#tooltip {
-	position: absolute;
-	display: none;
-	margin-right: -300px;
-	background: #000;
-	padding: 1px 5px 3px 5px;
-	color: #FFF;
-	font-size: 10px;
-	line-height: 12px;
-	max-width: 200px;
-	pointer-events: none;
 }
 
 .gridButton {
