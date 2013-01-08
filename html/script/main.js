@@ -42,11 +42,6 @@ function updateCanvas(options) {
 	var sort, flag, hint;
 	
 	switch (flagType) {
-		case 'top1000':
-			flag = function (entry) { return (entry.restrictedInDE > 1) ? colorRed : colorWhite };
-			sort = function (entry) { return -entry.viewCount };
-			hint = function (entry) { return 'Platz '+formatInteger(entry.rank)+' mit '+formatInteger(entry.viewCount)+' Aufrufen' };
-		break;
 		case 'germany':
 			flag = function (entry) { return (entry.restrictedInDE > 1) ? colorRed : colorWhite };
 			sort = function (entry) { return -entry.restrictedInDE };
@@ -97,14 +92,6 @@ function updateCanvas(options) {
 				}
 			}
 		break;
-		/*
-		case 'category':
-			sort = function (entry) { return  entry.category.toLowerCase() };
-			hint = function (entry) { return 'Kategorie: '+entry.category };
-		break;
-		case 'date':
-			sort = function (entry) { return  entry.publishedTS };
-			hint = function (entry) { return 'Datum: '+formatDate(entry.published) };
 		break;
 		case 'rating':
 			sort = function (entry) { return -entry.rating };
@@ -122,52 +109,9 @@ function updateCanvas(options) {
 		hint: hint
 	});
 	
-	
 	canvas.flag({
 		callback: flag
 	});
-		
-	/*  
-	
-	var flagType = options.flagType || $('#gridFlag .active').attr('value');
-	
-	callback = function (entry) {
-		return (entry.restrictedInDE > 1) ? colorRed : colorWhite
-	};
-	
-	switch (flagType) {
-		case 'full':
-			callback = function (entry) {
-				if (entry.reason.indexOf('möglicherweise') >= 0) {
-					return colorRed; //GEMA
-				} else if (entry.restrictedInDE > 1) {
-					return colorDarkRed; // Deutschland
-				} else if (entry.restrictionsAll.length > 0) {
-					return colorYellow; // Ausland
-				} else {
-					return colorWhite; // Niemand
-				}
-			}
-		break;
-		case 'germany':
-			callback = function (entry) {
-				return (entry.restrictedInDE > 1) ? colorRed : colorWhite
-			};
-		break;
-		case 'precautionary':
-			callback = function (entry) { return (entry.reason.indexOf('möglicherweise') >= 0) ? colorRed : colorWhite };
-		break;
-		case 'somewhere':
-			callback = function (entry) { return (entry.restrictionsAll.length > 0) ? colorRed : colorWhite };
-		break;
-		case 'foreign':
-			callback = function (entry) { return (entry.restrictionsAll.length > ((entry.restrictedInDE > 1) ? 1 : 0)) ? colorRed : colorWhite };
-		break;
-	};
-	
-	if (flagType != 'none') {
-	}
-	*/
 }
 
 function formatRating(value) {
