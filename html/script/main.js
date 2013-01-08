@@ -43,7 +43,8 @@ function updateCanvas(options) {
 	options = options || {};
 	var sortType = options.sortType || $('#gridSort .active').attr('value');
 	
-	var callback, hint;
+	var callback = function (entry) { return -entry.viewCount };
+	var hint = function (entry) { return 'Aufrufe: '+formatInteger(entry.viewCount) };
 	var sortDesc = false;
 	switch (sortType) {
 		case 'views':
@@ -75,7 +76,11 @@ function updateCanvas(options) {
 	
 	
 	var flagType = options.flagType || $('#gridFlag .active').attr('value');
-
+	
+	callback = function (entry) {
+		return (entry.restrictedInDE > 1) ? colorRed : colorWhite
+	};
+	
 	switch (flagType) {
 		case 'full':
 			callback = function (entry) {

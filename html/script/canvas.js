@@ -72,8 +72,6 @@ function Canvas(options) {
 			}
 			status.shown = true;
 			
-			var offset = $('#grid').offset();
-			
 			var xi = clamp(Math.floor(x/thumbWidth ), 0, columns - 1);
 			var yi = clamp(Math.floor(y/thumbHeight), 0, rows    - 1); 
 			var index = deproject[xi][yi];
@@ -85,17 +83,20 @@ function Canvas(options) {
 			if (status.content != content) {
 				tooltip.html(html);
 				
-				var tx = xi*thumbWidth  + offset.left;
-				var ty = yi*thumbHeight + offset.top;
-				
-				tooltip.css({
-					left: tx + thumbWidth/2 - tooltip.outerWidth()/2,
-					top:  ty + thumbHeight
-				});
+				var tx = xi*thumbWidth;
+				var ty = yi*thumbHeight;
 				
 				marker.css({
 					left: tx-3,
 					top:  ty-3
+				});
+				
+				tx += thumbWidth/2 - tooltip.outerWidth()/2;
+				ty += thumbHeight;
+				
+				tooltip.css({
+					left: Math.max(-10, tx),
+					top:  ty
 				});
 			}
 			

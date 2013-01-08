@@ -17,6 +17,7 @@
 		#tooltip {
 			position: absolute;
 			display: none;
+			margin-right: -300px;
 			background: #000;
 			padding: 1px 5px 3px 5px;
 			color: #FFF;
@@ -40,6 +41,17 @@
 			font-size: 12px;
 			margin: 5px 0;
 		}
+		.gridButton {
+			text-align:center;
+			margin: 0;
+		}
+		.gridDesc {
+			text-align: justify;
+			font-size: 12px;
+			color: #888;
+			margin-bottom: 20px;
+			margin-top: 0;
+		}
 	</style>
 	
 	<script src="libraries/jquery-1.8.3.min.js"></script>
@@ -47,81 +59,105 @@
 	<script src="script/main.js"></script>
 	<script src="script/canvas.js"></script>
 </head>
-<body>
-	<div class="container" style="width:960px">
-		<h1 style="margin-top:50px">Die Top 1000 YouTube-Videos</h1>
-		<p class="lead" style="margin-top:20px">
-			Ein großer Teil der Top 1000 YouTube-Videos sind nicht überall zu sehen.<br>
-			Etwa 14% von ihnen sind im Ausland gesperrt.<br>
-			Aber Deutschland ist einsamer Spitzenreiter! Ganze 42% der Top 1000 sind hier nicht verfügbar.</p>
-		<div id="gridContainer" style="margin-top:50px">
-			<table style="width:100%; margin-bottom:20px">
-				<tr>
-					<td>Markiere gesperrte:</td>
-					<td>
-						<div class="btn-group" data-toggle="buttons-radio" id="gridFlag">
-							<button class="btn" value="none">Nein</button>
-							<button class="btn" value="precautionary">Vorsorglich wegen GEMA</button>
-							<button class="btn active" value="germany">in Deutschland</button>
-							<button class="btn" value="foreign">im Ausland</button>
-							<button class="btn" value="somewhere">Irgendwo</button>
-						</div>
-					</td>
-				</tr>
-				<tr>
-					<td>Sortiere nach:</td>
-					<td>
-						<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
-							<button class="btn" value="restrictions">gesperrten Ländern</button>
-							<button class="btn active" value="views">Popularität</button>
-							<button class="btn" value="rating">Bewertung</button>
-							<button class="btn" value="category">Kategorie</button>
-							<button class="btn" value="date">Datum</button>
-						</div>
-						<!--
-						<form class="navbar-search pull-right">
-							<input type="text" class="search-query" placeholder="Search">
-						</form>
-						-->
-					</td>
-				</tr>
-			</table>
+<body style="background:#F5F5F5 url(http://www.spiegel.de/static/sys/v9/bg/bg_wrapper.png) repeat-y top left">
+	<div style="width:900px; background:#FFF">
+		<div style="width:860px; margin-left:20px">
+			<h1 style="margin-top:50px">Die Top 1000 YouTube-Videos</h1>
+			<p class="lead" style="margin-top:20px">
+				Ein großer Teil der Top 1000 YouTube-Videos sind nicht überall zu sehen.<br>
+				Etwa 14% von ihnen sind im Ausland gesperrt.<br>
+				Aber Deutschland ist einsamer Spitzenreiter! Ganze 42% der Top 1000 sind hier nicht verfügbar.</p>
+			<div id="gridContainer" style="margin-top:50px">
+				<!--
+				<table style="width:100%; margin-bottom:20px">
+					<tr>
+						<td>Markiere gesperrte:</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio" id="gridFlag">
+								<button class="btn" value="none">Nein</button>
+								<button class="btn" value="precautionary">Vorsorglich wegen GEMA</button>
+								<button class="btn active" value="germany">in Deutschland</button>
+								<button class="btn" value="foreign">im Ausland</button>
+								<button class="btn" value="somewhere">Irgendwo</button>
+							</div>
+						</td>
+					</tr>
+					<tr>
+						<td>Sortiere nach:</td>
+						<td>
+							<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
+								<button class="btn" value="restrictions">gesperrten Ländern</button>
+								<button class="btn active" value="views">Popularität</button>
+								<button class="btn" value="rating">Bewertung</button>
+								<button class="btn" value="category">Kategorie</button>
+								<button class="btn" value="date">Datum</button>
+							</div>
+						</td>
+					</tr>
+				</table>
+				-->
 			
-			<div id="grid" style="width:960px;height:450px;position:relative;overflow:visible">
-				<img src="images/grid.jpg" id="gridImage">
-				<canvas id="gridCanvas" width="400" height="480"></canvas>
-				<canvas id="gridCanvasOverlay" width="400" height="480" style="cursor:pointer"></canvas>
-				<div id="infobox" style="padding:3px 10px 10px 10px">
-					<button class="close">&times;</button>
-					<div id="infoboxContent">
-						<table style="width:100%;" border="0" style="padding:20px">
-							<tr>
-								<td style="width:150px;height:90px;background:url(%thumbnail%) no-repeat 10px center">									
-								</td>
-								<td style="padding-right:10px">
-									<p style="font-size: 16px; font-weight: bold">%title%</p>
-									<p>
-										Nutzer: %author%<br>
-										Veröffentlicht: %published%<br>
-										Aufrufe: %viewCount%<br>
-										Bewertung: %rating%<br>
-										Kategorie: %category%<br>
-										<a href="%url%" target="_blank">Link zu YouTube</a></p>
-								</td>
-							</tr>
-							<tr>
-								<td style="padding:10px 10px 10px 10px" colspan="2">
-									<p>gesperrt in: %restrictionCountries%</p>
-									<p>gesperrt in Deutschland: %restriction%</p>
-									%de%<p>Sperrgrund in Deutschland: &bdquo;%reason%&rdquo;</p>%/de%
-								</td>
-							</tr>
-						</table>
-					</div>
-				</div>
+				<table style="width:860px">
+					<tr>
+						<td style="width:500px; overflow: visible">
+							<div id="grid" style="width:520px;height:600px;position:relative;overflow:visible">
+								<img src="images/grid.jpg" id="gridImage">
+								<canvas id="gridCanvas" width="500" height="600"></canvas>
+								<canvas id="gridCanvasOverlay" width="500" height="600" style="cursor:pointer"></canvas>
+								<div id="infobox" style="padding:3px 10px 10px 10px">
+									<button class="close">&times;</button>
+									<div id="infoboxContent">
+										<table style="width:100%" border="0" style="padding:20px">
+											<tr>
+												<td style="width:150px;height:90px;background:url(%thumbnail%) no-repeat 10px center">									
+												</td>
+												<td style="padding-right:10px">
+													<p style="font-size: 16px; font-weight: bold">%title%</p>
+													<p>
+														Nutzer: %author%<br>
+														Veröffentlicht: %published%<br>
+														Aufrufe: %viewCount%<br>
+														Bewertung: %rating%<br>
+														Kategorie: %category%<br>
+														<a href="%url%" target="_blank">Link zu YouTube</a>
+													</p>
+												</td>
+											</tr>
+											<tr>
+												<td style="padding:10px 10px 10px 10px" colspan="2">
+													<p>gesperrt in: %restrictionCountries%</p>
+													<p>gesperrt in Deutschland: %restriction%</p>
+													%de%<p>Sperrgrund in Deutschland: &bdquo;%reason%&rdquo;</p>%/de%
+												</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none;">
+								<div id="tooltip"></div>
+							</div>
+						</td>
+						<td>
+							<div data-toggle="buttons-radio" id="gridFlag">
+								<p class="gridButton"><button class="btn active" value="germany">Top 1000 in Deutschland gesperrt</button></p>
+								<p class="gridDesc">Fast 60% der Top 1000 sind in Deutschland gesperrt</p>
+								<p class="gridButton"><button class="btn" value="somewhere">In Deutschland gesperrt nach Kategorie</button></p>
+								<p class="gridDesc">Größten</p>
+								<p class="gridButton"><button class="btn" value="somewhere">In Deutschland gesperrt nach Bewertung</button></p>
+								<p class="gridDesc"></p>
+								<p class="gridButton"><button class="btn" value="precautionary">Vorsorglich wegen GEMA gesperrt</button></p>
+								<p class="gridDesc"></p>
+								<p class="gridButton"><button class="btn" value="precautionary">Tatsächlicher Sperrgrund</button></p>
+								<p class="gridDesc"></p>
+								<p class="gridButton"><button class="btn" value="foreign">Im Ausland gesperrt</button></p>
+								<p class="gridDesc"></p>
+								<p class="gridButton"><button class="btn" value="somewhere">In den Vereinigten Staaten gesperrt</button></p>
+								<p class="gridDesc"></p>
+							</div>
+						</td>
+					</tr>
+				</table>
 			</div>
-			<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none">
-			<div id="tooltip"></div>
 		</div>
 	</div>
 	<div style="height:200px"></div>
