@@ -131,10 +131,10 @@ function Canvas(options) {
 				
 				var style = 'color:#888';
 				switch (highlightCountries[c[i]]) {
-					case 1:
-					case 2:
-					case 3: style = 'color:#000'; break; 
-					case 4: style = 'color:#000;font-weight:bold'; break;
+					case 1: break;
+					case 2: break;
+					case 3: style = ''; break; 
+					case 4: style = 'font-weight:bold'; break;
 				} 
 				countries.push('<span title="'+countryName+'" style="'+style+'">'+c[i]+'</span>');
 			}
@@ -159,7 +159,7 @@ function Canvas(options) {
 			html = replace(html, /%viewCount%/g, formatInteger(markedEntry.viewCount));
 			html = replace(html, /%category%/g,                markedEntry.category);
 			
-			if (!markedEntry.restriction) html = replace(html, /%de%.*?%\/de%/g, '');
+			if (!markedEntry.restrictedInDE) html = replace(html, /%de%.*?%\/de%/g, '');
 			
 			html = replace(html, /%.*?%/g, '');
 			

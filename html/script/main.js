@@ -31,49 +31,103 @@ $(function () {
 		updateCanvas({ flagType:$(e.target).attr('value') });
 	})
 	
-	$('#gridSort button').click(function (e) {
-		updateCanvas({ sortType:$(e.target).attr('value') });
-	})
-	
 	updateCanvas();
 });
 
 function updateCanvas(options) {
 	canvas.reset();
 	options = options || {};
-	var sortType = options.sortType || $('#gridSort .active').attr('value');
+	var flagType = options.flagType || $('#gridFlag .active').attr('value');
 	
-	var callback = function (entry) { return -entry.viewCount };
-	var hint = function (entry) { return 'Aufrufe: '+formatInteger(entry.viewCount) };
-	var sortDesc = false;
-	switch (sortType) {
-		case 'views':
-			callback = function (entry) { return -entry.viewCount };
-			hint     = function (entry) { return 'Aufrufe: '+formatInteger(entry.viewCount) };
+	var sort, flag, hint;
+	
+	switch (flagType) {
+		case 'top1000':
+			flag = function (entry) { return (entry.restrictedInDE > 1) ? colorRed : colorWhite };
+			sort = function (entry) { return -entry.viewCount };
+			hint = function (entry) { return 'Platz '+formatInteger(entry.rank)+' mit '+formatInteger(entry.viewCount)+' Aufrufen' };
 		break;
+		case 'germany':
+			flag = function (entry) { return (entry.restrictedInDE > 1) ? colorRed : colorWhite };
+			sort = function (entry) { return -entry.restrictedInDE };
+			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
+		break;
+		case 'gema':
+			flag = function (entry) { return (entry.restrictedInDE >= 3) ? colorRed : colorWhite };
+			sort = function (entry) { return -entry.restrictedInDE };
+			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
+		break;
+		case 'other':
+			flag = function (entry) { return ((entry.restrictedInDE > 1) && (entry.restrictedInDE < 3)) ? colorRed : colorWhite };
+			sort = function (entry) { return -entry.restrictedInDE };
+			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
+		break;
+		case 'foreign':
+			flag = function (entry) { return  (entry.restrictionsAll.length > ((entry.restrictedInDE > 1) ? 1 : 0)) ? colorRed : colorWhite };
+			sort = function (entry) {
+				var inDE = (entry.restrictedInDE > 1) ? 1 : 0;
+				var onlyForeign = entry.restrictionsAll.length - inDE;
+				if (onlyForeign > 0) {
+					return -(onlyForeign+1);
+				} else {
+					return -inDE/2
+				}
+			};
+			hint = function (entry) {
+				if (entry.restrictedInDE > 1) {
+					if (entry.restrictionsAll.length > 1) {
+						if (entry.restrictionsAll.length > 2) {
+							return 'gesperrt in '+(entry.restrictionsAll.length-1)+' Ländern,<br>zusätzlich auch in Deutschland';
+						} else {
+							var id = (entry.restrictionsAll[0] == 'DE') ? 1 : 0; 
+							return 'gesperrt in einem Land ('+countryCodes[entry.restrictionsAll[id]]+'),<br>zusätzlich auch in Deutschland';
+						}
+					} else {
+						return 'gesperrt nur in Deutschland';
+					}
+				} else {
+					if (entry.restrictionsAll.length > 1) {
+						return 'gesperrt in '+entry.restrictionsAll.length+' Ländern,<br>aber nicht in Deutschland';
+					} else if (entry.restrictionsAll.length > 0) {
+						return 'gesperrt in einem Land ('+countryCodes[entry.restrictionsAll[0]]+')';
+						
+					} else {
+						return 'nirgends gesperrt';
+					}
+				}
+			}
+		break;
+		/*
 		case 'category':
-			callback = function (entry) { return  entry.category.toLowerCase() };
-			hint     = function (entry) { return 'Kategorie: '+entry.category };
+			sort = function (entry) { return  entry.category.toLowerCase() };
+			hint = function (entry) { return 'Kategorie: '+entry.category };
 		break;
 		case 'date':
-			callback = function (entry) { return  entry.publishedTS };
-			hint     = function (entry) { return 'Datum: '+formatDate(entry.published) };
+			sort = function (entry) { return  entry.publishedTS };
+			hint = function (entry) { return 'Datum: '+formatDate(entry.published) };
 		break;
 		case 'rating':
-			callback = function (entry) { return -entry.rating };
-			hint     = function (entry) { return 'Bewertung: '+formatRating(entry.rating) };
+			sort = function (entry) { return -entry.rating };
+			hint = function (entry) { return 'Bewertung: '+formatRating(entry.rating) };
 		break;
 		case 'restrictions':
-			callback = function (entry) { return -entry.restrictionsAll.length - entry.restrictedInDE };
-			hint     = function (entry) { return 'gesperrt in '+entry.restrictionsAll.length+(entry.restrictionsAll.length == 1 ? ' Land' : ' Ländern') };
+			sort = function (entry) { return -entry.restrictionsAll.length - entry.restrictedInDE };
+			hint = function (entry) { return 'gesperrt in '+entry.restrictionsAll.length+(entry.restrictionsAll.length == 1 ? ' Land' : ' Ländern') };
 		break;
+		*/
 	};
 	
 	canvas.sort({
-		callback: callback,
+		callback: sort,
 		hint: hint
 	});
 	
+	
+	canvas.flag({
+		callback: flag
+	});
+		
+	/*  
 	
 	var flagType = options.flagType || $('#gridFlag .active').attr('value');
 	
@@ -112,10 +166,8 @@ function updateCanvas(options) {
 	};
 	
 	if (flagType != 'none') {
-		canvas.flag({
-			callback: callback
-		});
 	}
+	*/
 }
 
 function formatRating(value) {
