@@ -153,6 +153,7 @@ function Canvas(options) {
 			html = replace(html, /%restriction%/g,             markedEntry.restrictedInDE ? 'Ja' : 'Nein');
 			html = replace(html, /%restrictionCountries%/g,    countries);
 			html = replace(html, /%reason%/g,                  markedEntry.reason);
+			html = replace(html, /%rank%/g,      formatInteger(markedEntry.rank));
 			html = replace(html, /%thumbnail%/g,               markedEntry.thumbnail);
 			html = replace(html, /%rating%/g,     formatRating(markedEntry.rating));
 			html = replace(html, /%viewCount%/g, formatInteger(markedEntry.viewCount));

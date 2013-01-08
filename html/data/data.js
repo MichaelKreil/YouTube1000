@@ -16,7 +16,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.699805,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 1
 	},
 	{
 		"id": "kffacxfA7G4",
@@ -35,7 +36,8 @@ var data = [
 			"DE"
 		],
 		"rating": 2.2496283,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 2
 	},
 	{
 		"id": "t4H_Zoh7G5A",
@@ -54,7 +56,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7052493,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 3
 	},
 	{
 		"id": "uelHwf8o7_U",
@@ -73,7 +76,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.87094,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 4
 	},
 	{
 		"id": "KQ6zr6kCPj8",
@@ -92,7 +96,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8470397,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 5
 	},
 	{
 		"id": "_OBlgSz8sSM",
@@ -109,7 +114,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.4950123,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 6
 	},
 	{
 		"id": "pRpeEdMmmQ0",
@@ -128,7 +134,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.778736,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 7
 	},
 	{
 		"id": "qrO4YZeyl0I",
@@ -147,7 +154,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.2953606,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 8
 	},
 	{
 		"id": "hcm55lU9knw",
@@ -166,7 +174,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.644651,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 9
 	},
 	{
 		"id": "7zp1TbLFPp8",
@@ -211,7 +220,8 @@ var data = [
 			"VA"
 		],
 		"rating": 4.728697,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 10
 	},
 	{
 		"id": "j5-yKhDd64s",
@@ -230,7 +240,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8970814,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 11
 	},
 	{
 		"id": "fWNaR-rxAic",
@@ -249,7 +260,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7215204,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 12
 	},
 	{
 		"id": "SmM0653YvXU",
@@ -285,7 +297,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.839014,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 13
 	},
 	{
 		"id": "rYEDA3JcQqw",
@@ -304,7 +317,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9063897,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 14
 	},
 	{
 		"id": "8UVNT4wvIGY",
@@ -323,7 +337,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8499656,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 15
 	},
 	{
 		"id": "fLexgOxsZu0",
@@ -342,7 +357,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.857954,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 16
 	},
 	{
 		"id": "_Z5-P9v3F8w",
@@ -361,7 +377,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.7630832,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 17
 	},
 	{
 		"id": "QGJuMBdaqIw",
@@ -380,7 +397,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.778613,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 18
 	},
 	{
 		"id": "M11SvDtPBhA",
@@ -399,7 +417,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.335066,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 19
 	},
 	{
 		"id": "QJO3ROT-A4E",
@@ -435,7 +454,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.5818925,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 20
 	},
 	{
 		"id": "CHVhwcOg6y8",
@@ -454,7 +474,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.1544743,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 21
 	},
 	{
 		"id": "4JipHEz53sU",
@@ -473,7 +494,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.37105,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 22
 	},
 	{
 		"id": "U0CGsw6h60k",
@@ -492,7 +514,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7890916,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 23
 	},
 	{
 		"id": "astISOttCQ0",
@@ -509,7 +532,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.232138,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 24
 	},
 	{
 		"id": "SR6iYWJxHqs",
@@ -528,7 +552,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.882702,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 25
 	},
 	{
 		"id": "EPo5wWmKEaI",
@@ -582,7 +607,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9048114,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 26
 	},
 	{
 		"id": "LjhCEhWiKXk",
@@ -601,7 +627,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.92453,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 27
 	},
 	{
 		"id": "d_czxTedXpc",
@@ -618,7 +645,8 @@ var data = [
 		"restrictedInDE": 1,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Praktische Tipps & Styling"
+		"category": "Praktische Tipps & Styling",
+		"rank": 28
 	},
 	{
 		"id": "pa14VNsdSYM",
@@ -637,7 +665,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.843024,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 29
 	},
 	{
 		"id": "wyx6JDQCslE",
@@ -656,7 +685,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.637967,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 30
 	},
 	{
 		"id": "zBbMAJgBymA",
@@ -673,7 +703,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.4622576,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 31
 	},
 	{
 		"id": "qMxX-QOV9tI",
@@ -692,7 +723,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8234267,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 32
 	},
 	{
 		"id": "hLQl3WQQoQ0",
@@ -711,7 +743,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.902533,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 33
 	},
 	{
 		"id": "SOI4OF7iIr4",
@@ -730,7 +763,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.831164,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 34
 	},
 	{
 		"id": "CdXesX6mYUE",
@@ -766,7 +800,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8237157,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 35
 	},
 	{
 		"id": "wcLNteez3c4",
@@ -785,7 +820,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.3334756,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 36
 	},
 	{
 		"id": "tg00YEETFzg",
@@ -804,7 +840,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.786479,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 37
 	},
 	{
 		"id": "e82VE8UtW8A",
@@ -823,7 +860,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.650483,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 38
 	},
 	{
 		"id": "FlsBObg-1BQ",
@@ -842,7 +880,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.909575,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 39
 	},
 	{
 		"id": "VuNIsY6JdUw",
@@ -861,7 +900,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.870827,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 40
 	},
 	{
 		"id": "E2tMV96xULk",
@@ -938,7 +978,8 @@ var data = [
 			"YE"
 		],
 		"rating": 4.5499973,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 41
 	},
 	{
 		"id": "t5Sd5c4o9UM",
@@ -990,7 +1031,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.6251817,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 42
 	},
 	{
 		"id": "dMH0bHeiRNg",
@@ -1007,7 +1049,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.703047,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 43
 	},
 	{
 		"id": "4m1EFMoRFvY",
@@ -1043,7 +1086,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.809259,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 44
 	},
 	{
 		"id": "8gyLR4NfMiI",
@@ -1062,7 +1106,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7320004,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 45
 	},
 	{
 		"id": "KlyXNRrsk4A",
@@ -1081,7 +1126,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.746263,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 46
 	},
 	{
 		"id": "JwQZQygg3Lk",
@@ -1100,7 +1146,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7485147,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 47
 	},
 	{
 		"id": "bjgFH01k0gU",
@@ -1136,7 +1183,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.7197104,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 48
 	},
 	{
 		"id": "4GuqB1BQVr4",
@@ -1155,7 +1203,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.673519,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 49
 	},
 	{
 		"id": "yCjJyiqpAuU",
@@ -1172,7 +1221,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.2591443,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 50
 	},
 	{
 		"id": "Y1xs_xPb46M",
@@ -1225,7 +1275,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.7454543,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 51
 	},
 	{
 		"id": "Bg59q4puhmg",
@@ -1261,7 +1312,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8613315,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 52
 	},
 	{
 		"id": "sEhy-RXkNo0",
@@ -1280,7 +1332,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7392893,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 53
 	},
 	{
 		"id": "OZLUa8JUR18",
@@ -1299,7 +1352,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8014913,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 54
 	},
 	{
 		"id": "lQlIhraqL7o",
@@ -1316,7 +1370,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8523774,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 55
 	},
 	{
 		"id": "p-Z3YrHJ1sU",
@@ -1335,7 +1390,8 @@ var data = [
 			"IT"
 		],
 		"rating": 4.8795104,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 56
 	},
 	{
 		"id": "Xn0pzzuKzNc",
@@ -1352,7 +1408,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.2636409,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 57
 	},
 	{
 		"id": "xpyNpn-TshQ",
@@ -1369,7 +1426,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.9275638,
-		"category": "Praktische Tipps & Styling"
+		"category": "Praktische Tipps & Styling",
+		"rank": 58
 	},
 	{
 		"id": "niqrrmev4mA",
@@ -1388,7 +1446,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.178775,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 59
 	},
 	{
 		"id": "kn6-c223DUU",
@@ -1601,7 +1660,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9131403,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 60
 	},
 	{
 		"id": "cSnkWzZ7ZAA",
@@ -1618,7 +1678,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.888412,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 61
 	},
 	{
 		"id": "a_YR4dKArgo",
@@ -1637,7 +1698,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.652835,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 62
 	},
 	{
 		"id": "3ExWsVFJlFo",
@@ -1656,7 +1718,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.9135928,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 63
 	},
 	{
 		"id": "1G4isv_Fylg",
@@ -1675,7 +1738,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.930686,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 64
 	},
 	{
 		"id": "60MQ3AG1c8o",
@@ -1698,7 +1762,8 @@ var data = [
 			"SG"
 		],
 		"rating": 4.6496305,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 65
 	},
 	{
 		"id": "LXUSaVw3Mvk",
@@ -1717,7 +1782,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.7306855,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 66
 	},
 	{
 		"id": "yd8jh9QYfEs",
@@ -1736,7 +1802,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.863499,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 67
 	},
 	{
 		"id": "Hr0Wv5DJhuk",
@@ -1755,7 +1822,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.3228445,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 68
 	},
 	{
 		"id": "lAhHNCfA7NI",
@@ -1777,7 +1845,8 @@ var data = [
 			"VA"
 		],
 		"rating": 4.891162,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 69
 	},
 	{
 		"id": "YVw7eJ0vGfM",
@@ -1796,7 +1865,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8143563,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 70
 	},
 	{
 		"id": "NG2zyeVRcbs",
@@ -1815,7 +1885,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.703975,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 71
 	},
 	{
 		"id": "VBmMU_iwe6U",
@@ -1834,7 +1905,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.2375116,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 72
 	},
 	{
 		"id": "BzE1mX4Px0I",
@@ -1854,7 +1926,8 @@ var data = [
 			"JP"
 		],
 		"rating": 4.7408957,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 73
 	},
 	{
 		"id": "xd12hR68sWM",
@@ -1871,7 +1944,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.9752765,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 74
 	},
 	{
 		"id": "ajbcJiYhFKY",
@@ -1888,7 +1962,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.9799817,
-		"category": "Praktische Tipps & Styling"
+		"category": "Praktische Tipps & Styling",
+		"rank": 75
 	},
 	{
 		"id": "EgT_us6AsDg",
@@ -1907,7 +1982,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.618069,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 76
 	},
 	{
 		"id": "wePMYM4av6Q",
@@ -1926,7 +2002,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.0607862,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 77
 	},
 	{
 		"id": "Sv6dMFF_yts",
@@ -1945,7 +2022,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9021034,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 78
 	},
 	{
 		"id": "1uwOL4rB-go",
@@ -1962,7 +2040,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.80269,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 79
 	},
 	{
 		"id": "a5irTX82olg",
@@ -1998,7 +2077,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.5920544,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 80
 	},
 	{
 		"id": "wagn8Wrmzuc",
@@ -2017,7 +2097,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.065679,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 81
 	},
 	{
 		"id": "EVBsypHzF3U",
@@ -2036,7 +2117,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.4904556,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 82
 	},
 	{
 		"id": "0UjsXo9l6I8",
@@ -2053,7 +2135,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8679595,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 83
 	},
 	{
 		"id": "MSsZPHL22RU",
@@ -2070,7 +2153,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.305033,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 84
 	},
 	{
 		"id": "2Abk1jAONjw",
@@ -2089,7 +2173,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7531757,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 85
 	},
 	{
 		"id": "HBxt_v0WF6Y",
@@ -2108,7 +2193,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8147907,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 86
 	},
 	{
 		"id": "Ahha3Cqe_fk",
@@ -2127,7 +2213,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.907901,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 87
 	},
 	{
 		"id": "FzRH3iTQPrk",
@@ -2144,7 +2231,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8814573,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 88
 	},
 	{
 		"id": "bnVUHWCynig",
@@ -2180,7 +2268,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9261065,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 89
 	},
 	{
 		"id": "nmjdaBaZe8Y",
@@ -2219,7 +2308,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.919648,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 90
 	},
 	{
 		"id": "X9_n8jakvWU",
@@ -2238,7 +2328,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8637905,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 91
 	},
 	{
 		"id": "EkHTsc9PU2A",
@@ -2451,7 +2542,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.938824,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 92
 	},
 	{
 		"id": "bESGLojNYSo",
@@ -2470,7 +2562,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.674047,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 93
 	},
 	{
 		"id": "lgT1AidzRWM",
@@ -2489,7 +2582,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9277954,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 94
 	},
 	{
 		"id": "JRfuAukYTKg",
@@ -2508,7 +2602,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9169044,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 95
 	},
 	{
 		"id": "p4kVWCSzfK4",
@@ -2527,7 +2622,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.854417,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 96
 	},
 	{
 		"id": "UePtoxDhJSw",
@@ -2740,7 +2836,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.7948546,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 97
 	},
 	{
 		"id": "7AW9C3-qWug",
@@ -2759,7 +2856,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.839001,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 98
 	},
 	{
 		"id": "pNABPhDyJJk",
@@ -2776,7 +2874,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.7010467,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 99
 	},
 	{
 		"id": "SkTt9k4Y-a8",
@@ -2795,7 +2894,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7440395,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 100
 	},
 	{
 		"id": "d9NF2edxy-M",
@@ -2812,7 +2912,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9557695,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 101
 	},
 	{
 		"id": "bpOR_HuHRNs",
@@ -2831,7 +2932,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9179626,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 102
 	},
 	{
 		"id": "8SbUC-UaAxE",
@@ -2850,7 +2952,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9275055,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 103
 	},
 	{
 		"id": "LUjn3RpkcKY",
@@ -2869,7 +2972,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.145192,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 104
 	},
 	{
 		"id": "qemWRToNYJY",
@@ -2886,7 +2990,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.898455,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 105
 	},
 	{
 		"id": "VT1-sitWRtY",
@@ -2905,7 +3010,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8767095,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 106
 	},
 	{
 		"id": "ysSxxIqKNN0",
@@ -2924,7 +3030,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.917371,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 107
 	},
 	{
 		"id": "8aRor905cCw",
@@ -3137,7 +3244,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9095764,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 108
 	},
 	{
 		"id": "W-w3WfgpcGg",
@@ -3156,7 +3264,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.936303,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 109
 	},
 	{
 		"id": "Tx1XIm6q4r4",
@@ -3173,7 +3282,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8441463,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 110
 	},
 	{
 		"id": "WpmILPAcRQo",
@@ -3190,7 +3300,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.911383,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 111
 	},
 	{
 		"id": "5qm8PH4xAss",
@@ -3209,7 +3320,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8372974,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 112
 	},
 	{
 		"id": "IgLcQmlN2Xg",
@@ -3228,7 +3340,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.825208,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 113
 	},
 	{
 		"id": "IgFwiCApH7E",
@@ -3247,7 +3360,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7353516,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 114
 	},
 	{
 		"id": "N6O2ncUKvlg",
@@ -3266,7 +3380,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9310217,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 115
 	},
 	{
 		"id": "IpYp-MsBUnM",
@@ -3283,7 +3398,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.153084,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 116
 	},
 	{
 		"id": "AbPED9bisSc",
@@ -3302,7 +3418,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7495756,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 117
 	},
 	{
 		"id": "4m48GqaOz90",
@@ -3321,7 +3438,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7490344,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 118
 	},
 	{
 		"id": "nhBorPm6JjQ",
@@ -3340,7 +3458,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8470855,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 119
 	},
 	{
 		"id": "rywUS-ohqeE",
@@ -3376,7 +3495,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.92696,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 120
 	},
 	{
 		"id": "DBafI0p3Px8",
@@ -3393,7 +3513,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 121
 	},
 	{
 		"id": "iEPTlhBmwRg",
@@ -3412,7 +3533,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.871577,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 122
 	},
 	{
 		"id": "rp4UwPZfRis",
@@ -3431,7 +3553,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.905622,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 123
 	},
 	{
 		"id": "5H59Py7KApU",
@@ -3448,7 +3571,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0144105,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 124
 	},
 	{
 		"id": "Ys7-6_t7OEQ",
@@ -3467,7 +3591,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.233356,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 125
 	},
 	{
 		"id": "8UFIYGkROII",
@@ -3486,7 +3611,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.3074493,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 126
 	},
 	{
 		"id": "1wYNFfgrXTI",
@@ -3505,7 +3631,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9537964,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 127
 	},
 	{
 		"id": "uSD4vsh1zDA",
@@ -3524,7 +3651,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.834246,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 128
 	},
 	{
 		"id": "BELlZKpi1Zs",
@@ -3541,7 +3669,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.8567955,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 129
 	},
 	{
 		"id": "ZaI2IlHwmgQ",
@@ -3560,7 +3689,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8818007,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 130
 	},
 	{
 		"id": "F5VvvVxuKko",
@@ -3577,7 +3707,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.4904194,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 131
 	},
 	{
 		"id": "az8q58VcRwY",
@@ -3594,7 +3725,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.9637948,
-		"category": "Wissenschaft & Technik"
+		"category": "Wissenschaft & Technik",
+		"rank": 132
 	},
 	{
 		"id": "TxvpctgU_s8",
@@ -3611,7 +3743,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8148055,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 133
 	},
 	{
 		"id": "tQmEd_UeeIk",
@@ -3631,7 +3764,8 @@ var data = [
 			"JP"
 		],
 		"rating": 4.7547097,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 134
 	},
 	{
 		"id": "M8uPvX2te0I",
@@ -3650,7 +3784,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.75732,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 135
 	},
 	{
 		"id": "sOnqjkJTMaA",
@@ -3704,7 +3839,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8730645,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 136
 	},
 	{
 		"id": "qdDVtFvJwUc",
@@ -3723,7 +3859,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.032807,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 137
 	},
 	{
 		"id": "ZN5PoW7_kdA",
@@ -3740,7 +3877,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.5137444,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 138
 	},
 	{
 		"id": "nGeKSiCQkPw",
@@ -3757,7 +3895,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9326363,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 139
 	},
 	{
 		"id": "hWjrMTWXH28",
@@ -3776,7 +3915,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.903212,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 140
 	},
 	{
 		"id": "59GM_xjPhco",
@@ -3793,7 +3933,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.149523,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 141
 	},
 	{
 		"id": "CSvFpBOe8eY",
@@ -3829,7 +3970,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.903591,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 142
 	},
 	{
 		"id": "3OnnDqH6Wj8",
@@ -3848,7 +3990,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.903203,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 143
 	},
 	{
 		"id": "lWA2pjMjpBs",
@@ -3867,7 +4010,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8014736,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 144
 	},
 	{
 		"id": "SgM3r8xKfGE",
@@ -4080,7 +4224,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.914841,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 145
 	},
 	{
 		"id": "GnBYdUXi3Eg",
@@ -4338,7 +4483,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.8546634,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 146
 	},
 	{
 		"id": "0G3_kG5FFfQ",
@@ -4374,7 +4520,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.955311,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 147
 	},
 	{
 		"id": "QWNoiVrJDsE",
@@ -4391,7 +4538,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.77172,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 148
 	},
 	{
 		"id": "oUbpGmR1-QM",
@@ -4410,7 +4558,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8632636,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 149
 	},
 	{
 		"id": "4pXfHLUlZf4",
@@ -4429,7 +4578,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.841577,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 150
 	},
 	{
 		"id": "JH2d6PiSMzI",
@@ -4446,7 +4596,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.7254114,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 151
 	},
 	{
 		"id": "XAhTt60W7qo",
@@ -4482,7 +4633,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.774365,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 152
 	},
 	{
 		"id": "VUjdiDeJ0xg",
@@ -4501,7 +4653,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8468027,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 153
 	},
 	{
 		"id": "uuwfgXD8qV8",
@@ -4554,7 +4707,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.740296,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 154
 	},
 	{
 		"id": "T-sxSd1uwoU",
@@ -4590,7 +4744,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.6806765,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 155
 	},
 	{
 		"id": "pBI3lc18k8Q",
@@ -4803,7 +4958,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.7775326,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 156
 	},
 	{
 		"id": "suRsxpoAc5w",
@@ -4822,7 +4978,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.924134,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 157
 	},
 	{
 		"id": "P2hM9CLAMu4",
@@ -4841,7 +4998,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.911388,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 158
 	},
 	{
 		"id": "LefQdEMJP1I",
@@ -4877,7 +5035,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9055414,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 159
 	},
 	{
 		"id": "MtN1YnoL46Q",
@@ -4894,7 +5053,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.526152,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 160
 	},
 	{
 		"id": "7_mol6B9z00",
@@ -4911,7 +5071,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.042158,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 161
 	},
 	{
 		"id": "WSeNSzJ2-Jw",
@@ -4928,7 +5089,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.753966,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 162
 	},
 	{
 		"id": "OrTyD7rjBpw",
@@ -4947,7 +5109,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9217,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 163
 	},
 	{
 		"id": "k0BWlvnBmIE",
@@ -4994,7 +5157,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8286376,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 164
 	},
 	{
 		"id": "dvgZkm1xWPE",
@@ -5046,7 +5210,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8718963,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 165
 	},
 	{
 		"id": "Glny4jSciVI",
@@ -5063,7 +5228,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7836213,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 166
 	},
 	{
 		"id": "txqiwrbYGrs",
@@ -5080,7 +5246,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.744111,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 167
 	},
 	{
 		"id": "jUe8uoKdHao",
@@ -5099,7 +5266,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9137354,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 168
 	},
 	{
 		"id": "VA770wpLX-Q",
@@ -5118,7 +5286,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8930016,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 169
 	},
 	{
 		"id": "iP6XpLQM2Cs",
@@ -5154,7 +5323,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.465384,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 170
 	},
 	{
 		"id": "qExd-3oCTl4",
@@ -5173,7 +5343,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.844029,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 171
 	},
 	{
 		"id": "RxPZh4AnWyk",
@@ -5190,7 +5361,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.884152,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 172
 	},
 	{
 		"id": "3mC2ixOAivA",
@@ -5226,7 +5398,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8812,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 173
 	},
 	{
 		"id": "XNtTEibFvlQ",
@@ -5245,7 +5418,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.799046,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 174
 	},
 	{
 		"id": "2IH8tNQAzSs",
@@ -5264,7 +5438,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5166984,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 175
 	},
 	{
 		"id": "lRWqYR3e7xE",
@@ -5283,7 +5458,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.862048,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 176
 	},
 	{
 		"id": "JXoAmDDPZz4",
@@ -5300,7 +5476,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.8172643,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 177
 	},
 	{
 		"id": "KV2ssT8lzj8",
@@ -5319,7 +5496,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9162655,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 178
 	},
 	{
 		"id": "XPBwXKgDTdE",
@@ -5338,7 +5516,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8790636,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 179
 	},
 	{
 		"id": "tDq3fNew1rU",
@@ -5357,7 +5536,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9349194,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 180
 	},
 	{
 		"id": "EEuQU6a90Pc",
@@ -5393,7 +5573,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.622937,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 181
 	},
 	{
 		"id": "qzU9OrZlKb8",
@@ -5447,7 +5628,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.7673507,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 182
 	},
 	{
 		"id": "hMtZfW2z9dw",
@@ -5464,7 +5646,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.903842,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 183
 	},
 	{
 		"id": "D9g2szHsoz0",
@@ -5481,7 +5664,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.606921,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 184
 	},
 	{
 		"id": "weRHyjj34ZE",
@@ -5517,7 +5701,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8859196,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 185
 	},
 	{
 		"id": "T3E9Wjbq44E",
@@ -5536,7 +5721,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9600883,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 186
 	},
 	{
 		"id": "AaXaig_43lU",
@@ -5555,7 +5741,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8823633,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 187
 	},
 	{
 		"id": "RWAdb1vgoik",
@@ -5574,7 +5761,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8243604,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 188
 	},
 	{
 		"id": "Xmap94TcDNs",
@@ -5593,7 +5781,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7583756,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 189
 	},
 	{
 		"id": "WA4iX5D9Z64",
@@ -5612,7 +5801,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7471037,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 190
 	},
 	{
 		"id": "6g6g2mvItp4",
@@ -5631,7 +5821,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.879884,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 191
 	},
 	{
 		"id": "8xg3vE8Ie_E",
@@ -5650,7 +5841,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8929067,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 192
 	},
 	{
 		"id": "UA8rcLvS1BY",
@@ -5669,7 +5861,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8523154,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 193
 	},
 	{
 		"id": "1k08yxu57NA",
@@ -5686,7 +5879,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.903493,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 194
 	},
 	{
 		"id": "FrsM9WggCdo",
@@ -5703,7 +5897,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Nachrichten & Politik"
+		"category": "Nachrichten & Politik",
+		"rank": 195
 	},
 	{
 		"id": "d7n8GqewJ2M",
@@ -5720,7 +5915,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8008432,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 196
 	},
 	{
 		"id": "SbUBMklQSVU",
@@ -5739,7 +5935,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8902173,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 197
 	},
 	{
 		"id": "0iT7ZLqfDT0",
@@ -5756,7 +5953,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.5770257,
-		"category": "Nachrichten & Politik"
+		"category": "Nachrichten & Politik",
+		"rank": 198
 	},
 	{
 		"id": "ErCAOMi5EGM",
@@ -5775,7 +5973,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.746429,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 199
 	},
 	{
 		"id": "DUT5rEU6pqM",
@@ -5811,7 +6010,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9063983,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 200
 	},
 	{
 		"id": "mn42tbmgSC0",
@@ -5828,7 +6028,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.5656447,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 201
 	},
 	{
 		"id": "5XEN4vtH4Ic",
@@ -5845,7 +6046,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0510383,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 202
 	},
 	{
 		"id": "fwK7ggA3-bU",
@@ -5864,7 +6066,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.897974,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 203
 	},
 	{
 		"id": "NisCkxU544c",
@@ -5881,7 +6084,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.901842,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 204
 	},
 	{
 		"id": "lexLAjh8fPA",
@@ -5900,7 +6104,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.930037,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 205
 	},
 	{
 		"id": "wV1FrqwZyKw",
@@ -5919,7 +6124,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.0693393,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 206
 	},
 	{
 		"id": "E8aprCNnecU",
@@ -5936,7 +6142,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7656155,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 207
 	},
 	{
 		"id": "UJtB55MaoD0",
@@ -5955,7 +6162,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8450823,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 208
 	},
 	{
 		"id": "8PTDv_szmL0",
@@ -6168,7 +6376,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9329834,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 209
 	},
 	{
 		"id": "SeIJmciN8mo",
@@ -6187,7 +6396,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.328643,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 210
 	},
 	{
 		"id": "rSOzN0eihsE",
@@ -6206,7 +6416,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8974853,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 211
 	},
 	{
 		"id": "7_weSk0BonM",
@@ -6242,7 +6453,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9459043,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 212
 	},
 	{
 		"id": "eNII9PDlFJ0",
@@ -6278,7 +6490,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9100366,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 213
 	},
 	{
 		"id": "I7HahVwYpwo",
@@ -6297,7 +6510,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.885148,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 214
 	},
 	{
 		"id": "iEe_eraFWWs",
@@ -6316,7 +6530,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.826636,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 215
 	},
 	{
 		"id": "ePyRrb2-fzs",
@@ -6335,7 +6550,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.85088,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 216
 	},
 	{
 		"id": "sjSG6z_13-Q",
@@ -6354,7 +6570,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.129219,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 217
 	},
 	{
 		"id": "wIGxKY5y6Mg",
@@ -6371,7 +6588,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.189642,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 218
 	},
 	{
 		"id": "ruav0KvQOOg",
@@ -6388,7 +6606,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.857471,
-		"category": "Reisen & Events"
+		"category": "Reisen & Events",
+		"rank": 219
 	},
 	{
 		"id": "LU-ZQWZSGfc",
@@ -6405,7 +6624,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8533936,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 220
 	},
 	{
 		"id": "FHp2KgyQUFk",
@@ -6441,7 +6661,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8558993,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 221
 	},
 	{
 		"id": "AWpsOqh8q0M",
@@ -6477,7 +6698,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.92586,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 222
 	},
 	{
 		"id": "U5rLz5AZBIA",
@@ -6496,7 +6718,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9334636,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 223
 	},
 	{
 		"id": "9ha5ujHnYXg",
@@ -6515,7 +6738,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.884785,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 224
 	},
 	{
 		"id": "R4em3LKQCAQ",
@@ -6534,7 +6758,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.386555,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 225
 	},
 	{
 		"id": "prmmCg5bKxA",
@@ -6570,7 +6795,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.5953274,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 226
 	},
 	{
 		"id": "vx2u5uUu3DE",
@@ -6589,7 +6815,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.946282,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 227
 	},
 	{
 		"id": "k-ImCpNqbJw",
@@ -6608,7 +6835,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.914875,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 228
 	},
 	{
 		"id": "2cXDgFwE13g",
@@ -6627,7 +6855,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8650756,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 229
 	},
 	{
 		"id": "791Dr-VH-Zw",
@@ -6644,7 +6873,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.1962695,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 230
 	},
 	{
 		"id": "kXYiU_JCYtU",
@@ -6663,7 +6893,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9544272,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 231
 	},
 	{
 		"id": "pqJpf6tidn0",
@@ -6680,7 +6911,8 @@ var data = [
 		"restrictedInDE": 1,
 		"restrictionsAll": [],
 		"rating": 4.6256595,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 232
 	},
 	{
 		"id": "8JUvbJekM88",
@@ -6699,7 +6931,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.547142,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 233
 	},
 	{
 		"id": "GI6CfKcMhjY",
@@ -6716,7 +6949,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.917187,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 234
 	},
 	{
 		"id": "a7UFm6ErMPU",
@@ -6736,7 +6970,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.826679,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 235
 	},
 	{
 		"id": "YVkUvmDQ3HY",
@@ -6755,7 +6990,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.913673,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 236
 	},
 	{
 		"id": "2uJE48aKVNo",
@@ -6772,7 +7008,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0771747,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 237
 	},
 	{
 		"id": "K0K46C82v9o",
@@ -6791,7 +7028,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8520794,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 238
 	},
 	{
 		"id": "5FlQSQuv_mg",
@@ -6810,7 +7048,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.879142,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 239
 	},
 	{
 		"id": "YJVmu6yttiw",
@@ -6829,7 +7068,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.793123,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 240
 	},
 	{
 		"id": "Y4MnpzG5Sqc",
@@ -6846,7 +7086,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.5378737,
-		"category": "Soziales Engagement"
+		"category": "Soziales Engagement",
+		"rank": 241
 	},
 	{
 		"id": "VSrAJsWvEIc",
@@ -6863,7 +7104,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9000874,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 242
 	},
 	{
 		"id": "rMqayQ-U74s",
@@ -6899,7 +7141,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.876541,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 243
 	},
 	{
 		"id": "Jx2yQejrrUE",
@@ -6922,7 +7165,8 @@ var data = [
 			"US"
 		],
 		"rating": 4.860272,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 244
 	},
 	{
 		"id": "U7mPqycQ0tQ",
@@ -6939,7 +7183,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6670184,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 245
 	},
 	{
 		"id": "Kh2FRFhS7QY",
@@ -6956,7 +7201,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8480387,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 246
 	},
 	{
 		"id": "ScXLHgPcZuc",
@@ -6975,7 +7221,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.451069,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 247
 	},
 	{
 		"id": "4DO8GsIYfhQ",
@@ -6994,7 +7241,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.928378,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 248
 	},
 	{
 		"id": "hTWKbfoikeg",
@@ -7013,7 +7261,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.937288,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 249
 	},
 	{
 		"id": "3VVuMIB2hC0",
@@ -7030,7 +7279,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.742108,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 250
 	},
 	{
 		"id": "Ha80ZaecGkQ",
@@ -7049,7 +7299,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.723687,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 251
 	},
 	{
 		"id": "5sMKX22BHeE",
@@ -7085,7 +7336,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8988924,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 252
 	},
 	{
 		"id": "d2smz_1L2_0",
@@ -7104,7 +7356,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.608365,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 253
 	},
 	{
 		"id": "saalGKY7ifU",
@@ -7123,7 +7376,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8970876,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 254
 	},
 	{
 		"id": "w4s6H4ku6ZY",
@@ -7142,7 +7396,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.791209,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 255
 	},
 	{
 		"id": "bKDdT_nyP54",
@@ -7161,7 +7416,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.889495,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 256
 	},
 	{
 		"id": "l4e0hJGOIY8",
@@ -7178,7 +7434,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.837463,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 257
 	},
 	{
 		"id": "t4FtuXVAM2A",
@@ -7195,7 +7452,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.2205396,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 258
 	},
 	{
 		"id": "nIjVuRTm-dc",
@@ -7214,7 +7472,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9436984,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 259
 	},
 	{
 		"id": "1mB0tP1I-14",
@@ -7233,7 +7492,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.733733,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 260
 	},
 	{
 		"id": "9I9Ar6upx34",
@@ -7252,7 +7512,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8929834,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 261
 	},
 	{
 		"id": "QH2-TGUlwu4",
@@ -7269,7 +7530,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.740963,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 262
 	},
 	{
 		"id": "YgFyi74DVjc",
@@ -7321,7 +7583,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9291797,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 263
 	},
 	{
 		"id": "Wa5B22KAkEk",
@@ -7340,7 +7603,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.901823,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 264
 	},
 	{
 		"id": "Xil90dzIh0k",
@@ -7357,7 +7621,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0921397,
-		"category": "Wissenschaft & Technik"
+		"category": "Wissenschaft & Technik",
+		"rank": 265
 	},
 	{
 		"id": "ZQ2nCGawrSY",
@@ -7376,7 +7641,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8742404,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 266
 	},
 	{
 		"id": "2IFo7dot98o",
@@ -7393,7 +7659,8 @@ var data = [
 		"restrictedInDE": 1,
 		"restrictionsAll": [],
 		"rating": 1.8969697,
-		"category": "Soziales Engagement"
+		"category": "Soziales Engagement",
+		"rank": 267
 	},
 	{
 		"id": "z5W7DVFKrcs",
@@ -7412,7 +7679,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.4879684,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 268
 	},
 	{
 		"id": "kpZhZAr1cQU",
@@ -7431,7 +7699,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.855502,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 269
 	},
 	{
 		"id": "8v_4O44sfjM",
@@ -7450,7 +7719,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.935375,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 270
 	},
 	{
 		"id": "jCya1yiFFP4",
@@ -7717,7 +7987,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.897953,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 271
 	},
 	{
 		"id": "b3HeLs8Yosw",
@@ -7736,7 +8007,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.659384,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 272
 	},
 	{
 		"id": "Vo_0UXRY_rY",
@@ -7755,7 +8027,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9141436,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 273
 	},
 	{
 		"id": "Bag1gUxuU0g",
@@ -7774,7 +8047,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.786945,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 274
 	},
 	{
 		"id": "EwTZ2xpQwpA",
@@ -7791,7 +8065,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.3360343,
-		"category": "Nachrichten & Politik"
+		"category": "Nachrichten & Politik",
+		"rank": 275
 	},
 	{
 		"id": "CsBUm-JxA6A",
@@ -7808,7 +8083,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.4964588,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 276
 	},
 	{
 		"id": "PsO6ZnUZI0g",
@@ -7827,7 +8103,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.842926,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 277
 	},
 	{
 		"id": "NUVCQXMUVnI",
@@ -7846,7 +8123,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.911122,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 278
 	},
 	{
 		"id": "kS1fRGYdkNw",
@@ -7863,7 +8141,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.778321,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 279
 	},
 	{
 		"id": "dzsuE5ugxf4",
@@ -7882,7 +8161,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8140664,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 280
 	},
 	{
 		"id": "1Bk_nqUQ0fc",
@@ -7899,7 +8179,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.2814054,
-		"category": "Spiele"
+		"category": "Spiele",
+		"rank": 281
 	},
 	{
 		"id": "oBhj-Tv4WHI",
@@ -7918,7 +8199,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.881543,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 282
 	},
 	{
 		"id": "9O72RLP5fF4",
@@ -7937,7 +8219,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7210183,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 283
 	},
 	{
 		"id": "-eyig_V-_5o",
@@ -7954,7 +8237,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.235413,
-		"category": "Spiele"
+		"category": "Spiele",
+		"rank": 284
 	},
 	{
 		"id": "y_SI2EDM6Lo",
@@ -7973,7 +8257,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.906373,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 285
 	},
 	{
 		"id": "PVzljDmoPVs",
@@ -7992,7 +8277,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.903653,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 286
 	},
 	{
 		"id": "mnK7Xk0ZqJ8",
@@ -8009,7 +8295,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.859448,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 287
 	},
 	{
 		"id": "nvfejaHz-o0",
@@ -8028,7 +8315,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8348203,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 288
 	},
 	{
 		"id": "p_RqWocthcc",
@@ -8047,7 +8335,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.915576,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 289
 	},
 	{
 		"id": "KnEXrbAQyIo",
@@ -8098,7 +8387,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8511233,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 290
 	},
 	{
 		"id": "WSWrepLjTKc",
@@ -8117,7 +8407,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.822347,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 291
 	},
 	{
 		"id": "KRaWnd3LJfs",
@@ -8136,7 +8427,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8677044,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 292
 	},
 	{
 		"id": "UhQz-0QVmQ0",
@@ -8155,7 +8447,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8700047,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 293
 	},
 	{
 		"id": "ymKLymvwD2U",
@@ -8193,7 +8486,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.178252,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 294
 	},
 	{
 		"id": "6tpl9LtkRRw",
@@ -8212,7 +8506,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9216747,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 295
 	},
 	{
 		"id": "aFhvWOgg-YU",
@@ -8229,7 +8524,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.833383,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 296
 	},
 	{
 		"id": "vSYadh2xmcI",
@@ -8246,7 +8542,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.2972975,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 297
 	},
 	{
 		"id": "psuRGfAaju4",
@@ -8265,7 +8562,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8574896,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 298
 	},
 	{
 		"id": "lkHlnWFnA0c",
@@ -8284,7 +8582,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.9302146,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 299
 	},
 	{
 		"id": "-Edv8Onsrgg",
@@ -8303,7 +8602,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.3219595,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 300
 	},
 	{
 		"id": "lVhJ_A8XUgc",
@@ -8339,7 +8639,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.868376,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 301
 	},
 	{
 		"id": "_KSyWS8UgA4",
@@ -8358,7 +8659,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.885422,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 302
 	},
 	{
 		"id": "C-dvTjK_07c",
@@ -8394,7 +8696,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.923338,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 303
 	},
 	{
 		"id": "CvBfHwUxHIk",
@@ -8413,7 +8716,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.793489,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 304
 	},
 	{
 		"id": "hmP7TYtDVUU",
@@ -8432,7 +8736,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8150377,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 305
 	},
 	{
 		"id": "0habxsuXW4g",
@@ -8451,7 +8756,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.903202,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 306
 	},
 	{
 		"id": "2CGF_Z3yZAo",
@@ -8470,7 +8776,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8288984,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 307
 	},
 	{
 		"id": "cPJUBQd-PNM",
@@ -8487,7 +8794,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9178762,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 308
 	},
 	{
 		"id": "J3UjJ4wKLkg",
@@ -8506,7 +8814,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.91499,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 309
 	},
 	{
 		"id": "8wxOVn99FTE",
@@ -8525,7 +8834,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7697606,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 310
 	},
 	{
 		"id": "EmZvOhHF85I",
@@ -8544,7 +8854,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.54772,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 311
 	},
 	{
 		"id": "WLqRIowfmEY",
@@ -8563,7 +8874,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.122317,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 312
 	},
 	{
 		"id": "1hPxGmTGarM",
@@ -8580,7 +8892,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.151609,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 313
 	},
 	{
 		"id": "QNJL6nfu__Q",
@@ -8616,7 +8929,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.920707,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 314
 	},
 	{
 		"id": "1RnPB76mjxI",
@@ -8652,7 +8966,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.823611,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 315
 	},
 	{
 		"id": "CL_Cz1sc4Ek",
@@ -8671,7 +8986,8 @@ var data = [
 			"TR"
 		],
 		"rating": 3.8940592,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 316
 	},
 	{
 		"id": "6JnGBs88sL0",
@@ -8690,7 +9006,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9325986,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 317
 	},
 	{
 		"id": "t45i8cjHzko",
@@ -8709,7 +9026,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.683614,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 318
 	},
 	{
 		"id": "ZR0v0i63PQ4",
@@ -8728,7 +9046,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7793612,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 319
 	},
 	{
 		"id": "qXo3NFqkaRM",
@@ -8745,7 +9064,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9355483,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 320
 	},
 	{
 		"id": "MntbN1DdEP0",
@@ -8781,7 +9101,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8072677,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 321
 	},
 	{
 		"id": "FJfFZqTlWrQ",
@@ -8817,7 +9138,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9281707,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 322
 	},
 	{
 		"id": "eQWG8BVeryU",
@@ -8853,7 +9175,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8614764,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 323
 	},
 	{
 		"id": "adyZO3E63Gg",
@@ -8872,7 +9195,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7296295,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 324
 	},
 	{
 		"id": "NAc83CF8Ejk",
@@ -8891,7 +9215,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.935804,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 325
 	},
 	{
 		"id": "wkzmgV2gv0A",
@@ -8908,7 +9233,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.302672,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 326
 	},
 	{
 		"id": "2B50RUXbs-8",
@@ -8927,7 +9253,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9129567,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 327
 	},
 	{
 		"id": "r_8ydghbGSg",
@@ -8946,7 +9273,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8249054,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 328
 	},
 	{
 		"id": "8sgycukafqQ",
@@ -8965,7 +9293,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.907933,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 329
 	},
 	{
 		"id": "4-94JhLEiN0",
@@ -8984,7 +9313,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8717074,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 330
 	},
 	{
 		"id": "5kuq42qcXUA",
@@ -9003,7 +9333,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.216691,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 331
 	},
 	{
 		"id": "OGMO73sxbfU",
@@ -9020,7 +9351,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.515812,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 332
 	},
 	{
 		"id": "khCokQt--l4",
@@ -9037,7 +9369,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.831046,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 333
 	},
 	{
 		"id": "Zi_XLOBDo_Y",
@@ -9073,7 +9406,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.913183,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 334
 	},
 	{
 		"id": "mBRUkdQa6Is",
@@ -9092,7 +9426,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7890167,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 335
 	},
 	{
 		"id": "vTpV8Cmg21U",
@@ -9109,7 +9444,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.9203403,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 336
 	},
 	{
 		"id": "3ichQOqbewA",
@@ -9130,7 +9466,8 @@ var data = [
 			"FI"
 		],
 		"rating": 4.0845413,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 337
 	},
 	{
 		"id": "MWYCYQ4rVRE",
@@ -9147,7 +9484,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.78787,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 338
 	},
 	{
 		"id": "KMOOr7GEkj8",
@@ -9166,7 +9504,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9229145,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 339
 	},
 	{
 		"id": "qC_hF31z130",
@@ -9185,7 +9524,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.378638,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 340
 	},
 	{
 		"id": "nQJACVmankY",
@@ -9204,7 +9544,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8763337,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 341
 	},
 	{
 		"id": "o9tJW9MDs2M",
@@ -9223,7 +9564,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.3555617,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 342
 	},
 	{
 		"id": "LXO-jKksQkM",
@@ -9240,7 +9582,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9418683,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 343
 	},
 	{
 		"id": "MrTz5xjmso4",
@@ -9276,7 +9619,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.894983,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 344
 	},
 	{
 		"id": "RvnkAtWcKYg",
@@ -9295,7 +9639,8 @@ var data = [
 			"DE"
 		],
 		"rating": -1,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 345
 	},
 	{
 		"id": "JByDbPn6A1o",
@@ -9314,7 +9659,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9220366,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 346
 	},
 	{
 		"id": "_JmA2ClUvUY",
@@ -9331,7 +9677,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8741546,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 347
 	},
 	{
 		"id": "nmjO1p9Oxrk",
@@ -9350,7 +9697,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7704186,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 348
 	},
 	{
 		"id": "7HKoqNJtMTQ",
@@ -9367,7 +9715,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.857327,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 349
 	},
 	{
 		"id": "zRIbf6JqkNc",
@@ -9386,7 +9735,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.955957,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 350
 	},
 	{
 		"id": "u9LH_y159sg",
@@ -9405,7 +9755,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8951507,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 351
 	},
 	{
 		"id": "Ysqh1uzqGrc",
@@ -9422,7 +9773,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.565559,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 352
 	},
 	{
 		"id": "elueA2rofoo",
@@ -9480,7 +9832,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.834099,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 353
 	},
 	{
 		"id": "I9cCPQVPv8o",
@@ -9499,7 +9852,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.934877,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 354
 	},
 	{
 		"id": "V1bFr2SWP1I",
@@ -9518,7 +9872,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.943074,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 355
 	},
 	{
 		"id": "HAfFfqiYLp0",
@@ -9537,7 +9892,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.836889,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 356
 	},
 	{
 		"id": "kPBzTxZQG5Q",
@@ -9556,7 +9912,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9590406,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 357
 	},
 	{
 		"id": "he3DJLXbebI",
@@ -9575,7 +9932,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.727871,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 358
 	},
 	{
 		"id": "tZ46Ot4_lLo",
@@ -9592,7 +9950,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9105287,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 359
 	},
 	{
 		"id": "3RSlhNJFohI",
@@ -9611,7 +9970,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.4866567,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 360
 	},
 	{
 		"id": "4KcyzPPr82E",
@@ -9628,7 +9988,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.3628917,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 361
 	},
 	{
 		"id": "iCkYw3cRwLo",
@@ -9645,7 +10006,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.809142,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 362
 	},
 	{
 		"id": "8FX_NFOgQEU",
@@ -9662,7 +10024,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 363
 	},
 	{
 		"id": "N9qYF9DZPdw",
@@ -9698,7 +10061,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.938492,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 364
 	},
 	{
 		"id": "SKWxOsbt9gU",
@@ -9717,7 +10081,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.852684,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 365
 	},
 	{
 		"id": "47Fbo4kU2AU",
@@ -9736,7 +10101,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8249564,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 366
 	},
 	{
 		"id": "Ob7vObnFUJc",
@@ -9772,7 +10138,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8871913,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 367
 	},
 	{
 		"id": "whBcmlaSLJM",
@@ -9791,7 +10158,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8449636,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 368
 	},
 	{
 		"id": "WBKnpyoFEBo",
@@ -9827,7 +10195,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9540462,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 369
 	},
 	{
 		"id": "4ymhq6afE4M",
@@ -9844,7 +10213,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.4086146,
-		"category": "Sport"
+		"category": "Sport",
+		"rank": 370
 	},
 	{
 		"id": "nTasT5h0LEg",
@@ -9861,7 +10231,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6554503,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 371
 	},
 	{
 		"id": "VCLxJd1d84s",
@@ -9880,7 +10251,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9147744,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 372
 	},
 	{
 		"id": "SRcnnId15BA",
@@ -9899,7 +10271,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8359704,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 373
 	},
 	{
 		"id": "-7gIpfrQdAI",
@@ -9916,7 +10289,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.081808,
-		"category": "Spiele"
+		"category": "Spiele",
+		"rank": 374
 	},
 	{
 		"id": "74TFS8r_SMI",
@@ -9933,7 +10307,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8094,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 375
 	},
 	{
 		"id": "24kK6Wr-a3o",
@@ -9950,7 +10325,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.0998027,
-		"category": "Reisen & Events"
+		"category": "Reisen & Events",
+		"rank": 376
 	},
 	{
 		"id": "7XYQd_sJVzk",
@@ -9967,7 +10343,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.887989,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 377
 	},
 	{
 		"id": "G2RCCDSBEGk",
@@ -9986,7 +10363,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.853043,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 378
 	},
 	{
 		"id": "k6EQAOmJrbw",
@@ -10180,7 +10558,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.8220854,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 379
 	},
 	{
 		"id": "8sPj0Ic8KQ8",
@@ -10201,7 +10580,8 @@ var data = [
 			"VA"
 		],
 		"rating": 4.759067,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 380
 	},
 	{
 		"id": "zzmVn1BHCS4",
@@ -10218,7 +10598,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.191459,
-		"category": "Praktische Tipps & Styling"
+		"category": "Praktische Tipps & Styling",
+		"rank": 381
 	},
 	{
 		"id": "KUI8GPqgyvM",
@@ -10235,7 +10616,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.3484142,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 382
 	},
 	{
 		"id": "6Ejga4kJUts",
@@ -10254,7 +10636,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9449577,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 383
 	},
 	{
 		"id": "Co0tTeuUVhU",
@@ -10273,7 +10656,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.811304,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 384
 	},
 	{
 		"id": "8WYHDfJDPDc",
@@ -10292,7 +10676,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.936375,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 385
 	},
 	{
 		"id": "R7yfISlGLNU",
@@ -10311,7 +10696,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.847417,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 386
 	},
 	{
 		"id": "JWZwLCKyR1Q",
@@ -10330,7 +10716,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.6885366,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 387
 	},
 	{
 		"id": "nmwIgF2gekY",
@@ -10347,7 +10734,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.8020802,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 388
 	},
 	{
 		"id": "w9KnuJZkBjg",
@@ -10367,7 +10755,8 @@ var data = [
 			"IT"
 		],
 		"rating": 4.800164,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 389
 	},
 	{
 		"id": "1i7p0vTGcBk",
@@ -10384,7 +10773,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.372142,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 390
 	},
 	{
 		"id": "booKP974B0k",
@@ -10420,7 +10810,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.7631526,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 391
 	},
 	{
 		"id": "D2iqsJlWzT8",
@@ -10437,7 +10828,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 392
 	},
 	{
 		"id": "H7HmzwI67ec",
@@ -10456,7 +10848,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8815174,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 393
 	},
 	{
 		"id": "r2ozuCXpVJY",
@@ -10475,7 +10868,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.196797,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 394
 	},
 	{
 		"id": "kB9lkG8d7TA",
@@ -10492,7 +10886,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.5096571,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 395
 	},
 	{
 		"id": "Qit3ALTelOo",
@@ -10509,7 +10904,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.761179,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 396
 	},
 	{
 		"id": "dsKO_r76kfQ",
@@ -10526,7 +10922,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.907187,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 397
 	},
 	{
 		"id": "PPNMGYOm1aM",
@@ -10545,7 +10942,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7157435,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 398
 	},
 	{
 		"id": "ZGoWtY_h4xo",
@@ -10564,7 +10962,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.951759,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 399
 	},
 	{
 		"id": "QfZItov1BUo",
@@ -10581,7 +10980,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.658717,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 400
 	},
 	{
 		"id": "ZhODBFQ2-bQ",
@@ -10598,7 +10998,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.938487,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 401
 	},
 	{
 		"id": "r00ikilDxW4",
@@ -10617,7 +11018,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.914144,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 402
 	},
 	{
 		"id": "WXxV9g7lsFE",
@@ -10830,7 +11232,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.8748093,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 403
 	},
 	{
 		"id": "QOowQeKyNkQ",
@@ -10866,7 +11269,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.834519,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 404
 	},
 	{
 		"id": "fhseD2tRLUY",
@@ -10883,7 +11287,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 405
 	},
 	{
 		"id": "eVTXPUF4Oz4",
@@ -10902,7 +11307,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9481926,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 406
 	},
 	{
 		"id": "I6N9xzf9inM",
@@ -10919,7 +11325,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.6109438,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 407
 	},
 	{
 		"id": "Oe4Ic7fHWf8",
@@ -10938,7 +11345,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.766323,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 408
 	},
 	{
 		"id": "D7GW8TYCEG4",
@@ -10957,7 +11365,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7102404,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 409
 	},
 	{
 		"id": "6EEW-9NDM5k",
@@ -10976,7 +11385,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.910614,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 410
 	},
 	{
 		"id": "tLPZmPaHme0",
@@ -10993,7 +11403,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.880323,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 411
 	},
 	{
 		"id": "zudbz4hOcbc",
@@ -11044,7 +11455,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.890338,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 412
 	},
 	{
 		"id": "LU8DDYz68kM",
@@ -11061,7 +11473,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8924546,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 413
 	},
 	{
 		"id": "HRqOjhNN4hQ",
@@ -11080,7 +11493,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.0506744,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 414
 	},
 	{
 		"id": "MSqOwlLkews",
@@ -11099,7 +11513,8 @@ var data = [
 			"DE"
 		],
 		"rating": 2.5245757,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 415
 	},
 	{
 		"id": "UfcvO2t8Ntg",
@@ -11118,7 +11533,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.660533,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 416
 	},
 	{
 		"id": "t-vTaktsUSw",
@@ -11137,7 +11553,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.80922,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 417
 	},
 	{
 		"id": "DHyJTpDFgc8",
@@ -11154,7 +11571,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9234285,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 418
 	},
 	{
 		"id": "BYW6C44zo24",
@@ -11171,7 +11589,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.4178905,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 419
 	},
 	{
 		"id": "vtv_VSw_nhg",
@@ -11188,7 +11607,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.040479,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 420
 	},
 	{
 		"id": "ZyhrYis509A",
@@ -11207,7 +11627,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.713014,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 421
 	},
 	{
 		"id": "Dsp_8Lm1eSk",
@@ -11243,7 +11664,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9123526,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 422
 	},
 	{
 		"id": "6hzrDeceEKc",
@@ -11262,7 +11684,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9143925,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 423
 	},
 	{
 		"id": "y8Gf4-eT3w0",
@@ -11281,7 +11704,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8491907,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 424
 	},
 	{
 		"id": "HpyZEzrDf4c",
@@ -11300,7 +11724,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.938596,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 425
 	},
 	{
 		"id": "C-u5WLJ9Yk4",
@@ -11336,7 +11761,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.852295,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 426
 	},
 	{
 		"id": "0fw3l1z9CUQ",
@@ -11353,7 +11779,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.8539026,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 427
 	},
 	{
 		"id": "rtOvBOTyX00",
@@ -11372,7 +11799,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9639397,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 428
 	},
 	{
 		"id": "oxqnFJ3lp5k",
@@ -11408,7 +11836,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.915126,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 429
 	},
 	{
 		"id": "YersIyzsOpc",
@@ -11425,7 +11854,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7257323,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 430
 	},
 	{
 		"id": "eWUC5Q0RCAA",
@@ -11442,7 +11872,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8474345,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 431
 	},
 	{
 		"id": "AFA-rOls8YA",
@@ -11459,7 +11890,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.918813,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 432
 	},
 	{
 		"id": "Xcwd_Nz6Zog",
@@ -11478,7 +11910,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.776914,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 433
 	},
 	{
 		"id": "4yawTIYOimo",
@@ -11495,7 +11928,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.5948439,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 434
 	},
 	{
 		"id": "8ESdn0MuJWQ",
@@ -11514,7 +11948,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8868923,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 435
 	},
 	{
 		"id": "EAc4zHEDd7o",
@@ -11533,7 +11968,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8768516,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 436
 	},
 	{
 		"id": "dvf--10EYXw",
@@ -11746,7 +12182,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.8685193,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 437
 	},
 	{
 		"id": "dLhFDYQHDQY",
@@ -11765,7 +12202,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.881728,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 438
 	},
 	{
 		"id": "pwfdTndbNfA",
@@ -11782,7 +12220,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.512742,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 439
 	},
 	{
 		"id": "yVA-xTBeHyM",
@@ -11799,7 +12238,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.731482,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 440
 	},
 	{
 		"id": "kTHNpusq654",
@@ -11851,7 +12291,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.879355,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 441
 	},
 	{
 		"id": "JOrpPN3yqmg",
@@ -11868,7 +12309,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.4565141,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 442
 	},
 	{
 		"id": "T6j4f8cHBIM",
@@ -11887,7 +12329,8 @@ var data = [
 			"DE"
 		],
 		"rating": 2.302653,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 443
 	},
 	{
 		"id": "1Uw6ZkbsAH8",
@@ -11906,7 +12349,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.69761,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 444
 	},
 	{
 		"id": "uu_zwdmz0hE",
@@ -12167,7 +12611,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.825055,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 445
 	},
 	{
 		"id": "ZEInlYjVFzk",
@@ -12186,7 +12631,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.821928,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 446
 	},
 	{
 		"id": "2WNrx2jq184",
@@ -12203,7 +12649,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8858485,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 447
 	},
 	{
 		"id": "JI-5kh_4gO0",
@@ -12220,7 +12667,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.1458514,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 448
 	},
 	{
 		"id": "5anLPw0Efmo",
@@ -12239,7 +12687,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9582653,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 449
 	},
 	{
 		"id": "0Bmhjf0rKe8",
@@ -12256,7 +12705,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9434595,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 450
 	},
 	{
 		"id": "w55Nib4uf1U",
@@ -12273,7 +12723,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.868528,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 451
 	},
 	{
 		"id": "gBEHFFnV3RY",
@@ -12290,7 +12741,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.489139,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 452
 	},
 	{
 		"id": "NRdHsuuXxfk",
@@ -12309,7 +12761,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8755517,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 453
 	},
 	{
 		"id": "QeWBS0JBNzQ",
@@ -12328,7 +12781,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.506172,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 454
 	},
 	{
 		"id": "KRAMNWzfjcg",
@@ -12347,7 +12801,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8899155,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 455
 	},
 	{
 		"id": "udxZ9zkDzpo",
@@ -12366,7 +12821,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8497148,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 456
 	},
 	{
 		"id": "7oBQnIumBRY",
@@ -12383,7 +12839,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8654165,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 457
 	},
 	{
 		"id": "daG5ngFZKzs",
@@ -12402,7 +12859,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.182087,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 458
 	},
 	{
 		"id": "-rYOPBoqElM",
@@ -12419,7 +12877,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.251919,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 459
 	},
 	{
 		"id": "WpYeekQkAdc",
@@ -12438,7 +12897,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9443545,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 460
 	},
 	{
 		"id": "6pA_Tou-DPI",
@@ -12455,7 +12915,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.40365,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 461
 	},
 	{
 		"id": "7NJqUN9TClM",
@@ -12474,7 +12935,8 @@ var data = [
 			"DE"
 		],
 		"rating": -1,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 462
 	},
 	{
 		"id": "zuwXxNNQXrs",
@@ -12491,7 +12953,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.219625,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 463
 	},
 	{
 		"id": "lzsBwnv_dAg",
@@ -12508,7 +12971,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.4392242,
-		"category": "Wissenschaft & Technik"
+		"category": "Wissenschaft & Technik",
+		"rank": 464
 	},
 	{
 		"id": "w9TGj2jrJk8",
@@ -12525,7 +12989,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9360337,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 465
 	},
 	{
 		"id": "fzb75m8NuMQ",
@@ -12561,7 +13026,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8834667,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 466
 	},
 	{
 		"id": "1rh3_r0nbKs",
@@ -12599,7 +13065,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.7873516,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 467
 	},
 	{
 		"id": "koJlIGDImiU",
@@ -12618,7 +13085,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.927699,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 468
 	},
 	{
 		"id": "pqky5B179nM",
@@ -12637,7 +13105,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5823355,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 469
 	},
 	{
 		"id": "pOf3kYtwASo",
@@ -12656,7 +13125,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.6095047,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 470
 	},
 	{
 		"id": "LVDwipU1l8c",
@@ -12675,7 +13145,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.286386,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 471
 	},
 	{
 		"id": "vdrqA93sW-8",
@@ -12694,7 +13165,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5178237,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 472
 	},
 	{
 		"id": "QtovqcYKW2Y",
@@ -12713,7 +13185,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.85483,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 473
 	},
 	{
 		"id": "w0bSREbiLCI",
@@ -12730,7 +13203,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.6856506,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 474
 	},
 	{
 		"id": "Q5im0Ssyyus",
@@ -12747,7 +13221,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6777306,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 475
 	},
 	{
 		"id": "NN4pZGXAj1U",
@@ -12764,7 +13239,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.5771947,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 476
 	},
 	{
 		"id": "c7tOAGY59uQ",
@@ -12783,7 +13259,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.750225,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 477
 	},
 	{
 		"id": "aCyGvGEtOwc",
@@ -12996,7 +13473,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.899894,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 478
 	},
 	{
 		"id": "FT7MWDoW_rc",
@@ -13015,7 +13493,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7091265,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 479
 	},
 	{
 		"id": "6XbIuSLaCnk",
@@ -13034,7 +13513,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7929487,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 480
 	},
 	{
 		"id": "q3NwJF28wjU",
@@ -13277,7 +13757,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.8197937,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 481
 	},
 	{
 		"id": "1zfzka5VwRc",
@@ -13296,7 +13777,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.915653,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 482
 	},
 	{
 		"id": "Jb2stN7kH28",
@@ -13315,7 +13797,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8854704,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 483
 	},
 	{
 		"id": "IAsjjSkaWVc",
@@ -13334,7 +13817,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5612283,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 484
 	},
 	{
 		"id": "EnfVsoTXjK0",
@@ -13351,7 +13835,8 @@ var data = [
 		"restrictedInDE": 1,
 		"restrictionsAll": [],
 		"rating": 4.6157904,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 485
 	},
 	{
 		"id": "1QP-SIW6iKY",
@@ -13370,7 +13855,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9133153,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 486
 	},
 	{
 		"id": "2ggzxInyzVE",
@@ -13389,7 +13875,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8706613,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 487
 	},
 	{
 		"id": "8bbTtPL1jRs",
@@ -13408,7 +13895,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.764879,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 488
 	},
 	{
 		"id": "xGPeNN9S0Fg",
@@ -13444,7 +13932,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.860916,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 489
 	},
 	{
 		"id": "lpxpHQ9ggUE",
@@ -13463,7 +13952,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8596373,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 490
 	},
 	{
 		"id": "dn28nlMOYfg",
@@ -13482,7 +13972,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7200356,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 491
 	},
 	{
 		"id": "a81eP2E8MEQ",
@@ -13501,7 +13992,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.898084,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 492
 	},
 	{
 		"id": "JWA5hJl4Dv0",
@@ -13520,7 +14012,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9181743,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 493
 	},
 	{
 		"id": "ML8IL77gQ3k",
@@ -13537,7 +14030,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0399547,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 494
 	},
 	{
 		"id": "SBjQ9tuuTJQ",
@@ -13577,7 +14071,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9552126,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 495
 	},
 	{
 		"id": "GvgJEznqtms",
@@ -13596,7 +14091,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8011584,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 496
 	},
 	{
 		"id": "Fbv3S-yC7jg",
@@ -13613,7 +14109,8 @@ var data = [
 		"restrictedInDE": 1,
 		"restrictionsAll": [],
 		"rating": 2.3578193,
-		"category": "Nachrichten & Politik"
+		"category": "Nachrichten & Politik",
+		"rank": 497
 	},
 	{
 		"id": "e-fA-gBCkj0",
@@ -13632,7 +14129,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.899305,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 498
 	},
 	{
 		"id": "RFzyYYZsxGc",
@@ -13649,7 +14147,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.768235,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 499
 	},
 	{
 		"id": "lOcLnVZn1c4",
@@ -13666,7 +14165,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.8545682,
-		"category": "Sport"
+		"category": "Sport",
+		"rank": 500
 	},
 	{
 		"id": "GHLVjriwzFg",
@@ -13685,7 +14185,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8920016,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 501
 	},
 	{
 		"id": "_p9I5ipJFs0",
@@ -13704,7 +14205,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7837877,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 502
 	},
 	{
 		"id": "KDKva-s_khY",
@@ -13723,7 +14225,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.905322,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 503
 	},
 	{
 		"id": "ekFaaEU8Yuw",
@@ -13742,7 +14245,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.713956,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 504
 	},
 	{
 		"id": "J7_k5tUeoUc",
@@ -13759,7 +14263,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8921437,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 505
 	},
 	{
 		"id": "X9YMU0WeBwU",
@@ -13778,7 +14283,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5116386,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 506
 	},
 	{
 		"id": "Xn676-fLq7I",
@@ -13814,7 +14320,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.942929,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 507
 	},
 	{
 		"id": "x6UODla2hqE",
@@ -13833,7 +14340,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7557907,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 508
 	},
 	{
 		"id": "YlUKcNNmywk",
@@ -14027,7 +14535,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9484468,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 509
 	},
 	{
 		"id": "Ri7-vnrJD3k",
@@ -14046,7 +14555,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9403563,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 510
 	},
 	{
 		"id": "LOZuxwVk7TU",
@@ -14082,7 +14592,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.872915,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 511
 	},
 	{
 		"id": "Xyv4Bjja8yc",
@@ -14101,7 +14612,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.80516,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 512
 	},
 	{
 		"id": "TzxwOrT6Beo",
@@ -14120,7 +14632,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9162574,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 513
 	},
 	{
 		"id": "RF0HhrwIwp0",
@@ -14156,7 +14669,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.937917,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 514
 	},
 	{
 		"id": "F57P9C4SAW4",
@@ -14175,7 +14689,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.754893,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 515
 	},
 	{
 		"id": "XXVRrmQxOZ4",
@@ -14192,7 +14707,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.9543188,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 516
 	},
 	{
 		"id": "WC61-umSBhA",
@@ -14209,7 +14725,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 517
 	},
 	{
 		"id": "-zzP29emgpg",
@@ -14228,7 +14745,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.851863,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 518
 	},
 	{
 		"id": "XjVNlG5cZyQ",
@@ -14264,7 +14782,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9195256,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 519
 	},
 	{
 		"id": "ow2JZvqqeXM",
@@ -14281,7 +14800,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.6345818,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 520
 	},
 	{
 		"id": "1yw1Tgj9-VU",
@@ -14494,7 +15014,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9341226,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 521
 	},
 	{
 		"id": "qv9VKKXwVxU",
@@ -14511,7 +15032,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.406787,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 522
 	},
 	{
 		"id": "j7_lSP8Vc3o",
@@ -14530,7 +15052,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7466946,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 523
 	},
 	{
 		"id": "vHJAUuicC0Q",
@@ -14549,7 +15072,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8680215,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 524
 	},
 	{
 		"id": "zn7-fVtT16k",
@@ -14566,7 +15090,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9250727,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 525
 	},
 	{
 		"id": "Vzo-EL_62fQ",
@@ -14602,7 +15127,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9445558,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 526
 	},
 	{
 		"id": "3JV74i4yvcA",
@@ -14621,7 +15147,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.897451,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 527
 	},
 	{
 		"id": "rX372ZwXOEM",
@@ -14640,7 +15167,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.6875854,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 528
 	},
 	{
 		"id": "GemKqzILV4w",
@@ -14659,7 +15187,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.954088,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 529
 	},
 	{
 		"id": "GJzF7H2e3Tw",
@@ -14678,7 +15207,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.895128,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 530
 	},
 	{
 		"id": "XQcVllWpwGs",
@@ -14695,7 +15225,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6860576,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 531
 	},
 	{
 		"id": "BiEEJds8JFE",
@@ -14714,7 +15245,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8821087,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 532
 	},
 	{
 		"id": "GdZn7k5rZLQ",
@@ -14731,7 +15263,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7645555,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 533
 	},
 	{
 		"id": "OAzYPtXGc_U",
@@ -14748,7 +15281,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.086181,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 534
 	},
 	{
 		"id": "1w7OgIMMRc4",
@@ -14767,7 +15301,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9456263,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 535
 	},
 	{
 		"id": "VAzmC0uYKAY",
@@ -14784,7 +15319,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.04237,
-		"category": "Wissenschaft & Technik"
+		"category": "Wissenschaft & Technik",
+		"rank": 536
 	},
 	{
 		"id": "m-jRHI3INyg",
@@ -14803,7 +15339,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.4862943,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 537
 	},
 	{
 		"id": "kYtGl1dX5qI",
@@ -14822,7 +15359,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.4709406,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 538
 	},
 	{
 		"id": "D7K3wFXJFsQ",
@@ -14841,7 +15379,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.59664,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 539
 	},
 	{
 		"id": "TGbwL8kSpEk",
@@ -14860,7 +15399,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.6891584,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 540
 	},
 	{
 		"id": "jZkdcYlOn5M",
@@ -14877,7 +15417,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.881115,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 541
 	},
 	{
 		"id": "ZZNzGGgVXrs",
@@ -14894,7 +15435,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.417566,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 542
 	},
 	{
 		"id": "uaCIXcDtv7w",
@@ -14911,7 +15453,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.474578,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 543
 	},
 	{
 		"id": "E1nbvplgElw",
@@ -14928,7 +15471,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.830531,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 544
 	},
 	{
 		"id": "ViwtNLUqkMY",
@@ -14982,7 +15526,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9111547,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 545
 	},
 	{
 		"id": "i-Vie27Ly8o",
@@ -14999,7 +15544,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.5082035,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 546
 	},
 	{
 		"id": "H9nPf7w7pDI",
@@ -15018,7 +15564,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9002976,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 547
 	},
 	{
 		"id": "w8QH93jWZbk",
@@ -15035,7 +15582,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.879296,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 548
 	},
 	{
 		"id": "76RbWuFll0Y",
@@ -15055,7 +15603,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7478585,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 549
 	},
 	{
 		"id": "9dcVOmEQzKA",
@@ -15074,7 +15623,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8283033,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 550
 	},
 	{
 		"id": "PJkZo-kS6wk",
@@ -15093,7 +15643,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7595835,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 551
 	},
 	{
 		"id": "ekAXPCphKXQ",
@@ -15306,7 +15857,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.833016,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 552
 	},
 	{
 		"id": "TOrnUquxtwA",
@@ -15342,7 +15894,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9366536,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 553
 	},
 	{
 		"id": "XV7DOBFj-KI",
@@ -15361,7 +15914,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.862866,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 554
 	},
 	{
 		"id": "nxKtovhnrqc",
@@ -15378,7 +15932,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7485757,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 555
 	},
 	{
 		"id": "BXpdmKELE1k",
@@ -15433,7 +15988,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.923554,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 556
 	},
 	{
 		"id": "9b8erWuBA44",
@@ -15452,7 +16008,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8494005,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 557
 	},
 	{
 		"id": "k10XQpOx050",
@@ -15469,7 +16026,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.3432906,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 558
 	},
 	{
 		"id": "YGaOkZqJABA",
@@ -15486,7 +16044,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.1525636,
-		"category": "Praktische Tipps & Styling"
+		"category": "Praktische Tipps & Styling",
+		"rank": 559
 	},
 	{
 		"id": "qqXi8WmQ_WM",
@@ -15503,7 +16062,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7325654,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 560
 	},
 	{
 		"id": "ZwgsIK50pUc",
@@ -15520,7 +16080,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.9945475,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 561
 	},
 	{
 		"id": "xftFxCYQTdk",
@@ -15575,7 +16136,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.925666,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 562
 	},
 	{
 		"id": "S9bCLPwzSC0",
@@ -15594,7 +16156,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9528327,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 563
 	},
 	{
 		"id": "fJ9rUzIMcZQ",
@@ -15611,7 +16174,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9253883,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 564
 	},
 	{
 		"id": "d19eBjpP2Aw",
@@ -15628,7 +16192,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.914589,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 565
 	},
 	{
 		"id": "KagvExF-ijc",
@@ -15664,7 +16229,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9099765,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 566
 	},
 	{
 		"id": "vIaH35-MLsk",
@@ -15683,7 +16249,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9033113,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 567
 	},
 	{
 		"id": "-oCCnxBos10",
@@ -15702,7 +16269,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9065104,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 568
 	},
 	{
 		"id": "4fndeDfaWCg",
@@ -15738,7 +16306,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.898333,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 569
 	},
 	{
 		"id": "qFjP-OJ7Bh4",
@@ -15755,7 +16324,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.508496,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 570
 	},
 	{
 		"id": "hemZMthSYeU",
@@ -15772,7 +16342,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.156522,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 571
 	},
 	{
 		"id": "0put0_a--Ng",
@@ -15791,7 +16362,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.924754,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 572
 	},
 	{
 		"id": "ErMWX--UJZ4",
@@ -15808,7 +16380,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9067917,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 573
 	},
 	{
 		"id": "IxszlJppRQI",
@@ -15827,7 +16400,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9380984,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 574
 	},
 	{
 		"id": "RSdKmX2BH7o",
@@ -15846,7 +16420,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8822246,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 575
 	},
 	{
 		"id": "cDMhlvbOFaM",
@@ -15865,7 +16440,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.925932,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 576
 	},
 	{
 		"id": "RQa7SvVCdZk",
@@ -15886,7 +16462,8 @@ var data = [
 			"NZ"
 		],
 		"rating": 4.909322,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 577
 	},
 	{
 		"id": "nEqwKNNQBwc",
@@ -15903,7 +16480,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.7799013,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 578
 	},
 	{
 		"id": "AAbokV76tkU",
@@ -15922,7 +16500,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.795713,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 579
 	},
 	{
 		"id": "uM7nlIsBLoc",
@@ -15939,7 +16518,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.544576,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 580
 	},
 	{
 		"id": "a2RA0vsZXf8",
@@ -15956,7 +16536,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.958632,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 581
 	},
 	{
 		"id": "8dwR-F79MjU",
@@ -15978,7 +16559,8 @@ var data = [
 			"JE"
 		],
 		"rating": 4.695798,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 582
 	},
 	{
 		"id": "aemXgP-2xyg",
@@ -15995,7 +16577,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.665661,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 583
 	},
 	{
 		"id": "cl88QEll-Xc",
@@ -16012,7 +16595,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9481087,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 584
 	},
 	{
 		"id": "2lTB1pIg1y0",
@@ -16031,7 +16615,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7102876,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 585
 	},
 	{
 		"id": "Wws7mnMewPw",
@@ -16050,7 +16635,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8245225,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 586
 	},
 	{
 		"id": "l7VsurR48Ew",
@@ -16067,7 +16653,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.438235,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 587
 	},
 	{
 		"id": "gyFhf2m55is",
@@ -16084,7 +16671,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.967126,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 588
 	},
 	{
 		"id": "00gxHBkKPd8",
@@ -16101,7 +16689,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.8639033,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 589
 	},
 	{
 		"id": "ZSM3w1v-A_Y",
@@ -16120,7 +16709,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.951127,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 590
 	},
 	{
 		"id": "xat1GVnl8-k",
@@ -16139,7 +16729,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.88711,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 591
 	},
 	{
 		"id": "r6TwzSGYycM",
@@ -16158,7 +16749,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7771554,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 592
 	},
 	{
 		"id": "gnhXHvRoUd0",
@@ -16194,7 +16786,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.950551,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 593
 	},
 	{
 		"id": "JlxByc0-V40",
@@ -16230,7 +16823,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8683653,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 594
 	},
 	{
 		"id": "-J7J_IWUhls",
@@ -16443,7 +17037,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9463887,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 595
 	},
 	{
 		"id": "qtRsxX2gv4M",
@@ -16460,7 +17055,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.5370712,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 596
 	},
 	{
 		"id": "dQw4w9WgXcQ",
@@ -16498,7 +17094,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.738515,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 597
 	},
 	{
 		"id": "LYhrYHmUPn0",
@@ -16515,7 +17112,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9054775,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 598
 	},
 	{
 		"id": "0LEYwoooVfw",
@@ -16532,7 +17130,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0940604,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 599
 	},
 	{
 		"id": "8PQgYpnhDIw",
@@ -16551,7 +17150,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.870566,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 600
 	},
 	{
 		"id": "AsBsBU3vn6M",
@@ -16570,7 +17170,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8558793,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 601
 	},
 	{
 		"id": "nWOfkDUYZT4",
@@ -16587,7 +17188,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.7861774,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 602
 	},
 	{
 		"id": "IXdNnw99-Ic",
@@ -16832,7 +17434,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.8834295,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 603
 	},
 	{
 		"id": "M7CdTAiaLes",
@@ -16851,7 +17454,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9335046,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 604
 	},
 	{
 		"id": "2up_Eq6r6Ko",
@@ -16887,7 +17491,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.834654,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 605
 	},
 	{
 		"id": "Pb-K2tXWK4w",
@@ -16906,7 +17511,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8780885,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 606
 	},
 	{
 		"id": "_lrYPuyoalE",
@@ -16925,7 +17531,8 @@ var data = [
 			"JP"
 		],
 		"rating": 4.2527943,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 607
 	},
 	{
 		"id": "Ro7yHf_pU14",
@@ -16944,7 +17551,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.917361,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 608
 	},
 	{
 		"id": "7xzU9Qqdqww",
@@ -16963,7 +17571,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8921285,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 609
 	},
 	{
 		"id": "1AJmKkU5POA",
@@ -17234,7 +17843,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.877205,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 610
 	},
 	{
 		"id": "lj3iNxZ8Dww",
@@ -17251,7 +17861,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6742954,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 611
 	},
 	{
 		"id": "6dNryy5elc8",
@@ -17268,7 +17879,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6899557,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 612
 	},
 	{
 		"id": "mVEG793G3N4",
@@ -17287,7 +17899,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.782626,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 613
 	},
 	{
 		"id": "7N5OhNplEd4",
@@ -17304,7 +17917,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.717972,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 614
 	},
 	{
 		"id": "t99ULJjCsaM",
@@ -17321,7 +17935,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.991736,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 615
 	},
 	{
 		"id": "dsUXAEzaC3Q",
@@ -17357,7 +17972,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8983665,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 616
 	},
 	{
 		"id": "dGghkjpNCQ8",
@@ -17410,7 +18026,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9350433,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 617
 	},
 	{
 		"id": "saF3-f0XWAY",
@@ -17427,7 +18044,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.7481375,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 618
 	},
 	{
 		"id": "T2NEU6Xf7lM",
@@ -17444,7 +18062,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.894333,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 619
 	},
 	{
 		"id": "AgE-Z1Rua_I",
@@ -17461,7 +18080,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.1486034,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 620
 	},
 	{
 		"id": "ZM0RKmuUBD8",
@@ -17478,7 +18098,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.4652653,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 621
 	},
 	{
 		"id": "4r7wHMg5Yjg",
@@ -17495,7 +18116,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.90796,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 622
 	},
 	{
 		"id": "-lLvtydTM78",
@@ -17512,7 +18134,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.922973,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 623
 	},
 	{
 		"id": "_ovdm2yX4MA",
@@ -17531,7 +18154,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.922993,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 624
 	},
 	{
 		"id": "oGHN3qsuons",
@@ -17548,7 +18172,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.6160245,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 625
 	},
 	{
 		"id": "JqHliQijgvA",
@@ -17567,7 +18192,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7364254,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 626
 	},
 	{
 		"id": "qSxyffSB7wA",
@@ -17603,7 +18229,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9649606,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 627
 	},
 	{
 		"id": "DQGxqTOgT58",
@@ -17620,7 +18247,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.38371,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 628
 	},
 	{
 		"id": "R55e-uHQna0",
@@ -17637,7 +18265,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9321074,
-		"category": "Autos & Fahrzeuge"
+		"category": "Autos & Fahrzeuge",
+		"rank": 629
 	},
 	{
 		"id": "nJ3ZM8FDBlg",
@@ -17673,7 +18302,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9446054,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 630
 	},
 	{
 		"id": "UcTLJ692F70",
@@ -17690,7 +18320,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9188137,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 631
 	},
 	{
 		"id": "lm_n3hg-Gbg",
@@ -17707,7 +18338,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.9794717,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 632
 	},
 	{
 		"id": "D1Xr-JFLxik",
@@ -17726,7 +18358,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.928978,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 633
 	},
 	{
 		"id": "s1XozsBN5Z4",
@@ -17745,7 +18378,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.846337,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 634
 	},
 	{
 		"id": "dCFs-0B5X2E",
@@ -17762,7 +18396,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.53745,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 635
 	},
 	{
 		"id": "QR_qa3Ohwls",
@@ -17798,7 +18433,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.6500382,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 636
 	},
 	{
 		"id": "ynMk2EwRi4Q",
@@ -17817,7 +18453,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.937359,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 637
 	},
 	{
 		"id": "K2cYWfq--Nw",
@@ -17836,7 +18473,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8569756,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 638
 	},
 	{
 		"id": "lJwgP44Ap9E",
@@ -17863,7 +18501,8 @@ var data = [
 			"TF"
 		],
 		"rating": 4.7332826,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 639
 	},
 	{
 		"id": "xG0wi1m-89o",
@@ -17880,7 +18519,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.858601,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 640
 	},
 	{
 		"id": "NWdrO4BoCu8",
@@ -17899,7 +18539,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9476523,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 641
 	},
 	{
 		"id": "BoEKWtgJQAU",
@@ -17918,7 +18559,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5017753,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 642
 	},
 	{
 		"id": "KGABwm9lCIc",
@@ -17935,7 +18577,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.455275,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 643
 	},
 	{
 		"id": "BJ-CmHZrKHU",
@@ -17954,7 +18597,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.49349,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 644
 	},
 	{
 		"id": "N9hazmsUxrM",
@@ -18005,7 +18649,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8355007,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 645
 	},
 	{
 		"id": "gGdGFtwCNBE",
@@ -18024,7 +18669,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.946626,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 646
 	},
 	{
 		"id": "XSbZidsgMfw",
@@ -18041,7 +18687,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.397891,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 647
 	},
 	{
 		"id": "beGjncfEPt8",
@@ -18060,7 +18707,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.836045,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 648
 	},
 	{
 		"id": "3fumBcKC6RE",
@@ -18079,7 +18727,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5991955,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 649
 	},
 	{
 		"id": "KuVAeTHqijk",
@@ -18098,7 +18747,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9144125,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 650
 	},
 	{
 		"id": "W_cGo0q7krk",
@@ -18115,7 +18765,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.4482794,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 651
 	},
 	{
 		"id": "-ZBoPlCzuRY",
@@ -18134,7 +18785,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.752171,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 652
 	},
 	{
 		"id": "cB5e0zHRzHc",
@@ -18170,7 +18822,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.930238,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 653
 	},
 	{
 		"id": "KyXW64L-XZA",
@@ -18189,7 +18842,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.2908506,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 654
 	},
 	{
 		"id": "-K_8R03jIZI",
@@ -18206,7 +18860,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.3652487,
-		"category": "Reisen & Events"
+		"category": "Reisen & Events",
+		"rank": 655
 	},
 	{
 		"id": "4N3N1MlvVc4",
@@ -18223,7 +18878,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9448,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 656
 	},
 	{
 		"id": "Vo0Cazxj_yc",
@@ -18240,7 +18896,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9489117,
-		"category": "Sport"
+		"category": "Sport",
+		"rank": 657
 	},
 	{
 		"id": "63eQ2avGEv4",
@@ -18257,7 +18914,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.9112375,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 658
 	},
 	{
 		"id": "rNM5HW13_O8",
@@ -18293,7 +18951,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8407073,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 659
 	},
 	{
 		"id": "qrOeGCJdZe4",
@@ -18337,7 +18996,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.945106,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 660
 	},
 	{
 		"id": "e1WYd732SeI",
@@ -18358,7 +19018,8 @@ var data = [
 			"RU"
 		],
 		"rating": 4.8086863,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 661
 	},
 	{
 		"id": "H6IeASZZf1c",
@@ -18375,7 +19036,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7967377,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 662
 	},
 	{
 		"id": "pIOOwhmkoLo",
@@ -18394,7 +19056,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8768764,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 663
 	},
 	{
 		"id": "P3CxhBIrBho",
@@ -18413,7 +19076,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.83683,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 664
 	},
 	{
 		"id": "sAYuOc7_TKg",
@@ -18432,7 +19096,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.944689,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 665
 	},
 	{
 		"id": "Loj5C1GVQBw",
@@ -18449,7 +19114,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.3771195,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 666
 	},
 	{
 		"id": "2EwViQxSJJQ",
@@ -18485,7 +19151,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9271626,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 667
 	},
 	{
 		"id": "X3HlFewKByw",
@@ -18506,7 +19173,8 @@ var data = [
 			"RU"
 		],
 		"rating": 4.0913095,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 668
 	},
 	{
 		"id": "u6hAgaP066k",
@@ -18523,7 +19191,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.552896,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 669
 	},
 	{
 		"id": "k2rDbRUDkds",
@@ -18540,7 +19209,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.932501,
-		"category": "Spiele"
+		"category": "Spiele",
+		"rank": 670
 	},
 	{
 		"id": "3yl-5FOZcr0",
@@ -18576,7 +19246,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9188623,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 671
 	},
 	{
 		"id": "QQrWTQBZPo4",
@@ -18593,7 +19264,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8516564,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 672
 	},
 	{
 		"id": "ww8FN2ZEYSs",
@@ -18610,7 +19282,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.881649,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 673
 	},
 	{
 		"id": "ngH0fkiNo-g",
@@ -18629,7 +19302,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.929131,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 674
 	},
 	{
 		"id": "pSFyrrhKj1Q",
@@ -18648,7 +19322,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.651408,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 675
 	},
 	{
 		"id": "eq9n1WJPhF4",
@@ -18665,7 +19340,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Wissenschaft & Technik"
+		"category": "Wissenschaft & Technik",
+		"rank": 676
 	},
 	{
 		"id": "3YxaaGgTQYM",
@@ -18684,7 +19360,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.953634,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 677
 	},
 	{
 		"id": "yKWoPlL2B8I",
@@ -18701,7 +19378,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.917024,
-		"category": "Sport"
+		"category": "Sport",
+		"rank": 678
 	},
 	{
 		"id": "dyMXYE_50Ts",
@@ -18718,7 +19396,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.354504,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 679
 	},
 	{
 		"id": "pn1VGytzXus",
@@ -18737,7 +19416,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.47002,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 680
 	},
 	{
 		"id": "f9573kGBtuE",
@@ -18754,7 +19434,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8175893,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 681
 	},
 	{
 		"id": "tNRAuzj2ImA",
@@ -18773,7 +19454,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8357277,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 682
 	},
 	{
 		"id": "Rfc6rh0Sm0I",
@@ -18797,7 +19479,8 @@ var data = [
 			"RE"
 		],
 		"rating": 4.6524267,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 683
 	},
 	{
 		"id": "SFu2DfPDGeU",
@@ -18814,7 +19497,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.744839,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 684
 	},
 	{
 		"id": "6VSaExP2anI",
@@ -18831,7 +19515,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.0669603,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 685
 	},
 	{
 		"id": "EbJtYqBYCV8",
@@ -18850,7 +19535,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8599467,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 686
 	},
 	{
 		"id": "9O_Bnr5oiwM",
@@ -18867,7 +19553,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 687
 	},
 	{
 		"id": "lDK9QqIzhwk",
@@ -18886,7 +19573,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9474516,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 688
 	},
 	{
 		"id": "HzZ_urpj4As",
@@ -18922,7 +19610,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9210887,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 689
 	},
 	{
 		"id": "cR2XilcGYOo",
@@ -18939,7 +19628,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.823944,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 690
 	},
 	{
 		"id": "RP4abiHdQpc",
@@ -18956,7 +19646,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.919343,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 691
 	},
 	{
 		"id": "2ZCUtnuAXg8",
@@ -18975,7 +19666,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.1240716,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 692
 	},
 	{
 		"id": "5EVhiBGvVFc",
@@ -18992,7 +19684,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.5198994,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 693
 	},
 	{
 		"id": "mXvmSaE0JXA",
@@ -19028,7 +19721,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.471182,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 694
 	},
 	{
 		"id": "EzgGTTtR0kc",
@@ -19045,7 +19739,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.892491,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 695
 	},
 	{
 		"id": "lbvY6KyY5-0",
@@ -19062,7 +19757,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.3373675,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 696
 	},
 	{
 		"id": "Rmp6zIr5y4U",
@@ -19081,7 +19777,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.899605,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 697
 	},
 	{
 		"id": "t5XNWFw5HVw",
@@ -19117,7 +19814,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8869643,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 698
 	},
 	{
 		"id": "hMnk7lh9M3o",
@@ -19136,7 +19834,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8295207,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 699
 	},
 	{
 		"id": "yXQViqx6GMY",
@@ -19172,7 +19871,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.907208,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 700
 	},
 	{
 		"id": "wwCykGDEp7M",
@@ -19211,7 +19911,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.955499,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 701
 	},
 	{
 		"id": "z3U0udLH974",
@@ -19228,7 +19929,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8918657,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 702
 	},
 	{
 		"id": "K0xb5e29fpc",
@@ -19245,7 +19947,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 703
 	},
 	{
 		"id": "UxoxAKadqgg",
@@ -19280,7 +19983,8 @@ var data = [
 			"ZR"
 		],
 		"rating": -1,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 704
 	},
 	{
 		"id": "zQV_WcltnsA",
@@ -19297,7 +20001,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Reisen & Events"
+		"category": "Reisen & Events",
+		"rank": 705
 	},
 	{
 		"id": "fV4DiAyExN0",
@@ -19316,7 +20021,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9519973,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 706
 	},
 	{
 		"id": "0jgrCKhxE1s",
@@ -19341,7 +20047,8 @@ var data = [
 			"VI"
 		],
 		"rating": 4.8133845,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 707
 	},
 	{
 		"id": "9BMwcO6_hyA",
@@ -19360,7 +20067,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9466786,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 708
 	},
 	{
 		"id": "wFh-rX_Sfhs",
@@ -19377,7 +20085,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.75943,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 709
 	},
 	{
 		"id": "ryPovlX6Fbg",
@@ -19394,7 +20103,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7888794,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 710
 	},
 	{
 		"id": "tZmDWltBziM",
@@ -19411,7 +20121,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7245593,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 711
 	},
 	{
 		"id": "CCx34OQSpqU",
@@ -19428,7 +20139,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.5677297,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 712
 	},
 	{
 		"id": "u6mlOFLxUmo",
@@ -19445,7 +20157,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.3747249,
-		"category": "Reisen & Events"
+		"category": "Reisen & Events",
+		"rank": 713
 	},
 	{
 		"id": "2J2dwFVZHsY",
@@ -19464,7 +20177,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8759,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 714
 	},
 	{
 		"id": "SScZfkkMC8Q",
@@ -19481,7 +20195,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0087276,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 715
 	},
 	{
 		"id": "dX_1B0w7Hzc",
@@ -19498,7 +20213,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.890158,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 716
 	},
 	{
 		"id": "8c2ahBlTPz0",
@@ -19517,7 +20233,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.689724,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 717
 	},
 	{
 		"id": "kiaLOzP1lCA",
@@ -19534,7 +20251,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.8956923,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 718
 	},
 	{
 		"id": "-fCraMMQqx4",
@@ -19553,7 +20271,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9164557,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 719
 	},
 	{
 		"id": "nWAGLkyxQG0",
@@ -19572,7 +20291,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8794527,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 720
 	},
 	{
 		"id": "SmVAWKfJ4Go",
@@ -19589,7 +20309,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9520645,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 721
 	},
 	{
 		"id": "j4y-RzVGrHg",
@@ -19802,7 +20523,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.930406,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 722
 	},
 	{
 		"id": "d8ekz_CSBVg",
@@ -19838,7 +20560,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9541335,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 723
 	},
 	{
 		"id": "YjVKYzy4ek8",
@@ -19855,7 +20578,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.7885067,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 724
 	},
 	{
 		"id": "LCH1AsUydSc",
@@ -19908,7 +20632,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.906148,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 725
 	},
 	{
 		"id": "JDOCpKyKnYM",
@@ -19927,7 +20652,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.776523,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 726
 	},
 	{
 		"id": "28iW_O5qWfU",
@@ -19944,7 +20670,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.3987293,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 727
 	},
 	{
 		"id": "UAWcs5H-qgQ",
@@ -19963,7 +20690,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9412446,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 728
 	},
 	{
 		"id": "NiXbRBS5Z58",
@@ -19982,7 +20710,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8284645,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 729
 	},
 	{
 		"id": "JpBGRA6HHtY",
@@ -19999,7 +20728,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.5697985,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 730
 	},
 	{
 		"id": "MytfhzcSF-Y",
@@ -20016,7 +20746,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.906089,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 731
 	},
 	{
 		"id": "0xHnvPemGz0",
@@ -20033,7 +20764,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6574926,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 732
 	},
 	{
 		"id": "VNfFTuIk-dQ",
@@ -20055,7 +20787,8 @@ var data = [
 			"VA"
 		],
 		"rating": 4.812206,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 733
 	},
 	{
 		"id": "_HKH7Emy1SY",
@@ -20091,7 +20824,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.938294,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 734
 	},
 	{
 		"id": "_RRyniZG0Jo",
@@ -20127,7 +20861,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.7133803,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 735
 	},
 	{
 		"id": "E1mU6h4Xdxc",
@@ -20146,7 +20881,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.841688,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 736
 	},
 	{
 		"id": "Y5ylcr8echA",
@@ -20163,7 +20899,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.634947,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 737
 	},
 	{
 		"id": "qQkBeOisNM0",
@@ -20182,7 +20919,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.922116,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 738
 	},
 	{
 		"id": "6Zx39v3JUUI",
@@ -20199,7 +20937,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.717599,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 739
 	},
 	{
 		"id": "HO1OV5B_JDw",
@@ -20216,7 +20955,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8393645,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 740
 	},
 	{
 		"id": "GMuZdN84PJg",
@@ -20233,7 +20973,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.738794,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 741
 	},
 	{
 		"id": "gkN5e8d_r8o",
@@ -20250,7 +20991,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.1561182,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 742
 	},
 	{
 		"id": "kVpv8-5XWOI",
@@ -20286,7 +21028,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.908731,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 743
 	},
 	{
 		"id": "oRdxUFDoQe0",
@@ -20326,7 +21069,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.877502,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 744
 	},
 	{
 		"id": "ZYAFoso0CLk",
@@ -20343,7 +21087,8 @@ var data = [
 		"restrictedInDE": 1,
 		"restrictionsAll": [],
 		"rating": 4.773809,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 745
 	},
 	{
 		"id": "kVLgrmGBFM0",
@@ -20360,7 +21105,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.159752,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 746
 	},
 	{
 		"id": "QZmkU5Pg1sw",
@@ -20379,7 +21125,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.766523,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 747
 	},
 	{
 		"id": "F2AitTPI5U0",
@@ -20415,7 +21162,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.920903,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 748
 	},
 	{
 		"id": "jzy2dgEUOhY",
@@ -20453,7 +21201,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.873314,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 749
 	},
 	{
 		"id": "IytNBm8WA1c",
@@ -20472,7 +21221,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9135656,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 750
 	},
 	{
 		"id": "Q8Tiz6INF7I",
@@ -20489,7 +21239,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9576015,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 751
 	},
 	{
 		"id": "fbGkxcY7YFU",
@@ -20506,7 +21257,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.6815643,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 752
 	},
 	{
 		"id": "FUAdNwsAvsw",
@@ -20523,7 +21275,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.3056827,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 753
 	},
 	{
 		"id": "Vw4KVoEVcr0",
@@ -20540,7 +21293,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9136896,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 754
 	},
 	{
 		"id": "skhxizRYxps",
@@ -20559,7 +21313,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7549343,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 755
 	},
 	{
 		"id": "cQyGYdRqulQ",
@@ -20578,7 +21333,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.843132,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 756
 	},
 	{
 		"id": "yURRmWtbTbo",
@@ -20614,7 +21370,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.935081,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 757
 	},
 	{
 		"id": "kOGBIbqXwYE",
@@ -20633,7 +21390,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8452573,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 758
 	},
 	{
 		"id": "5NNi4JIwsCo",
@@ -20652,7 +21410,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8553348,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 759
 	},
 	{
 		"id": "z_krRs7vsOI",
@@ -20669,7 +21428,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.5160031,
-		"category": "Praktische Tipps & Styling"
+		"category": "Praktische Tipps & Styling",
+		"rank": 760
 	},
 	{
 		"id": "bxDlC7YV5is",
@@ -20686,7 +21446,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8426237,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 761
 	},
 	{
 		"id": "oobDQ0vdm8M",
@@ -20705,7 +21466,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9164186,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 762
 	},
 	{
 		"id": "v_6KuYtc0Z8",
@@ -20724,7 +21486,8 @@ var data = [
 			"DE"
 		],
 		"rating": 3.5722337,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 763
 	},
 	{
 		"id": "5EjG-1U3wqA",
@@ -20741,7 +21504,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8493977,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 764
 	},
 	{
 		"id": "mgEixhE3Oms",
@@ -20760,7 +21524,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.763167,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 765
 	},
 	{
 		"id": "Gng3sPiJdzA",
@@ -20777,7 +21542,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.512491,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 766
 	},
 	{
 		"id": "F0rwOsAteXM",
@@ -20832,7 +21598,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9243846,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 767
 	},
 	{
 		"id": "60og9gwKh1o",
@@ -20851,7 +21618,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.6999197,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 768
 	},
 	{
 		"id": "zut0ruLWYMg",
@@ -20870,7 +21638,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.568473,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 769
 	},
 	{
 		"id": "tkuoRGig4Cs",
@@ -20887,7 +21656,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.913013,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 770
 	},
 	{
 		"id": "wCF3ywukQYA",
@@ -20904,7 +21674,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6613684,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 771
 	},
 	{
 		"id": "4OVEjCFVCPM",
@@ -20921,7 +21692,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Nachrichten & Politik"
+		"category": "Nachrichten & Politik",
+		"rank": 772
 	},
 	{
 		"id": "VceA2FfMkFk",
@@ -20938,7 +21710,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.781138,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 773
 	},
 	{
 		"id": "jZhQOvvV45w",
@@ -20957,7 +21730,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9562397,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 774
 	},
 	{
 		"id": "vQVeaIHWWck",
@@ -20974,7 +21748,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9265356,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 775
 	},
 	{
 		"id": "cggNqDAtJYU",
@@ -20993,7 +21768,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.336502,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 776
 	},
 	{
 		"id": "uiH4BFTELME",
@@ -21010,7 +21786,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6549273,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 777
 	},
 	{
 		"id": "playnmJB_TI",
@@ -21027,7 +21804,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7658215,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 778
 	},
 	{
 		"id": "dk9Yt1PqQiw",
@@ -21044,7 +21822,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.8829937,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 779
 	},
 	{
 		"id": "knWnMKKEt88",
@@ -21063,7 +21842,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.373118,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 780
 	},
 	{
 		"id": "fyMhvkC3A84",
@@ -21115,7 +21895,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9248714,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 781
 	},
 	{
 		"id": "dLqcS-80_bo",
@@ -21132,7 +21913,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.600473,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 782
 	},
 	{
 		"id": "juqyzgnbspY",
@@ -21151,7 +21933,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.0555115,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 783
 	},
 	{
 		"id": "sS76eS34Y0c",
@@ -21172,7 +21955,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8993335,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 784
 	},
 	{
 		"id": "Lp6W4aK1sbs",
@@ -21225,7 +22009,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.859221,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 785
 	},
 	{
 		"id": "otCpCn0l4Wo",
@@ -21277,7 +22062,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9273534,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 786
 	},
 	{
 		"id": "EzNhaLUT520",
@@ -21294,7 +22080,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.892277,
-		"category": "Nachrichten & Politik"
+		"category": "Nachrichten & Politik",
+		"rank": 787
 	},
 	{
 		"id": "KRzMtlZjXpU",
@@ -21313,7 +22100,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9108415,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 788
 	},
 	{
 		"id": "xQ9G3HfcheE",
@@ -21330,7 +22118,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.2203467,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 789
 	},
 	{
 		"id": "VEL5ABddZ0k",
@@ -21347,7 +22136,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.588499,
-		"category": "Autos & Fahrzeuge"
+		"category": "Autos & Fahrzeuge",
+		"rank": 790
 	},
 	{
 		"id": "fhMlSITt7hU",
@@ -21383,7 +22173,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.937454,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 791
 	},
 	{
 		"id": "1mjlM_RnsVE",
@@ -21596,7 +22387,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9194736,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 792
 	},
 	{
 		"id": "4TshFWSsrn8",
@@ -21613,7 +22405,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.936894,
-		"category": "Autos & Fahrzeuge"
+		"category": "Autos & Fahrzeuge",
+		"rank": 793
 	},
 	{
 		"id": "mqqLoUcLX5I",
@@ -21649,7 +22442,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.772802,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 794
 	},
 	{
 		"id": "Lt2wjJlP2N4",
@@ -21707,7 +22501,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9048233,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 795
 	},
 	{
 		"id": "BuJDaOVz2qY",
@@ -21726,7 +22521,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8801637,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 796
 	},
 	{
 		"id": "8-QToIzw7Fk",
@@ -21743,7 +22539,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.6494975,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 797
 	},
 	{
 		"id": "jLN63bRcY5I",
@@ -21760,7 +22557,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.714573,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 798
 	},
 	{
 		"id": "165VjNKRNdw",
@@ -21777,7 +22575,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.65127,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 799
 	},
 	{
 		"id": "AKEQwvaYI_k",
@@ -21794,7 +22593,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.603302,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 800
 	},
 	{
 		"id": "YHROHJlU_Ng",
@@ -21811,7 +22611,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.627145,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 801
 	},
 	{
 		"id": "Gd9OhYroLN0",
@@ -21830,7 +22631,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.941534,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 802
 	},
 	{
 		"id": "eDuRoPIOBjE",
@@ -21849,7 +22651,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.874212,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 803
 	},
 	{
 		"id": "gS9o1FAszdk",
@@ -21885,7 +22688,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.960039,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 804
 	},
 	{
 		"id": "pAyKJAtDNCw",
@@ -21922,7 +22726,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.942813,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 805
 	},
 	{
 		"id": "9mmF8zOlh_g",
@@ -21939,7 +22744,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.692348,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 806
 	},
 	{
 		"id": "DmeUuoxyt_E",
@@ -22152,7 +22958,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.8117847,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 807
 	},
 	{
 		"id": "Dwimc4cvUmQ",
@@ -22171,7 +22978,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5798364,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 808
 	},
 	{
 		"id": "ocDlOD1Hw9k",
@@ -22190,7 +22998,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9273458,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 809
 	},
 	{
 		"id": "OYpwAtnywTk",
@@ -22207,7 +23016,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.801952,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 810
 	},
 	{
 		"id": "jaCFA86DqCY",
@@ -22224,7 +23034,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.9561483,
-		"category": "Sport"
+		"category": "Sport",
+		"rank": 811
 	},
 	{
 		"id": "0JkSpPZJDkE",
@@ -22241,7 +23052,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.3877964,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 812
 	},
 	{
 		"id": "YWt4wmZ_EMI",
@@ -22260,7 +23072,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.93573,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 813
 	},
 	{
 		"id": "DksSPZTZES0",
@@ -22317,7 +23130,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9274945,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 814
 	},
 	{
 		"id": "8cJiBArztwA",
@@ -22334,7 +23148,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.669741,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 815
 	},
 	{
 		"id": "gFDCHdKbKBY",
@@ -22351,7 +23166,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.553348,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 816
 	},
 	{
 		"id": "gaVtC5A5frA",
@@ -22370,7 +23186,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.910805,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 817
 	},
 	{
 		"id": "nwyjxsOYnys",
@@ -22389,7 +23206,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.858555,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 818
 	},
 	{
 		"id": "clSv4TzbRCs",
@@ -22408,7 +23226,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.781754,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 819
 	},
 	{
 		"id": "K6Rhfv4e0O4",
@@ -22425,7 +23244,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.651968,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 820
 	},
 	{
 		"id": "kXhy7ZsiR50",
@@ -22444,7 +23264,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8905964,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 821
 	},
 	{
 		"id": "A63VwWz1ij0",
@@ -22657,7 +23478,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9215374,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 822
 	},
 	{
 		"id": "cItHOl5LRWg",
@@ -22674,7 +23496,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.306776,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 823
 	},
 	{
 		"id": "2cehkSxOLNA",
@@ -22691,7 +23514,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9269834,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 824
 	},
 	{
 		"id": "7nKBKPcycFE",
@@ -22708,7 +23532,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.6040394,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 825
 	},
 	{
 		"id": "zj2Zf9tlg2Y",
@@ -22725,7 +23550,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9337993,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 826
 	},
 	{
 		"id": "gOfOt76D3MM",
@@ -22747,7 +23573,8 @@ var data = [
 			"US"
 		],
 		"rating": 4.884749,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 827
 	},
 	{
 		"id": "9sTQ0QdkN3Q",
@@ -22783,7 +23610,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9128537,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 828
 	},
 	{
 		"id": "gidumziw4JE",
@@ -22800,7 +23628,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.539584,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 829
 	},
 	{
 		"id": "vabnZ9-ex7o",
@@ -22819,7 +23648,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.947948,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 830
 	},
 	{
 		"id": "XCcplgeQzrU",
@@ -22836,7 +23666,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.5890653,
-		"category": "Wissenschaft & Technik"
+		"category": "Wissenschaft & Technik",
+		"rank": 831
 	},
 	{
 		"id": "axpO86pGHAM",
@@ -22872,7 +23703,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.7609253,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 832
 	},
 	{
 		"id": "po0jY4WvCIc",
@@ -22889,7 +23721,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8617363,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 833
 	},
 	{
 		"id": "BZmE3fUKU5U",
@@ -22906,7 +23739,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.845387,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 834
 	},
 	{
 		"id": "LPgvNlrBfb0",
@@ -22945,7 +23779,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.81655,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 835
 	},
 	{
 		"id": "fGFNmEOntFA",
@@ -22964,7 +23799,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.3730326,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 836
 	},
 	{
 		"id": "AuJrEBtmM1Q",
@@ -22983,7 +23819,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9379086,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 837
 	},
 	{
 		"id": "GllEDACUbNo",
@@ -23002,7 +23839,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9055433,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 838
 	},
 	{
 		"id": "sOinKk71o90",
@@ -23019,7 +23857,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.7359836,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 839
 	},
 	{
 		"id": "Us-TVg40ExM",
@@ -23038,7 +23877,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.962906,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 840
 	},
 	{
 		"id": "9QS0q3mGPGg",
@@ -23055,7 +23895,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.912919,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 841
 	},
 	{
 		"id": "AoaZBuz-_2k",
@@ -23072,7 +23913,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.7032865,
-		"category": "Reisen & Events"
+		"category": "Reisen & Events",
+		"rank": 842
 	},
 	{
 		"id": "cL_qGMfbtAk",
@@ -23089,7 +23931,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8133035,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 843
 	},
 	{
 		"id": "jYa1eI1hpDE",
@@ -23108,7 +23951,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8929057,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 844
 	},
 	{
 		"id": "Oe1fRwgGu5E",
@@ -23128,7 +23972,8 @@ var data = [
 			"VE"
 		],
 		"rating": 4.8338127,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 845
 	},
 	{
 		"id": "vQZDx2gYnbE",
@@ -23145,7 +23990,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.7235343,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 846
 	},
 	{
 		"id": "kK42LZqO0wA",
@@ -23162,7 +24008,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.902781,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 847
 	},
 	{
 		"id": "BkKWApOAG2g",
@@ -23179,7 +24026,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.753763,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 848
 	},
 	{
 		"id": "l3w2MTXBebg",
@@ -23196,7 +24044,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.887291,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 849
 	},
 	{
 		"id": "O2MFducncsg",
@@ -23213,7 +24062,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.5410285,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 850
 	},
 	{
 		"id": "87c3fP7yW2g",
@@ -23230,7 +24080,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.2549372,
-		"category": "Sport"
+		"category": "Sport",
+		"rank": 851
 	},
 	{
 		"id": "eOofWzI3flA",
@@ -23249,7 +24100,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8529277,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 852
 	},
 	{
 		"id": "Vg9eZxpV3VA",
@@ -23266,7 +24118,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.893552,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 853
 	},
 	{
 		"id": "81szj1vpEu8",
@@ -23283,7 +24136,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.885766,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 854
 	},
 	{
 		"id": "w2ypECTEaY4",
@@ -23300,7 +24154,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.912806,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 855
 	},
 	{
 		"id": "26PAgklYYvo",
@@ -23319,7 +24174,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9612966,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 856
 	},
 	{
 		"id": "n4RjJKxsamQ",
@@ -23338,7 +24194,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9555917,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 857
 	},
 	{
 		"id": "IXmF4GbA86E",
@@ -23357,7 +24214,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8853936,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 858
 	},
 	{
 		"id": "3n71KUiWn1I",
@@ -23376,7 +24234,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.78905,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 859
 	},
 	{
 		"id": "s1tAYmMjLdY",
@@ -23395,7 +24254,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.93351,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 860
 	},
 	{
 		"id": "cNkp4QF3we8",
@@ -23412,7 +24272,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8995686,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 861
 	},
 	{
 		"id": "KaVnA88oNTg",
@@ -23429,7 +24290,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.91692,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 862
 	},
 	{
 		"id": "gG_dA32oH44",
@@ -23448,7 +24310,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7321863,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 863
 	},
 	{
 		"id": "Yc5OyXmHD0w",
@@ -23468,7 +24331,8 @@ var data = [
 			"IN"
 		],
 		"rating": 4.888913,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 864
 	},
 	{
 		"id": "CUFsQ5lTo6g",
@@ -23487,7 +24351,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.792504,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 865
 	},
 	{
 		"id": "fY36BMNDqbg",
@@ -23506,7 +24371,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8928266,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 866
 	},
 	{
 		"id": "vcwQ-eNZpTY",
@@ -23523,7 +24389,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.5580244,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 867
 	},
 	{
 		"id": "crrOl0egI00",
@@ -23542,7 +24409,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.88434,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 868
 	},
 	{
 		"id": "kfVsfOSbJY0",
@@ -23559,7 +24427,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.7749116,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 869
 	},
 	{
 		"id": "QzvGKas5RsU",
@@ -23606,7 +24475,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.824602,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 870
 	},
 	{
 		"id": "B9Yc7BMQPH0",
@@ -23625,7 +24495,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8633666,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 871
 	},
 	{
 		"id": "w8KQmps-Sog",
@@ -23838,7 +24709,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9312425,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 872
 	},
 	{
 		"id": "8yvEYKRF5IA",
@@ -23855,7 +24727,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8762636,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 873
 	},
 	{
 		"id": "mgVwv0ZuPhM",
@@ -23872,7 +24745,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.909421,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 874
 	},
 	{
 		"id": "wjRsa77u6OU",
@@ -23889,7 +24763,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.032292,
-		"category": "Praktische Tipps & Styling"
+		"category": "Praktische Tipps & Styling",
+		"rank": 875
 	},
 	{
 		"id": "XmSdTa9kaiQ",
@@ -23908,7 +24783,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9379,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 876
 	},
 	{
 		"id": "eMOIUUS8GWo",
@@ -23927,7 +24803,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.220793,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 877
 	},
 	{
 		"id": "RfYcOYMNuXM",
@@ -23946,7 +24823,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.4471607,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 878
 	},
 	{
 		"id": "bw9CALKOvAI",
@@ -23965,7 +24843,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.4156637,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 879
 	},
 	{
 		"id": "bIEOZCcaXzE",
@@ -23984,7 +24863,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8433704,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 880
 	},
 	{
 		"id": "Ddn4MGaS3N4",
@@ -24001,7 +24881,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.93556,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 881
 	},
 	{
 		"id": "vQbYvjmfbr4",
@@ -24058,7 +24939,8 @@ var data = [
 			"UA"
 		],
 		"rating": 4.7588973,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 882
 	},
 	{
 		"id": "dey9h3J8XHE",
@@ -24075,7 +24957,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.713581,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 883
 	},
 	{
 		"id": "3onO-Panwkk",
@@ -24092,7 +24975,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.871122,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 884
 	},
 	{
 		"id": "XHuaCaWo9S8",
@@ -24109,7 +24993,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0315976,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 885
 	},
 	{
 		"id": "5AWbgkRpYwc",
@@ -24126,7 +25011,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.917224,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 886
 	},
 	{
 		"id": "YUXH2DqVOC8",
@@ -24145,7 +25031,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.744815,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 887
 	},
 	{
 		"id": "vc6vs-l5dkc",
@@ -24164,7 +25051,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.910794,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 888
 	},
 	{
 		"id": "QK8mJJJvaes",
@@ -24183,7 +25071,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8962235,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 889
 	},
 	{
 		"id": "KsxSxF3JKeU",
@@ -24202,7 +25091,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8995714,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 890
 	},
 	{
 		"id": "kHmvkRoEowc",
@@ -24219,7 +25109,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.5488515,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 891
 	},
 	{
 		"id": "I-sH53vXP2A",
@@ -24236,7 +25127,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.931861,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 892
 	},
 	{
 		"id": "tSOSxwEWFA4",
@@ -24255,7 +25147,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.844772,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 893
 	},
 	{
 		"id": "q0S2IpFoBiQ",
@@ -24272,7 +25165,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.3298297,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 894
 	},
 	{
 		"id": "wavpWRK6IX8",
@@ -24291,7 +25185,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8015337,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 895
 	},
 	{
 		"id": "PDZpT5ELSWs",
@@ -24308,7 +25203,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.202832,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 896
 	},
 	{
 		"id": "xTSxYvOaJXc",
@@ -24327,7 +25223,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.5505815,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 897
 	},
 	{
 		"id": "gAYL5H46QnQ",
@@ -24344,7 +25241,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.88199,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 898
 	},
 	{
 		"id": "k6M5C-oKw9k",
@@ -24363,7 +25261,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9321957,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 899
 	},
 	{
 		"id": "q_gfD3nvh-8",
@@ -24382,7 +25281,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.724694,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 900
 	},
 	{
 		"id": "elGZbcpGzdU",
@@ -24399,7 +25299,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9192867,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 901
 	},
 	{
 		"id": "DyGNfbKkMVE",
@@ -24418,7 +25319,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.922383,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 902
 	},
 	{
 		"id": "szKApsnAe2Q",
@@ -24435,7 +25337,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.0021133,
-		"category": "Praktische Tipps & Styling"
+		"category": "Praktische Tipps & Styling",
+		"rank": 903
 	},
 	{
 		"id": "xKCek6_dB0M",
@@ -24454,7 +25357,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9203053,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 904
 	},
 	{
 		"id": "3QC4RvnhYoI",
@@ -24471,7 +25375,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.953012,
-		"category": "Spiele"
+		"category": "Spiele",
+		"rank": 905
 	},
 	{
 		"id": "q0SyUgw98tE",
@@ -24490,7 +25395,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.920706,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 906
 	},
 	{
 		"id": "1-7ABIM2qjU",
@@ -24526,7 +25432,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9235396,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 907
 	},
 	{
 		"id": "Pi7gwX7rjOw",
@@ -24543,7 +25450,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.913828,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 908
 	},
 	{
 		"id": "UyG1FG3H6rY",
@@ -24756,7 +25664,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.897014,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 909
 	},
 	{
 		"id": "zlfKdbWwruY",
@@ -24773,7 +25682,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.932524,
-		"category": "Reisen & Events"
+		"category": "Reisen & Events",
+		"rank": 910
 	},
 	{
 		"id": "v_09wFxoaeQ",
@@ -24792,7 +25702,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8860264,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 911
 	},
 	{
 		"id": "9EHAo6rEuas",
@@ -24811,7 +25722,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9606133,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 912
 	},
 	{
 		"id": "3rgwIp6D3ow",
@@ -24830,7 +25742,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.876227,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 913
 	},
 	{
 		"id": "SwXtaahxjls",
@@ -24849,7 +25762,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.228534,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 914
 	},
 	{
 		"id": "HH0Su8xgtcA",
@@ -24866,7 +25780,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.601283,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 915
 	},
 	{
 		"id": "KewfYKJy8YU",
@@ -25047,7 +25962,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.8516116,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 916
 	},
 	{
 		"id": "X0DeIqJm4vM",
@@ -25064,7 +25980,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9131136,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 917
 	},
 	{
 		"id": "9Ht5RZpzPqw",
@@ -25083,7 +26000,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9017634,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 918
 	},
 	{
 		"id": "3JWTaaS7LdU",
@@ -25120,7 +26038,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9505715,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 919
 	},
 	{
 		"id": "Ra-Om7UMSJc",
@@ -25156,7 +26075,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9611125,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 920
 	},
 	{
 		"id": "F21aifX0lZY",
@@ -25173,7 +26093,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.850325,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 921
 	},
 	{
 		"id": "GchEVSx9XEA",
@@ -25192,7 +26113,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.848173,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 922
 	},
 	{
 		"id": "EsfSuL-VFBw",
@@ -25211,7 +26133,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.948534,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 923
 	},
 	{
 		"id": "018UMWioeW4",
@@ -25228,7 +26151,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9314933,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 924
 	},
 	{
 		"id": "RpFMuBHxGWs",
@@ -25247,7 +26171,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.6836476,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 925
 	},
 	{
 		"id": "azVLl7RavUs",
@@ -25264,7 +26189,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 1.3821385,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 926
 	},
 	{
 		"id": "CeLrlmV9A-s",
@@ -25281,7 +26207,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9199147,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 927
 	},
 	{
 		"id": "qi7Yh16dA0w",
@@ -25317,7 +26244,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.9310675,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 928
 	},
 	{
 		"id": "qHm9MG9xw1o",
@@ -25336,7 +26264,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.965072,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 929
 	},
 	{
 		"id": "HY9uZWCh4go",
@@ -25355,7 +26284,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.587055,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 930
 	},
 	{
 		"id": "i1zuN17t51A",
@@ -25374,7 +26304,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.363554,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 931
 	},
 	{
 		"id": "qjHlgrGsLWQ",
@@ -25393,7 +26324,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.953423,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 932
 	},
 	{
 		"id": "Ox8ht-EVnQA",
@@ -25410,7 +26342,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.9355633,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 933
 	},
 	{
 		"id": "LnL4F_vJV2o",
@@ -25439,7 +26372,8 @@ var data = [
 			"WF"
 		],
 		"rating": 4.8627872,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 934
 	},
 	{
 		"id": "aWWP4xtxXXE",
@@ -25458,7 +26392,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8770475,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 935
 	},
 	{
 		"id": "fm0T7_SGee4",
@@ -25477,7 +26412,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.910611,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 936
 	},
 	{
 		"id": "9CkKuA86Mis",
@@ -25496,7 +26432,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.87238,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 937
 	},
 	{
 		"id": "DEY_zh0Cxh8",
@@ -25513,7 +26450,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.7588034,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 938
 	},
 	{
 		"id": "noLrCDzAp5M",
@@ -25549,7 +26487,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8837605,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 939
 	},
 	{
 		"id": "rrNbLBS1D2Q",
@@ -25566,7 +26505,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.4851823,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 940
 	},
 	{
 		"id": "u0fk6syQ7iY",
@@ -25602,7 +26542,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.8988843,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 941
 	},
 	{
 		"id": "bqpA5Acc8-c",
@@ -25621,7 +26562,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.864467,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 942
 	},
 	{
 		"id": "1cQh1ccqu8M",
@@ -25835,7 +26777,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.9292145,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 943
 	},
 	{
 		"id": "owGykVbfgUE",
@@ -25852,7 +26795,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.922319,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 944
 	},
 	{
 		"id": "GEXqMH8I3_w",
@@ -25869,7 +26813,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.1621094,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 945
 	},
 	{
 		"id": "p5Jw-T4dVss",
@@ -25888,7 +26833,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.411533,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 946
 	},
 	{
 		"id": "D4hAVemuQXY",
@@ -25907,7 +26853,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.944521,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 947
 	},
 	{
 		"id": "rG3U-FrBsVE",
@@ -25924,7 +26871,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.2140763,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 948
 	},
 	{
 		"id": "u4FF6MpcsRw",
@@ -25978,7 +26926,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.887953,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 949
 	},
 	{
 		"id": "njos57IJf-0",
@@ -25995,7 +26944,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.916934,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 950
 	},
 	{
 		"id": "QY7wL78cBTI",
@@ -26012,7 +26962,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.6956928,
-		"category": "Leute & Blogs"
+		"category": "Leute & Blogs",
+		"rank": 951
 	},
 	{
 		"id": "J6ZWlDks0nQ",
@@ -26031,7 +26982,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9027653,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 952
 	},
 	{
 		"id": "mk48xRzuNvA",
@@ -26070,7 +27022,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.938164,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 953
 	},
 	{
 		"id": "miEi3F8s8H8",
@@ -26087,7 +27040,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.9818559,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 954
 	},
 	{
 		"id": "51iquRYKPbs",
@@ -26106,7 +27060,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.844685,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 955
 	},
 	{
 		"id": "6vwNcNOTVzY",
@@ -26125,7 +27080,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8767724,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 956
 	},
 	{
 		"id": "FThuVI_maAs",
@@ -26142,7 +27098,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.8062863,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 957
 	},
 	{
 		"id": "VLPAT3DLtSI",
@@ -26159,7 +27116,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.0501804,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 958
 	},
 	{
 		"id": "_wjFahULCK8",
@@ -26197,7 +27155,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.83718,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 959
 	},
 	{
 		"id": "HjoANsFm3V4",
@@ -26214,7 +27173,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.791183,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 960
 	},
 	{
 		"id": "IqUKHT4fUaA",
@@ -26231,7 +27191,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.861607,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 961
 	},
 	{
 		"id": "KUmZp8pR1uc",
@@ -26250,7 +27211,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8949122,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 962
 	},
 	{
 		"id": "HmQPIBNPFBE",
@@ -26267,7 +27229,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.374208,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 963
 	},
 	{
 		"id": "TdN5GyTl8K0",
@@ -26286,7 +27249,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9628735,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 964
 	},
 	{
 		"id": "tf_gPZSDIxI",
@@ -26305,7 +27269,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.875011,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 965
 	},
 	{
 		"id": "pESsKRCg6pQ",
@@ -26324,7 +27289,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.924213,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 966
 	},
 	{
 		"id": "_z-hEyVQDRA",
@@ -26343,7 +27309,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.878497,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 967
 	},
 	{
 		"id": "4oGUHRXT-wA",
@@ -26362,7 +27329,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.947858,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 968
 	},
 	{
 		"id": "3BBsF7VIQyo",
@@ -26381,7 +27349,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.902117,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 969
 	},
 	{
 		"id": "vRBgZ4aMPio",
@@ -26400,7 +27369,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8507657,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 970
 	},
 	{
 		"id": "AFR7hUpmJv4",
@@ -26417,7 +27387,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.6045313,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 971
 	},
 	{
 		"id": "o3IWTfcks4k",
@@ -26453,7 +27424,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.93399,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 972
 	},
 	{
 		"id": "-WCj7S3Ha68",
@@ -26470,7 +27442,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.1783204,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 973
 	},
 	{
 		"id": "HgzGwKwLmgM",
@@ -26489,7 +27462,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9686055,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 974
 	},
 	{
 		"id": "zyqt2avPkoA",
@@ -26508,7 +27482,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9005985,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 975
 	},
 	{
 		"id": "uwIGZLjugKA",
@@ -26527,7 +27502,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.817484,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 976
 	},
 	{
 		"id": "eiuHdUkuRi0",
@@ -26546,7 +27522,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.7730846,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 977
 	},
 	{
 		"id": "tZWr8X2OziU",
@@ -26565,7 +27542,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9112,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 978
 	},
 	{
 		"id": "5qF_qbaWt3Q",
@@ -26584,7 +27562,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.87554,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 979
 	},
 	{
 		"id": "_ZSbC09qgLI",
@@ -26601,7 +27580,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.26096,
-		"category": "Tiere"
+		"category": "Tiere",
+		"rank": 980
 	},
 	{
 		"id": "UDApZhXTpH8",
@@ -26620,7 +27600,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8686686,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 981
 	},
 	{
 		"id": "Zc-XlVLHJDo",
@@ -26637,7 +27618,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.216313,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 982
 	},
 	{
 		"id": "ZoG5jJ3E8rg",
@@ -26850,7 +27832,8 @@ var data = [
 			"ZW"
 		],
 		"rating": 4.837661,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 983
 	},
 	{
 		"id": "y7ZEVA5dy-Y",
@@ -26869,7 +27852,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9194508,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 984
 	},
 	{
 		"id": "p2qLTsYr39c",
@@ -26886,7 +27870,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.813269,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 985
 	},
 	{
 		"id": "h3S4dBk4E1g",
@@ -26905,7 +27890,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.8352904,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 986
 	},
 	{
 		"id": "vMxwPgzF4ME",
@@ -26922,7 +27908,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.623896,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 987
 	},
 	{
 		"id": "L_fCqg92qks",
@@ -26941,7 +27928,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.845231,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 988
 	},
 	{
 		"id": "iNzrwh2Z2hQ",
@@ -26960,7 +27948,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.9283595,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 989
 	},
 	{
 		"id": "rJYcmq__nDM",
@@ -26979,7 +27968,8 @@ var data = [
 			"DE"
 		],
 		"rating": 4.916738,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 990
 	},
 	{
 		"id": "-MtBaFKa_F4",
@@ -26996,7 +27986,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.8864539,
-		"category": "Shows"
+		"category": "Shows",
+		"rank": 991
 	},
 	{
 		"id": "Q3xeDFOo1BM",
@@ -27013,7 +28004,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": -1,
-		"category": "Bildung"
+		"category": "Bildung",
+		"rank": 992
 	},
 	{
 		"id": "u9emjalsOsE",
@@ -27030,7 +28022,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.849548,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 993
 	},
 	{
 		"id": "GT2ZD0q3wU4",
@@ -27047,7 +28040,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 2.2988753,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 994
 	},
 	{
 		"id": "N9oxmRT2YWw",
@@ -27064,7 +28058,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.927906,
-		"category": "Komödie"
+		"category": "Komödie",
+		"rank": 995
 	},
 	{
 		"id": "xfeys7Jfnx8",
@@ -27081,7 +28076,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9407616,
-		"category": "Unterhaltung"
+		"category": "Unterhaltung",
+		"rank": 996
 	},
 	{
 		"id": "xdCrZfTkG1c",
@@ -27098,7 +28094,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.9084945,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 997
 	},
 	{
 		"id": "-ScjucUV8v0",
@@ -27137,7 +28134,8 @@ var data = [
 			"ZR"
 		],
 		"rating": 4.918029,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 998
 	},
 	{
 		"id": "JOMvHetRyEM",
@@ -27154,7 +28152,8 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 3.0201313,
-		"category": "Film & Animation"
+		"category": "Film & Animation",
+		"rank": 999
 	},
 	{
 		"id": "tIdIqbv7SPo",
@@ -27171,6 +28170,7 @@ var data = [
 		"restrictedInDE": 0,
 		"restrictionsAll": [],
 		"rating": 4.966285,
-		"category": "Musik"
+		"category": "Musik",
+		"rank": 1000
 	}
 ]

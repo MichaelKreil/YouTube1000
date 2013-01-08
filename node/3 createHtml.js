@@ -57,6 +57,7 @@ if (generateJSON) {
 		var entry = list[i];
 		//if (entry.description.length > 200) entry.description = entry.description.substr(0,200)+'...';
 		entry.description = undefined;
+		entry.rank = i+1;
 		
 		var restricted = reasons2restriction[entry.reason];
 		if (restricted === undefined) {
