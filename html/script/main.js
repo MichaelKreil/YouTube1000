@@ -32,13 +32,17 @@ $(function () {
 		updateCanvas({ flagType:$(e.target).attr('value') });
 	})
 	
+	$('#gridSort button').click(function (e) {
+		updateCanvas({ sortType:$(e.target).attr('value') });
+	})
+	
 	updateCanvas();
 });
 
 function updateCanvas(options) {
 	options = options || {};
 	var flagType = options.flagType || $('#gridFlag .active').attr('value');
-	var sortType = options.flagType || $('#gridSort .active').attr('value');
+	var sortType = options.sortType || $('#gridSort .active').attr('value');
 	
 	var sort, flag, hint;
 	
