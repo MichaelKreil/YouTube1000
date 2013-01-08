@@ -37,8 +37,8 @@ function Canvas(options) {
 		deproject[x][y] = i;
 	}
 	
-	nodeOverlay.mouseenter(function (e) { me.toolTip.show(e.offsetX, e.offsetY) });
-	nodeOverlay.mousemove( function (e) { me.toolTip.show(e.offsetX, e.offsetY) });
+	nodeOverlay.mouseenter(function (e) { me.toolTip.show(e.pageX, e.pageY) });
+	nodeOverlay.mousemove( function (e) { me.toolTip.show(e.pageX, e.pageY) });
 	nodeOverlay.mouseleave(function (e) { me.toolTip.hide() });
 	nodeOverlay.click(function (e) {
 		me.toolTip.showInfobox();
@@ -72,8 +72,12 @@ function Canvas(options) {
 			}
 			status.shown = true;
 			
+			var offset = $('#gridCanvas').offset();
+			x -= offset.left;
+			y -= offset.top;
+			
 			var xi = clamp(Math.floor(x/thumbWidth ), 0, columns - 1);
-			var yi = clamp(Math.floor(y/thumbHeight), 0, rows    - 1); 
+			var yi = clamp(Math.floor(y/thumbHeight), 0, rows    - 1);
 			var index = deproject[xi][yi];
 			var id = index.id
 			var entry = indexes[index].entry;
