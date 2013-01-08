@@ -103,6 +103,9 @@ function updateCanvas(options) {
 		case 'rating':
 			sort = function (entry) { return -entry.rating	};
 		break;
+		case 'category':
+			sort = function (entry) { return  entry.category.toLowerCase() };
+		break;
 	}
 	
 	canvas.sort({
