@@ -15,13 +15,13 @@ var reasons2restriction = {
 	"Wir haben deine Spracheinstellung festgelegt.":0,
 	"Führe ein Upgrade auf die aktuelle Flash Player-Version aus, um die Wiedergabequalität zu verbessern.  Jetzt aktualisieren  oder  weitere Informationen  erhalten":0,
 	"Inhaltswarnung":1,
-	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":2,
-	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":3,
-	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":3,
-	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":3,
-	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":4,
-	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":4,
-	"Dieses Video ist in deinem Land nicht verfügbar.":4,
+	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":2,
+	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":2,
+	"Dieses Video ist in deinem Land nicht verfügbar.":2,
+	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":3,
+	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
+	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
+	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
 }
  
 
@@ -40,12 +40,13 @@ var rows = list.length/columns;
 if (generateThumbs) {
 	var child = spawn('bash', [], {cwd: '../images', stdio: [null, process.stdout, process.stderr]});
 	
+	child.stdin.write('echo "converting Thumbs:"\n');
 	for (var i = 0; i < list.length; i++) {
-		var s = ''
+		var s = '';
 		id = list[i].id;
 		s += 'convert "originals/thumb_'+id+'.jpg" -resize '+Math.round(width*f)+'x'+Math.round(height*f)+'^ -gravity center -crop '+width+'x'+height+'+0+0 "thumbs/thumb'+i+'.png"\n';
 		if ((i+1) % 100 == 0) {
-			s += 'echo "converting Thumbs: '+(100*(i+1)/list.length).toFixed(0)+'%"\n';
+			s += 'echo "   '+(100*(i+1)/list.length).toFixed(0)+'%"\n';
 		}
 		child.stdin.write(s);
 	}
