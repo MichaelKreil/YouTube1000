@@ -1,8 +1,8 @@
 
 
+var generateJSON = true;
 var generateThumbs = true;
 var generateGridHTML = 'simple'; // false, 'info', 'simple'
-var generateJSON = true;
 var generateChart = true;
 	
 var width = 20;   // Höhe der Thumbnails
@@ -54,7 +54,26 @@ if (generateThumbs) {
 	child.stdin.end();
 }
 
+for (var i = 0; i < list.length; i++) {
+	var countries = {};
+	var entry = list[i];
+	var r = entry.restrictionsAll;
+	for (var j = 0; j < r.length; j++) {
+		var c = r[j];
+		if (countries[c] === undefined) countries[c] = true;
+	}
+	entry.restrictionsAll = countries;
+}
+
+function obj2List(obj) {
+	var l = [];
+	for (var i in obj) if (obj[i]) l.push(i);
+	l.sort();
+	return l;
+}
+
 if (generateJSON) {
+	var data = [];
 	for (var i = 0; i < list.length; i++) {
 		var entry = list[i];
 		//if (entry.description.length > 200) entry.description = entry.description.substr(0,200)+'...';
@@ -70,19 +89,27 @@ if (generateJSON) {
 				console.error(entry);
 			}
 			entry.restrictedInDE = restricted;
-			if (restricted > 1) {
-				if (entry.restrictionsAll.join(',').indexOf('DE') < 0) {
-					entry.restrictionsAll.push('DE');
-					entry.restrictionsAll.sort();
-				}
-			} else {
-				if (entry.restrictionsAll.join(',').indexOf('DE') >= 0) {
-					entry.restrictionsAll = entry.restrictionsAll.join(',').replace(/DE/g, '').replace(/\,\,/g, ',').split(',');
-				}
-			}
+			entry.restrictionsAll['DE'] = (restricted > 1);
+		}
+		data[i] = {
+			id: entry.id,
+			viewCount: entry.viewCount,
+			reason: entry.reason,
+			thumbnail: entry.thumbnail,
+			image: entry.image,
+			url: entry.url,
+			published: entry.published,
+			updated: entry.updated,
+			title: entry.title,
+			author: entry.author,
+			restrictedInDE: entry.restrictedInDE,
+			restrictionsAll: obj2List(entry.restrictionsAll),
+			rating: entry.rating,
+			category: entry.category,
+			rank: entry.rank
 		}
 	}
-	var data = 'var data = '+JSON.stringify(list, null, '\t');
+	data = 'var data = '+JSON.stringify(data, null, '\t');
 	fs.writeFileSync('../html/data/data.js', data, 'utf8');
 }
 
