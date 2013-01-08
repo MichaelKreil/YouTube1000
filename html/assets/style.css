@@ -131,6 +131,12 @@ body {
 					
 				}
 				
+		#branding {
+			
+			padding: 20px 0px 0px;
+			
+		}
+				
 #gridImage, #gridCanvas, #gridCanvasOverlay {
 	width: 500px;
 	height: 600px;
