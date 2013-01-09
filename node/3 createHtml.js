@@ -125,9 +125,11 @@ if (generateChart) {
 			count[country]++;
 		} 
 	}
+	var line = [];
 	for (var i in count) {
-		console.log(i+'\t'+countryCodes[i]+'\t'+count[i]);	
+		line.push([i, countryCodes[i], count[i]].join('\t'));	
 	}
+	fs.writeFileSync('../data/countries.tsv', line.join('\r'), 'utf8');
 }
 
 if (generateGridHTML) {
