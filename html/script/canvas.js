@@ -225,7 +225,7 @@ function Canvas(options) {
 
 			context.fillStyle = '#FFF';
 			context.fillRect(0,0,width,height);
-			for (var i = 0; i < indexes.length; i++) {
+			for (var i = indexes.length-1; i >= 0; i--) {
 				var entry = indexes[i].entry;
 				var id = entry.id;
 				
