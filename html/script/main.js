@@ -298,22 +298,21 @@ function updateCanvas(options) {
 	var flagType = options.flagType || $('#gridFlag .active').attr('value');
 	var sortType = options.sortType || $('#gridSort .active').attr('value');
 	
-	var sort, flag, hint;
+	var flag;
+	var sort = function (entry) { return -entry.restrictedInDE };
+	var hint;
 	
 	switch (flagType) {
 		case 'germany':
 			flag = function (entry) { return (entry.restrictedInDE > 1) };
-			sort = function (entry) { return -entry.restrictedInDE };
 			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'gema':
 			flag = function (entry) { return (entry.restrictedInDE >= 3) };
-			sort = function (entry) { return -entry.restrictedInDE };
 			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'other':
 			flag = function (entry) { return ((entry.restrictedInDE > 1) && (entry.restrictedInDE < 3)) };
-			sort = function (entry) { return -entry.restrictedInDE };
 			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'foreign':
@@ -322,9 +321,9 @@ function updateCanvas(options) {
 				var inDE = (entry.restrictedInDE > 1) ? 1 : 0;
 				var onlyForeign = entry.restrictionsAll.length - inDE;
 				if (onlyForeign > 0) {
-					return -(onlyForeign+1);
+					return -(onlyForeign+10);
 				} else {
-					return -inDE/2
+					return -entry.restrictedInDE
 				}
 			};
 			hint = function (entry) {
