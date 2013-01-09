@@ -151,7 +151,7 @@ if (downloadReason) {
 						text = text.replace(/\<.*?>/g, ' ');
 						text = text.replace(/[ \s\t]*>/g, ' ');
 						text = trim(text);
-						//console.log(text);
+
 						entry.reason = text;
 					} else {
 						entry.use = false;
@@ -203,6 +203,7 @@ function check() {
 			lines.push(line.join('\t'));
 		}
 		fs.writeFileSync('../data/top1000.tsv', lines.join('\r'), 'utf8');
+		fs.writeFileSync('../html/data/top1000.tsv', lines.join('\r'), 'utf8');
 	}
 }
 
