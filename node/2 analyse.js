@@ -184,7 +184,11 @@ function check() {
 			if (entries[i].use) result.push(entries[i]);
 		}
 		
-		fs.writeFileSync('../data/top1000.json', JSON.stringify(result, null, '\t'), 'utf8');
+		var json = JSON.stringify(result, null, '\t');
+		fs.writeFileSync('../data/top1000.json', json, 'utf8');
+		var date = (new Date()).toISOString();
+		date = date.substr(0, 19).replace(/\:/g, '-');
+		fs.writeFileSync('../data/archive/top1000_'+date+'.json', json, 'utf8');
 		
 		var keys = [];
 		for (var key in result[0]) keys.push(key);
