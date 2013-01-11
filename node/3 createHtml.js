@@ -43,22 +43,6 @@ list.length = 1000;
 
 var rows = list.length/columns;
 
-if (generateThumbs) {
-	var child = spawn('bash', [], {cwd: '../images', stdio: [null, process.stdout, process.stderr]});
-	
-	child.stdin.write('echo "generate thumbs"\n');
-	
-	for (var i = 0; i < list.length; i++) {
-		var s = '';
-		id = list[i].id;
-		s += 'convert "originals/thumb_'+id+'.jpg" -resize '+Math.round(width*f)+'x'+Math.round(height*f)+'^ -gravity center -crop '+width+'x'+height+'+0+0 "thumbs/thumb'+i+'.png"\n';
-		if ((i+1) % 100 == 0) {
-			s += 'echo "   '+(100*(i+1)/list.length).toFixed(0)+'%"\n';
-		}
-		child.stdin.write(s);
-	}
-	child.stdin.end();
-}
 
 for (var i = 0; i < list.length; i++) {
 	var countries = {};
@@ -148,44 +132,23 @@ if (generateChart) {
 	fs.writeFileSync('../data/countries.tsv', line.join('\r'), 'utf8');
 }
 
-if (generateGridHTML) {
+if (generateThumbs) {
+	var child = spawn('bash', [], {cwd: '..', stdio: [null, process.stdout, process.stderr]});
 	
-	console.log('generate grid image');
-	
-	if (generateGridHTML == 'info') {
-		list.sort(function (a,b) { return (b.restriction ? 1 : 0) - (a.restriction ? 1 : 0); })
-	};
-	
-	var html = [];
+	child.stdin.write('echo "generate thumbs"\n');
 	
 	for (var i = 0; i < list.length; i++) {
-		var x = i % columns;
-		var y = Math.floor(i/columns);
-	
-		var className = '';
-		if (list[i].restriction) {
-			className = ' restricted';
+		var s = '';
+		id = list[i].id;
+		s += 'convert "images/originals/thumb_'+id+'.jpg" -resize '+Math.round(width*f)+'x'+Math.round(height*f)+'^ -gravity center -crop '+width+'x'+height+'+0+0 "images/thumbs/thumb'+i+'.png"\n';
+		if ((i+1) % 100 == 0) {
+			s += 'echo "   '+(100*(i+1)/list.length).toFixed(0)+'%"\n';
 		}
-		if (generateGridHTML == 'info') {
-			html.push('<div class="img'+className+'" style="top:'+(height*x)+'px;left:'+(width*y)+'px"><img src="thumbs/thumb'+i+'.png"></div>');
-		} else {
-			html.push('<img src="thumbs/thumb'+i+'.png" style="top:'+(height*y)+'px;left:'+(width*x)+'px">');
-		}
+		child.stdin.write(s);
 	}
-	
-	html = html.join('\n');
-	
-	var style = '';
-	if (generateGridHTML == 'info') {
-		style += '.img {background:#0072bc;text-align:center;width:'+width+'px;height:'+height+'px;position:absolute}';
-		style += '.img.restricted {background:#ed1c24}';
-		style += 'img {opacity:0.5;width:'+width+'px;height:'+height+'px}';
-	} else {
-		style += 'img {width:'+width+'px;height:'+height+'px;position:absolute}';
-	}
-		
-	html = '<body style="position:relative">' + html + '</body>';
-	html = '<html><head><style>'+style+'</style></head>' + html + '</head>';
-	
-	fs.writeFileSync('../images/grid.html', html, 'utf8');
+	child.stdin.write('echo "   generate grid image"\n');
+	child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \'images/thumbs/thumb%d.png[0-999]\' html/images/grid.png\n');
+	child.stdin.write('convert html/images/grid.png -quality 90 -interlace JPEG html/images/grid.jpg\n');
+	child.stdin.end();
 }
+
