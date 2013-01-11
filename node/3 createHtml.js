@@ -12,22 +12,22 @@ var columns = 25; // Wieviele Spalten hat das Ding
 
 
 
-var reasons2restriction = {
-	"Wir haben deine Spracheinstellung festgelegt.":0,
-	"Führe ein Upgrade auf die aktuelle Flash Player-Version aus, um die Wiedergabequalität zu verbessern.  Jetzt aktualisieren  oder  weitere Informationen  erhalten":0,
+var reason2info = {
+	"Wir haben deine Spracheinstellung festgelegt.":{code:0},
+	"Führe ein Upgrade auf die aktuelle Flash Player-Version aus, um die Wiedergabequalität zu verbessern.  Jetzt aktualisieren  oder  weitere Informationen  erhalten":{code:0},
 	
-	"Inhaltswarnung":1,
+	"Inhaltswarnung":{code:1},
 	
-	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":2,
-	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":2,
-	"Dieses Video ist in deinem Land nicht verfügbar.":2,
-	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":2,
+	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":{code:2},
+	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":{code:2},
+	"Dieses Video ist in deinem Land nicht verfügbar.":{code:2},
+	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":{code:2},
 	
-	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":3,
+	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":{code:3},
 	
-	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
-	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
-	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
+	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:4},
+	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:4},
+	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:4}
 }
  
 
@@ -77,7 +77,7 @@ if (generateJSON) {
 		entry.description = undefined;
 		entry.rank = i+1;
 		
-		var restricted = reasons2restriction[entry.reason];
+		var restricted = reason2info[entry.reason].code;
 		if (restricted === undefined) {
 			console.error('url "'+entry.url+'"');
 			console.error('Unknown reason "'+entry.reason+'"');
