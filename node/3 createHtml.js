@@ -15,11 +15,16 @@ var columns = 25; // Wieviele Spalten hat das Ding
 var reasons2restriction = {
 	"Wir haben deine Spracheinstellung festgelegt.":0,
 	"Führe ein Upgrade auf die aktuelle Flash Player-Version aus, um die Wiedergabequalität zu verbessern.  Jetzt aktualisieren  oder  weitere Informationen  erhalten":0,
+	
 	"Inhaltswarnung":1,
+	
 	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":2,
 	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":2,
 	"Dieses Video ist in deinem Land nicht verfügbar.":2,
+	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":2,
+	
 	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":3,
+	
 	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
 	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
 	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":4,
@@ -63,6 +68,10 @@ for (var i = 0; i < list.length; i++) {
 		if (countries[c] === undefined) countries[c] = true;
 	}
 	entry.restrictionsAll = countries;
+	
+	// Fixe UTF-8-Fehler
+	entry.reason = entry.reason.replace(/verf[^a-z]{2}gbar/g, 'verfügbar');
+	entry.reason = entry.reason.replace(/ f[^a-z]{2}r /g, ' für ');
 }
 
 function obj2List(obj) {
@@ -76,7 +85,7 @@ if (generateJSON) {
 	var data = [];
 	for (var i = 0; i < list.length; i++) {
 		var entry = list[i];
-		//if (entry.description.length > 200) entry.description = entry.description.substr(0,200)+'...';
+
 		entry.description = undefined;
 		entry.rank = i+1;
 		
