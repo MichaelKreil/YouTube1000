@@ -34,8 +34,8 @@ for (var i in list) {
 
 //entries.length = 1;
 
-if (downloadDetail) {
-	for (var i = 0; i < entries.length; i++) {
+for (var i = 0; i < entries.length; i++) {
+	if (downloadDetail) {
 		(function () {
 			var entry = entries[i];
 			queuedIn++;
@@ -101,11 +101,8 @@ if (downloadDetail) {
 			);
 		})();
 	}
-}
-
-
-if (downloadThumbs) {
-	for (var i = 0; i < entries.length; i++) {
+	
+	if (downloadThumbs) {
 		(function () {
 			var url = entries[i].image;
 			var id  = entries[i].id;
@@ -128,10 +125,8 @@ if (downloadThumbs) {
 			}
 		})();
 	}
-}
 
-if (downloadReason) {
-	for (var i = 0; i < entries.length; i++) {
+	if (downloadReason) {
 		(function () {
 			var entry = entries[i];
 			
