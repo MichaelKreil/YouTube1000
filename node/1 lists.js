@@ -6,11 +6,20 @@ var minViewCount = 42000000;
 var modes = [
 	'',
 	'q=',
-	'q=rights', // für "... All rights reserved ..."
+	'q=rights',
 	'q=video',
 	'q=music',
 	'q=by',
 	'q=download',
+	'q=the',
+	'q=to',
+	'q=a',
+	'q=by',
+	'q=you',
+	'q=in',
+	'q=is',
+	'q=youtube',
+	'q=http',
 	'q=and',
 	'q=iTunes',
 	'q=cat',
@@ -110,7 +119,7 @@ function download(pageId, country, mode) {
 	
 
 function check() {
-	progress = Math.floor(30*finished/queued);
+	progress = Math.floor(50*finished/(queued+1));
 	if (progress > lastProgress) {
 		util.print('.');
 		lastProgress = progress;
