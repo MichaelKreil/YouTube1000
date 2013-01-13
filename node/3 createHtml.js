@@ -57,6 +57,7 @@ for (var i = 0; i < list.length; i++) {
 	// Fixe UTF-8-Fehler
 	entry.reason = entry.reason.replace(/verf[^a-z]{2}gbar/g, 'verfügbar');
 	entry.reason = entry.reason.replace(/ f[^a-z]{2}r /g, ' für ');
+	entry.reason = entry.reason.replace(/m[^a-z]{2}glicher/g, 'möglicher');
 }
 
 function obj2List(obj) {
@@ -77,11 +78,12 @@ if (generateJSON) {
 		entry.description = undefined;
 		entry.rank = i+1;
 		
-		var restricted = reason2info[entry.reason].code;
+		var restricted = reason2info[entry.reason];
 		if (restricted === undefined) {
 			console.error('url "'+entry.url+'"');
 			console.error('Unknown reason "'+entry.reason+'"');
 		} else {
+			restricted = restricted.code
 			if (entry.restrictedInDE != (restricted > 1)) {
 				console.error(entry);
 			}
