@@ -2,6 +2,7 @@
 
 var generateJSON = true;
 var generateThumbs = true;
+var generateHugeThumbs = true;
 var generateGridHTML = 'simple'; // false, 'info', 'simple'
 var generateChart = true;
 	
@@ -10,8 +11,9 @@ var height = 15;  // Breite der Thumbnails
 var f = 1.4;      // Ausschnitt, um die 16:9-Ränder zu verhindern. 1 = nicht ausschneiden
 var columns = 25; // Wieviele Spalten hat das Ding
 
-
-
+var widthHuge  = Math.round(Math.min(480, 360*width/height)/f);
+var heightHuge = Math.round(Math.min(360, 480*height/width)/f); 
+ 
 var reason2info = {
 	"Wir haben deine Spracheinstellung festgelegt.":{code:0},
 	"Führe ein Upgrade auf die aktuelle Flash Player-Version aus, um die Wiedergabequalität zu verbessern.  Jetzt aktualisieren  oder  weitere Informationen  erhalten":{code:0},
@@ -134,7 +136,7 @@ if (generateChart) {
 	fs.writeFileSync('../data/countries.tsv', line.join('\r'), 'utf8');
 }
 
-if (generateThumbs) {
+if (generateThumbs || generateHugeThumbs) {
 	var child = spawn('bash', [], {cwd: '..', stdio: [null, process.stdout, process.stderr]});
 	
 	child.stdin.write('echo "generate thumbs"\n');
@@ -142,15 +144,34 @@ if (generateThumbs) {
 	for (var i = 0; i < list.length; i++) {
 		var s = '';
 		id = list[i].id;
-		s += 'convert "images/originals/thumb_'+id+'.jpg" -resize '+Math.round(width*f)+'x'+Math.round(height*f)+'^ -gravity center -crop '+width+'x'+height+'+0+0 "images/thumbs/thumb'+i+'.png"\n';
-		if ((i+1) % 100 == 0) {
-			s += 'echo "   '+(100*(i+1)/list.length).toFixed(0)+'%"\n';
+		
+		if (generateThumbs) {
+			child.stdin.write('convert "images/originals/thumb_'+id+'.jpg" -resize '+Math.round(width*f)+'x'+Math.round(height*f)+'^ -gravity center -crop '+width+'x'+height+'+0+0 "images/thumbs/thumb'+i+'.png"\n');
 		}
-		child.stdin.write(s);
+		
+		if (generateHugeThumbs) {
+			var filename = 'images/hugethumbs/thumb_'+id+'.jpg';
+			if (!fs.existsSync('../'+filename)) {
+				child.stdin.write('convert "images/originals/thumb_'+id+'.jpg" -gravity center -crop '+widthHuge+'x'+heightHuge+'+0+0 -quality 95 "'+filename+'"\n');
+			}
+		}
+		
+		if ((i+1) % 100 == 0) {
+			child.stdin.write('echo "   '+(100*(i+1)/list.length).toFixed(0)+'%"\n');
+		}
 	}
-	child.stdin.write('echo "   generate grid image"\n');
-	child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \'images/thumbs/thumb%d.png[0-999]\' html/images/grid.png\n');
-	child.stdin.write('convert html/images/grid.png -quality 90 -interlace JPEG html/images/grid.jpg\n');
+	
+	if (generateThumbs) {
+		child.stdin.write('echo "   generate grid image"\n');
+		child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \'images/thumbs/thumb%d.png[0-999]\' html/images/grid.png\n');
+		child.stdin.write('convert html/images/grid.png -quality 90 -interlace JPEG html/images/grid.jpg\n');
+	}
+	
 	child.stdin.end();
 }
+
+
+
+
+
 
