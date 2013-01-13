@@ -5,3 +5,4 @@ data/*.json -diff
 data/*.tsv -diff
 data/archive/*.json -diff
 data/archive/*.tsv -diff
+charts/*.json -diff
