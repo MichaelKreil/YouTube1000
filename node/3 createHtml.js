@@ -4,7 +4,6 @@ var generateJSON = true;
 var generateThumbs = true;
 var generateHugeThumbs = true;
 var generateGridHTML = 'simple'; // false, 'info', 'simple'
-var generateChart = true;
 	
 var width = 20;   // Höhe der Thumbnails
 var height = 15;  // Breite der Thumbnails
@@ -116,6 +115,7 @@ if (generateJSON) {
 
 if (generateThumbs || generateHugeThumbs) {
 	var child = spawn('bash', [], {cwd: '..', stdio: [null, process.stdout, process.stderr]});
+	var thumbList = [];
 	
 	child.stdin.write('echo "generate thumbs"\n');
 	
@@ -124,7 +124,13 @@ if (generateThumbs || generateHugeThumbs) {
 		id = list[i].id;
 		
 		if (generateThumbs) {
-			child.stdin.write('convert "images/originals/thumb_'+id+'.jpg" -resize '+Math.round(width*f)+'x'+Math.round(height*f)+'^ -gravity center -crop '+width+'x'+height+'+0+0 "images/thumbs/thumb'+i+'.png"\n');
+			var filename = 'images/thumbs/thumb_'+id+'.png';
+			
+			thumbList.push(filename);
+			
+			if (!fs.existsSync('../'+filename)) {
+				child.stdin.write('convert "images/originals/thumb_'+id+'.jpg" -resize '+Math.round(width*f)+'x'+Math.round(height*f)+'^ -gravity center -crop '+width+'x'+height+'+0+0 "'+filename+'"\n');
+			}
 		}
 		
 		if (generateHugeThumbs) {
@@ -141,7 +147,8 @@ if (generateThumbs || generateHugeThumbs) {
 	
 	if (generateThumbs) {
 		child.stdin.write('echo "   generate grid image"\n');
-		child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \'images/thumbs/thumb%d.png[0-999]\' html/images/grid.png\n');
+		//child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \'images/thumbs/thumb%d.png[0-999]\' html/images/grid.png\n');
+		child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \''+thumbList.join('\' \'')+'\' html/images/grid.png\n');
 		child.stdin.write('convert html/images/grid.png -quality 90 -interlace JPEG html/images/grid.jpg\n');
 	}
 	
