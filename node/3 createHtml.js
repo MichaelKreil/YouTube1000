@@ -109,7 +109,7 @@ if (generateJSON) {
 			rank: entry.rank
 		}
 	}
-	fs.writeFileSync('../html/data/data.js', 'var data = '+JSON.stringify(data), 'utf8');
+	fs.writeFileSync('../html/viz/data/data.js', 'var data = '+JSON.stringify(data), 'utf8');
 	fs.writeFileSync('../charts/data.json', JSON.stringify(data, null, '\t'), 'utf8');
 }
 
@@ -147,9 +147,9 @@ if (generateThumbs || generateHugeThumbs) {
 	
 	if (generateThumbs) {
 		child.stdin.write('echo "   generate grid image"\n');
-		//child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \'images/thumbs/thumb%d.png[0-999]\' html/images/grid.png\n');
-		child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \''+thumbList.join('\' \'')+'\' html/images/grid.png\n');
-		child.stdin.write('convert html/images/grid.png -quality 90 -interlace JPEG html/images/grid.jpg\n');
+		//child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \'images/thumbs/thumb%d.png[0-999]\' html/viz/images/grid.png\n');
+		child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \''+thumbList.join('\' \'')+'\' html/viz/images/grid.png\n');
+		child.stdin.write('convert html/viz/images/grid.png -quality 90 -interlace JPEG html/viz/images/grid.jpg\n');
 	}
 	
 	child.stdin.end();
