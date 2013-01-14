@@ -70,7 +70,7 @@ function generateGridSVG(filename, sortCallback, flagCallback) {
 	var columns = 25;
 	var rows = 40;
 	
-	var scale = 10;
+	var scale = 1;
 	
 	for (var i = 0; i < data.length; i++) data[i].sortValue = sortCallback(data[i]);
 	data = data.sort(function (a, b) {
