@@ -86,31 +86,33 @@ function download(pageId, country, mode) {
 	queued++;
 	
 	var url = getPageUrl(pageId, country, mode);
-	downloader.download(url, function (data) {
+	downloader.download(url, function (data, ok) {
 		finished++;
 		
-		data = JSON.parse(data);
-		data = data.feed.entry;
-		var nextPage = (pageId < 19);
-		
-		for (var i = 0; i < data.length; i++) {
-			var entry = data[i];
-			var viewCount;
+		if (ok) {
+			data = JSON.parse(data);
+			data = data.feed.entry;
+			var nextPage = (pageId < 19);
 			
-			try {
-				viewCount = parseInt(entry.yt$statistics.viewCount, 10);
-				if (viewCount > minViewCount) {
-					var id = entry.media$group.yt$videoid.$t;
-					results['_'+id] = viewCount;
-				} else {
-					nextPage = false;
+			for (var i = 0; i < data.length; i++) {
+				var entry = data[i];
+				var viewCount;
+				
+				try {
+					viewCount = parseInt(entry.yt$statistics.viewCount, 10);
+					if (viewCount > minViewCount) {
+						var id = entry.media$group.yt$videoid.$t;
+						results['_'+id] = viewCount;
+					} else {
+						nextPage = false;
+					}
+				} catch (e) {
 				}
-			} catch (e) {
 			}
-		}
-		
-		if (nextPage) {
-			download(pageId+1, country, mode); 
+			
+			if (nextPage) {
+				download(pageId+1, country, mode); 
+			}
 		}
 		
 		check();
