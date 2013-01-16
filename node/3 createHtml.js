@@ -19,16 +19,17 @@ var reason2info = {
 	
 	"Inhaltswarnung":{code:1},
 	
-	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":{code:2},
-	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":{code:2},
-	"Dieses Video ist in deinem Land nicht verfügbar.":{code:2},
-	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":{code:2},
+	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":{code:2},
 	
-	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":{code:3},
+	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:3},
+	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:3},
+	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:3},
 	
-	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:4},
-	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:4},
-	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:4}
+	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":{code:4},
+	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":{code:4},
+	"Dieses Video enthält Content von Sony ATV Publishing und UMPG Publishing. Einer oder mehrere dieser Partner haben das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":{code:4},
+	"Dieses Video ist in deinem Land nicht verfügbar.":{code:4},
+	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":{code:4}
 }
  
 
@@ -59,6 +60,7 @@ for (var i = 0; i < list.length; i++) {
 	entry.reason = entry.reason.replace(/verf[^a-z]{2}gbar/g, 'verfügbar');
 	entry.reason = entry.reason.replace(/ f[^a-z]{2}r /g, ' für ');
 	entry.reason = entry.reason.replace(/m[^a-z]{2}glicher/g, 'möglicher');
+	entry.reason = entry.reason.replace(/einger[^a-z]{2}umt/g, 'eingeräumt');
 }
 
 function obj2List(obj) {
