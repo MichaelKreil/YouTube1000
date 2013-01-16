@@ -255,8 +255,29 @@ function Canvas(options) {
 
 			context.fillStyle = '#FFF';
 			context.fillRect(0,0,width,height);
-			for (var i = indexes.length-1; i >= 0; i--) {
+			
+			var order = [];
+			
+			for (var i = 0; i < indexes.length; i++) {
 				var entry = indexes[i].entry;
+				var id = entry.id;
+				order[i] = {
+					entry:entry,
+					value:(1-a)*entry.oldColor[3] + a*entry.newColor[3] 
+				}
+			}
+			
+			order.sort(function (a,b) {
+				if (a.value == b.value) {
+					return a.newPos - b.newPos;
+				} else {
+					return a.value-b.value;
+				}
+			})
+			
+			
+			for (var i = order.length-1; i >= 0; i--) {
+				var entry = order[i].entry;
 				var id = entry.id;
 				
 				var x0 = projectX[entry.oldPos];
@@ -292,9 +313,13 @@ function Canvas(options) {
 				context.fillRect(x, y, thumbWidth, thumbHeight);
 				
 			}
+			
 			if (frame >= frameNumber) {
 				clearInterval(interval);
-				for (var i = 0; i < indexes.length; i++) indexes[i].entry.oldPos = indexes[i].entry.newPos;
+				for (var i = 0; i < indexes.length; i++) {
+					indexes[i].entry.oldColor = indexes[i].entry.newColor;
+					indexes[i].entry.oldPos   = indexes[i].entry.newPos;
+				}
 			}
 			frame++; 
 		}, 60);
