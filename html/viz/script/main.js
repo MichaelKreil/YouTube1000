@@ -300,20 +300,17 @@ function updateCanvas(options) {
 	
 	var flag;
 	var sort = function (entry) { return -entry.restrictedInDE };
-	var hint;
+	var hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 	
 	switch (flagType) {
 		case 'germany':
 			flag = function (entry) { return (entry.restrictedInDE > 1) };
-			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'gema':
 			flag = function (entry) { return (entry.restrictedInDE >= 3) };
-			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'other':
 			flag = function (entry) { return ((entry.restrictedInDE > 1) && (entry.restrictedInDE < 3)) };
-			hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reason+'</i>' : '' };
 		break;
 		case 'foreign':
 			flag = function (entry) { return  (entry.restrictionsAll.length > ((entry.restrictedInDE > 1) ? 1 : 0)) };
