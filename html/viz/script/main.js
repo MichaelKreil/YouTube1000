@@ -394,7 +394,7 @@ function setCounter(value) {
 		clearInterval(counterInterval);
 		(function () {
 			var frame = 1;
-			var frameNumber = 40;
+			var frameNumber = 20;
 			counterInterval = setInterval(
 				function () {
 					if (frame >= frameNumber) {
@@ -408,7 +408,7 @@ function setCounter(value) {
 						setValue(v);
 						frame++
 					}
-				}, 10
+				}, 30
 			);
 		})();
 	}

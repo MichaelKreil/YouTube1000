@@ -297,7 +297,7 @@ function Canvas(options) {
 				for (var i = 0; i < indexes.length; i++) indexes[i].entry.oldPos = indexes[i].entry.newPos;
 			}
 			frame++; 
-		}, 40);
+		}, 60);
 	}
 	
 	me.makeItFast = function () {
