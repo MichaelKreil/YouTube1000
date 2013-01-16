@@ -199,9 +199,12 @@ function Canvas(options) {
 	}
 	
 	var cHigh   = [237,  28,  36, 0.6];
-	var cMiddle = [255, 255,   0, 0.6];
+	var cMiddle = [255, 255,  60, 0.6];
 	var cLow    = [200, 255, 200, 0.8];
-	//var cLow    = [255, 255, 255, 0.8];
+	
+	var cHigh   = [180,  28,  36, 0.6];
+	var cMiddle = [255, 142, 146, 0.6];
+	var cLow    = [255, 255, 255, 0.8];
 
 	me.flag = function (options) {
 		var count = 0;
