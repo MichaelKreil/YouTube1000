@@ -198,13 +198,43 @@ function Canvas(options) {
 		
 	}
 	
+	var cHigh   = [237,  28,  36, 0.6];
+	var cMiddle = [255, 255,   0, 0.6];
+	var cLow    = [200, 255, 200, 0.8];
+	//var cLow    = [255, 255, 255, 0.8];
+
 	me.flag = function (options) {
 		var count = 0;
 		for (var i = 0; i < indexes.length; i++) {
 			var entry = indexes[i].entry;
 			var flagged = options.callback(entry);
-			var color = flagged ? [237,  28,  36, 0.6] : [255, 255, 255, 0.8];
-			if (flagged) count++;
+			var color;
+			
+			switch (flagged) {
+				case 0.0: color = cLow;    break;
+				case 0.5: color = cMiddle; break;
+				case 1.0: color = cHigh;   break;
+				default:
+					var v = flagged*2;
+					if (v > 1) {
+						v -= 1;
+						color = [
+							cHigh[0]*v + (1-v)*cMiddle[0],
+							cHigh[1]*v + (1-v)*cMiddle[1],
+							cHigh[2]*v + (1-v)*cMiddle[2],
+							cHigh[3]*v + (1-v)*cMiddle[3]
+						]
+					} else {
+						color = [
+							cMiddle[0]*v + (1-v)*cLow[0],
+							cMiddle[1]*v + (1-v)*cLow[1],
+							cMiddle[2]*v + (1-v)*cLow[2],
+							cMiddle[3]*v + (1-v)*cLow[3]
+						]
+					}
+			}
+			
+			if (flagged > 0) count++;
 			
 			entry.oldColor = entry.newColor;
 			entry.newColor = color;
