@@ -160,7 +160,7 @@ function Canvas(options) {
 			html = replace(html, /%published%/g,    formatDate(markedEntry.published));
 			html = replace(html, /%url%/g,                     markedEntry.url);
 			html = replace(html, /%author%/g,                  markedEntry.author);
-			html = replace(html, /%restriction%/g,             markedEntry.restrictedInDE ? 'Ja' : 'Nein');
+			html = replace(html, /%restriction%/g,            (markedEntry.restrictedInDE > 1) ? 'Ja' : 'Nein');
 			html = replace(html, /%restrictionCountries%/g,    countries);
 			html = replace(html, /%reason%/g,                  markedEntry.reason);
 			html = replace(html, /%rank%/g,      formatInteger(markedEntry.rank));
@@ -169,7 +169,7 @@ function Canvas(options) {
 			html = replace(html, /%viewCount%/g, formatInteger(markedEntry.viewCount));
 			html = replace(html, /%category%/g,                markedEntry.category);
 			
-			if (!markedEntry.restrictedInDE) html = replace(html, /%de%.*?%\/de%/g, '');
+			if (!markedEntry.restrictedInDE > 1) html = replace(html, /%de%.*?%\/de%/g, '');
 			
 			html = replace(html, /%.*?%/g, '');
 			
