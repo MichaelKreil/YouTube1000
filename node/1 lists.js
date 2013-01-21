@@ -40,7 +40,7 @@ var modes = [
 
 // Da einige Länder unterschiedlich sperren, einfach mal mehrere "freiheitliche" Länder durchprobieren
 var countries = [
-	'US', 'DE', 'ET', 'CH', 'LU', 'TV', 'ES', 'IL', 'LU', 'IE'
+	'US', 'DE', 'ET', 'CH', 'LU', 'TV', 'ES', 'IL', 'IE', 'UK', 'CN', 'FR', 'RU'
 ];
 
 var endless = (process.argv[2] !== undefined);
