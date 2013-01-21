@@ -32,8 +32,6 @@ for (var i in list) {
 	});
 }
 
-//entries.length = 1;
-
 for (var i = 0; i < entries.length; i++) {
 	if (downloadDetail) {
 		(function () {
@@ -135,25 +133,21 @@ for (var i = 0; i < entries.length; i++) {
 				entry.url,
 				function (html, ok) {
 					queuedOut++;
-					if (ok) {
-						html = html.replace(/[\r\n]/g, ' ');
-						text = html.match(/\<div\s*class\=\"content\"\>.*?\<\/h1\>/i);
-						if (text == null) {
-							text = html.match(/\<div\s*class\=\"yt\-alert\-message\"\>.*?\<\/div\>/i)[0];
-						} else {
-							text = text[0];
-						}
-						text = text.replace(/\<.*?>/g, ' ');
-						text = text.replace(/[ \s\t]*>/g, ' ');
-						text = trim(text);
-
-						entry.reason = text;
-					} else {
-						entry.use = false;
-					}
+					if (ok) { entry.reasonDE = extractReason(html); } else { entry.use = false; }
 					check();
 				},
 				true
+			);
+			
+			queuedIn++;
+			downloader.download(
+				entry.url,
+				function (html, ok) {
+					queuedOut++;
+					if (ok) { entry.reasonEN = extractReason(html); } else { entry.use = false; }
+					check();
+				},
+				false
 			);
 		})();
 	}
@@ -205,5 +199,20 @@ function check() {
 		fs.writeFileSync('../html/viz/data/top1000.tsv', lines.join('\r'), 'utf8');
 	}
 }
+
+function extractReason(html) {
+	html = html.replace(/[\r\n]/g, ' ');
+	var text = html.match(/\<div\s*class\=\"content\"\>.*?\<\/h1\>/i);
+	if (text == null) {
+		text = html.match(/\<div\s*class\=\"yt\-alert\-message\"\>.*?\<\/div\>/i)[0];
+	} else {
+		text = text[0];
+	}
+	text = text.replace(/\<.*?>/g, ' ');
+	text = text.replace(/[ \s\t]*>/g, ' ');
+	text = trim(text);
+	return text;
+}
+
 
 /* Why is always this fucking */function/* missing to */trim/* a fucking */(text)/* ??? */ { return text.replace(/^\s*|\s*$/g, ''); }
