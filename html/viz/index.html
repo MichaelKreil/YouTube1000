@@ -3,96 +3,44 @@
 	<head>
 		<title>YouTube 1000</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
+		
 		<link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/style.css" rel="stylesheet">
-
-		<script src="libraries/jquery-1.8.3.min.js"></script>
-		<script src="data/data.js"></script>
-		<script src="script/main.js"></script>
-		<script src="script/canvas.js"></script>
-		<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+		<style>
+			h1, h2 {
+				margin: 20px 0px 20px 20px;
+			}
+			
+			h2 {
+				margin-left: 60px;
+			}
+			
+			iframe {
+				margin-left: 60px;
+				margin-bottom: 60px;
+			}
+		</style>
 	</head>
 	<body>
-		<div id="container">
-			<h1>Die Top 1000 YouTube-Videos</h1>
-			<p class="lead">
-				Ein großer Teil der Top 1000 YouTube-Videos sind nicht überall zu sehen.<br />
-				Etwa 19% davon sind irgendwo in der Welt gesperrt.<br />
-				In Deutschland jedoch sind knapp <strong>64%</strong> der beliebtesten Videos nicht verfügbar,<br />
-				fast alle auf Grund vermuteter Rechte der <strong>GEMA</strong>.
-			</p>
-			<div id="content">
-				<div id="grid">
-					<img src="images/grid.jpg" id="gridImage" />
-					<canvas id="gridCanvas" width="500" height="600"></canvas>
-					<canvas id="gridCanvasOverlay" width="500" height="600" style="cursor:pointer"></canvas>
-					<div id="infobox">
-						<button class="close">&times;</button>
-						<div id="infoboxContent">
-							<table style="width:100%" border="0" style="padding:20px">
-								<tr>
-									<td colspan="2">
-										<p style="font-size: 16px; font-weight: bold">%title%</p>
-									</td>
-								</tr>
-								<tr>
-									<td style="width:150px;height:90px;background:url(%thumbnail%) no-repeat 10px center">									
-									</td>
-									<td style="padding-right:10px">
-										<p>Platz: %rank%</p>
-										<p>Aufrufe: %viewCount%</p>
-										<p>Nutzer: %author%</p>
-										<p>Veröffentlicht: %published%</p>
-										<p>Bewertung: %rating%</p>
-										<p>Kategorie: %category%</p>
-										<p><a href="%url%" target="_blank">Link zu YouTube</a></p>
-								
-									</td>
-								</tr>
-								<tr>
-									<td style="padding:10px 10px 10px 10px;" colspan="2">
-										<div class="scroll">
-										<p>gesperrt in: %restrictionCountries%</p>
-										<p>gesperrt in Deutschland: <b>%restriction%</b></p>
-										%de%<p>Sperrgrund in Deutschland: <b>&bdquo;%reason%&rdquo;</b></p>%/de%
-										</div>
-									</td>
-								</tr>
-							</table>
-							<button id="close" class="btn btn-danger btn-small" onclick="$('#infobox').fadeOut('fast');">Schließen</button>
-						</div>
-					</div>
-					<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none;">
-					<div id="tooltip"></div>
-				</div>
-				<div id="display-number">
-					<div class="well" id="display-number-content">
-						96,2%
-					</div>
-				</div>
-				<div id="controller-navigation">
-					<div data-toggle="buttons-radio" id="gridFlag">
-						<h3 style="margin-top:30px">Gesperrt in Deutschland</h3>
-						<div class="btn-group btn-group-vertical">
-							<button class="btn btn-large active" value="germany">Alle in Deutschland gesperrten Videos</button>
-							<button class="btn btn-large" value="other">konkrete Rechteprobleme</button>
-							<button class="btn btn-large" value="gema">möglicherweise Rechteprobleme</button>
-						</div>
-						<h3>In anderen Ländern</h3>
-						<button class="btn btn-large btn-full" value="foreign">In anderen Staaten gesperrt</button>
-					</div>
-					<h3 style="margin-top:60px">Sortieren nach</h3>
-					<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
-						<button class="btn btn-large active" value="rank">Klicks</button>
-						<button class="btn btn-large" value="rating">Bewertung</button>
-						<button class="btn btn-large" value="blocked">Sperrung</button>
-					</div>
-				</div>
-			</div>
-			<div id="branding">
-				Realisiert von <a href="http://www.opendatacity.de/">OpenDataCity</a> &middot; <a href="http://www.opendatacity.de/kontakt/">Impressum</a> &middot; <a href="data/top1000.tsv">Download</a>
-			</div>
-		</div>
+		<h1>Deutsch</h1>
+		
+		<h2>520x400 deutsch</h2>
+		<iframe src="frame-520-de.html" width="520" height="400"></iframe>
+		
+		<h2>640x400 deutsch</h2>
+		<iframe src="frame-640-de.html" width="640" height="400"></iframe>
+		
+		<h2>640x400 deutsch</h2>
+		<iframe src="frame-860-de.html" width="860" height="400"></iframe>
+		
+		<h1>Englisch</h1>
+		
+		<h2>520x400 englisch</h2>
+		<iframe src="frame-520-en.html" width="520" height="400"></iframe>
+		
+		<h2>640x400 englisch</h2>
+		<iframe src="frame-640-en.html" width="640" height="400"></iframe>
+		
+		<h2>640x400 englisch</h2>
+		<iframe src="frame-860-en.html" width="860" height="400"></iframe>
 	</body>
 </html>
