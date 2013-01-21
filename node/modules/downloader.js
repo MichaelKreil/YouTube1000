@@ -47,7 +47,7 @@ exports.download = function (url, callback, german, binary) {
 	
 	request.setTimeout(10*1000, function (e) {
 		console.error('Timeout: '+e);
-		callback(data, false);
+		callback(undefined, false);
 	});
 	
 	request.on('error', function(e) {
