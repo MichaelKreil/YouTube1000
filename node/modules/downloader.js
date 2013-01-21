@@ -25,7 +25,7 @@ exports.download = function (url, callback, german, binary) {
 			var code = res.statusCode;
 			if (code != 200) {
 				console.error('ERROR: HTTP code = ' + code + ' (' + url + ')');
-				callback(data, false);
+				callback(undefined, false);
 				return;
 			}
 			
@@ -40,7 +40,7 @@ exports.download = function (url, callback, german, binary) {
 			});
 
 			res.on('error', function (e) {
-				console.error('ERROR: '+e);
+				console.error('UNKOWN ERROR: '+e);
 			});
 		}
 	);
@@ -51,7 +51,7 @@ exports.download = function (url, callback, german, binary) {
 	});
 	
 	request.on('error', function(e) {
-		console.error('ERROR: '+e);
+		console.error('UNKOWN ERROR: '+e);
 	});
 	
 	request.end();
