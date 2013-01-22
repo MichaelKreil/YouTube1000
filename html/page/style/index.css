@@ -99,25 +99,6 @@ body {
 					
 				}
 				
-#gridImage, #gridCanvas, #gridCanvasOverlay {
-	width: 500px;
-	height: 600px;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-
-.gridButton {
-	text-align:left;
-	margin: 0;
-}
-.gridDesc {
-	text-align: justify;
-	font-size: 12px;
-	color: #888;
-	margin-bottom: 20px;
-	margin-top: 0;
-}
 
 .clear {
 	clear: both;
