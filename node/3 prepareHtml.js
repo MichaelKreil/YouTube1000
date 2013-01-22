@@ -4,32 +4,71 @@ var generateJSON = true;
 var generateThumbs = true;
 var generateHugeThumbs = true;
 var generateGridHTML = 'simple'; // false, 'info', 'simple'
-	
-var width = 20;   // Höhe der Thumbnails
-var height = 15;  // Breite der Thumbnails
-var f = 1.4;      // Ausschnitt, um die 16:9-Ränder zu verhindern. 1 = nicht ausschneiden
-var columns = 25; // Wieviele Spalten hat das Ding
 
-var widthHuge  = Math.round(Math.min(480, 360*width/height)/f);
-var heightHuge = Math.round(Math.min(360, 480*height/width)/f); 
+var parameters = [
+	{ width:20, height:15, f:1.4, columns:25, rows:40, suffix:'860' },
+	{ width:16, height:12, f:1.4, columns:25, rows:40, suffix:'640' },
+	{ width:12, height:09, f:1.4, columns:25, rows:40, suffix:'520' }
+];
+
+var widthHuge  = Math.round(Math.min(480, 360*parameters[0].width/parameters[0].height)/parameters[0].f);
+var heightHuge = Math.round(Math.min(360, 480*parameters[0].height/parameters[0].width)/parameters[0].f); 
  
 var reason2info = {
-	"Wir haben deine Spracheinstellung festgelegt.":{code:0},
-	"Führe ein Upgrade auf die aktuelle Flash Player-Version aus, um die Wiedergabequalität zu verbessern.  Jetzt aktualisieren  oder  weitere Informationen  erhalten":{code:0},
+	"Wir haben deine Spracheinstellung festgelegt.": {
+		code: 0,
+		newDE: 'Nicht gesperrt',
+		newEN: 'not blocked',
+		en: 'Added to'
+	},
+	"Führe ein Upgrade auf die aktuelle Flash Player-Version aus, um die Wiedergabequalität zu verbessern.  Jetzt aktualisieren  oder  weitere Informationen  erhalten":{
+		code:0,
+		newDE: 'Nicht gesperrt',
+		newEN: 'not blocked',
+		en: 'Added to'
+	},
 	
-	"Inhaltswarnung":{code:1},
 	
-	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":{code:2},
+	"Inhaltswarnung":{
+		code:1,
+		en:'Content Warning'
+	},
 	
-	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:3},
-	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:3},
-	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{code:3},
 	
-	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":{code:4},
-	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":{code:4},
-	"Dieses Video enthält Content von Sony ATV Publishing und UMPG Publishing. Einer oder mehrere dieser Partner haben das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":{code:4},
-	"Dieses Video ist in deinem Land nicht verfügbar.":{code:4},
-	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":{code:4}
+	"Dieses Video ist in Deutschland nicht verfügbar, weil es möglicherweise Musik enthält, für die die erforderlichen Musikrechte von der GEMA nicht eingeräumt wurden.":{
+		code:2,
+		en:'Unfortunately, this video is not available in Germany because it may contain music for which GEMA has not granted the respective music rights.'
+	},
+	
+	
+	"Leider ist dieses Video, das Musik von SME beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{
+		code:3,
+		en:'Unfortunately, this SME-music-content is not available in Germany because GEMA has not granted the respective music publishing rights.'
+	},
+	"Leider ist dieses Video, das Musik von UMG beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{
+		code:3,
+		en:'Unfortunately, this UMG-music-content is not available in Germany because GEMA has not granted the respective music publishing rights.'
+	},
+	"Leider ist dieses Video, das Musik von EMI beinhaltet, in Deutschland nicht verfügbar, da die GEMA die Verlagsrechte hieran nicht eingeräumt hat.":{
+		code:3,
+		en:'Unfortunately, this EMI-music-content is not available in Germany because GEMA has not granted the respective music publishing rights.'
+	},
+	
+	
+	"Dieses Video enthält Content von UMG. Dieser Partner hat das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":{
+		code:4,
+		en:'This video contains content from UMG, who has blocked it in your country on copyright grounds.'
+	},
+	"Dieses Video enthält Content von BPI (British Recorded Music Industry) Limited und Beggars. Einer oder mehrere dieser Partner haben das Video aus urheberrechtlichen Gründen gesperrt.":{
+		code:4,
+		en:'This video contains content from BPI (British Recorded Music Industry) Limited and Beggars, one or more of whom have blocked it on copyright grounds.'
+	},
+	"Dieses Video enthält Content von Sony ATV Publishing und UMPG Publishing. Einer oder mehrere dieser Partner haben das Video in deinem Land aus urheberrechtlichen Gründen gesperrt.":{code:4,en:''},
+	"Dieses Video ist in deinem Land nicht verfügbar.":{
+		code:4,
+		en:'This video is not available in your country.'
+	},
+	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":{code:4,en:''}
 }
  
 
@@ -43,8 +82,6 @@ var list = JSON.parse(fs.readFileSync('../data/top1000.json', 'utf8'));
 list.sort(function (a,b) { return b.viewCount - a.viewCount});
 list.length = 1000;
 
-var rows = list.length/columns;
-
 
 for (var i = 0; i < list.length; i++) {
 	var countries = {};
@@ -57,17 +94,12 @@ for (var i = 0; i < list.length; i++) {
 	entry.restrictionsAll = countries;
 	
 	// Fixe UTF-8-Fehler
-	entry.reason = entry.reason.replace(/verf[^a-z]{2}gbar/g, 'verfügbar');
-	entry.reason = entry.reason.replace(/ f[^a-z]{2}r /g, ' für ');
-	entry.reason = entry.reason.replace(/m[^a-z]{2}glicher/g, 'möglicher');
-	entry.reason = entry.reason.replace(/einger[^a-z]{2}umt/g, 'eingeräumt');
-}
-
-function obj2List(obj) {
-	var l = [];
-	for (var i in obj) if (obj[i]) l.push(i);
-	l.sort();
-	return l;
+	var reason = entry.reasonDE;
+	reason = reason.replace(/verf[^a-z]{2}gbar/g, 'verfügbar');
+	reason = reason.replace(/ f[^a-z]{2}r /g, ' für ');
+	reason = reason.replace(/m[^a-z]{2}glicher/g, 'möglicher');
+	reason = reason.replace(/einger[^a-z]{2}umt/g, 'eingeräumt');
+	entry.reasonDE = reason;
 }
 
 if (generateJSON) {
@@ -81,22 +113,31 @@ if (generateJSON) {
 		entry.description = undefined;
 		entry.rank = i+1;
 		
-		var restricted = reason2info[entry.reason];
-		if (restricted === undefined) {
+		var restrictInfo = reason2info[entry.reasonDE];
+		if (restrictInfo === undefined) {
 			console.error('url "'+entry.url+'"');
-			console.error('Unknown reason "'+entry.reason+'"');
+			console.error('Unknown reason "' + entry.reasonDE + '"');
 		} else {
-			restricted = restricted.code
-			if (entry.restrictedInDE != (restricted > 1)) {
-				console.error(entry);
+			if (entry.restrictedInDE != (restrictInfo.code > 1)) {
+				console.error('Irgendwas ist nicht in Ordnung', entry);
 			}
-			entry.restrictedInDE = restricted;
-			entry.restrictionsAll['DE'] = (restricted > 1);
+			if ((restrictInfo.en !== undefined) && (restrictInfo.en != entry.reasonEN)) {
+				console.error(entry.reasonDE);
+				console.error(entry.reasonEN);
+			}
+			entry.restrictedInDE = restrictInfo.code;
+			entry.restrictionsAll['DE'] = (restrictInfo.code > 1);
 		}
+		
+		if (entry.reasonEN == '') {
+			console.error('kein en-reason');
+		}
+		
 		data[i] = {
 			id: entry.id,
 			viewCount: entry.viewCount,
-			reason: entry.reason,
+			reasonDE: restrictInfo.newDE ? restrictInfo.newDE : entry.reasonDE,
+			reasonEN: restrictInfo.newEN ? restrictInfo.newEN : entry.reasonEN,
 			thumbnail: entry.thumbnail,
 			image: entry.image,
 			url: entry.url,
@@ -117,7 +158,8 @@ if (generateJSON) {
 
 if (generateThumbs || generateHugeThumbs) {
 	var child = spawn('bash', [], {cwd: '..', stdio: [null, process.stdout, process.stderr]});
-	var thumbList = [];
+	
+	for (var j = 0; j < parameters.length; j++) parameters[j].thumbList = [];
 	
 	child.stdin.write('echo "generate thumbs"\n');
 	
@@ -126,12 +168,15 @@ if (generateThumbs || generateHugeThumbs) {
 		id = list[i].id;
 		
 		if (generateThumbs) {
-			var filename = 'images/thumbs/thumb_'+id+'.png';
-			
-			thumbList.push(filename);
-			
-			if (!fs.existsSync('../'+filename)) {
-				child.stdin.write('convert "images/originals/thumb_'+id+'.jpg" -resize '+Math.round(width*f)+'x'+Math.round(height*f)+'^ -gravity center -crop '+width+'x'+height+'+0+0 "'+filename+'"\n');
+			for (var j = 0; j < parameters.length; j++) {
+				var p = parameters[j];
+				var filename = 'images/thumbs_'+p.suffix+'/thumb_'+id+'.png';
+				
+				p.thumbList.push(filename);
+				
+				if (!fs.existsSync('../'+filename)) {
+					child.stdin.write('convert "images/originals/thumb_'+id+'.jpg" -resize '+Math.round(p.width*p.f)+'x'+Math.round(p.height*p.f)+'^ -gravity center -crop '+p.width+'x'+p.height+'+0+0 "'+filename+'"\n');
+				}
 			}
 		}
 		
@@ -148,10 +193,13 @@ if (generateThumbs || generateHugeThumbs) {
 	}
 	
 	if (generateThumbs) {
-		child.stdin.write('echo "   generate grid image"\n');
-		//child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \'images/thumbs/thumb%d.png[0-999]\' html/viz/images/grid.png\n');
-		child.stdin.write('montage -tile '+columns+'x'+rows+' -geometry '+width+'x'+height+'+0+0 \''+thumbList.join('\' \'')+'\' html/viz/images/grid.png\n');
-		child.stdin.write('convert html/viz/images/grid.png -quality 90 -interlace JPEG html/viz/images/grid.jpg\n');
+		for (var j = 0; j < parameters.length; j++) {
+			var p = parameters[j];
+			child.stdin.write('echo "   generate grid image '+(j+1)+'/'+parameters.length+'"\n');
+			
+			child.stdin.write('montage -tile '+p.columns+'x'+p.rows+' -geometry '+p.width+'x'+p.height+'+0+0 \''+p.thumbList.join('\' \'')+'\' html/viz/images/grid_'+p.suffix+'.png\n');
+			child.stdin.write('convert html/viz/images/grid_'+p.suffix+'.png -quality 90 -interlace JPEG html/viz/images/grid_'+p.suffix+'.jpg\n');
+		}
 	}
 	
 	child.stdin.end();
@@ -159,6 +207,13 @@ if (generateThumbs || generateHugeThumbs) {
 
 
 
+
+function obj2List(obj) {
+	var l = [];
+	for (var i in obj) if (obj[i]) l.push(i);
+	l.sort();
+	return l;
+}
 
 
 
