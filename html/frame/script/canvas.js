@@ -59,7 +59,6 @@ function Canvas(options) {
 		var marker = $('#marker');
 		var infobox = $('#infobox');
 		var infoboxContent = $('#infoboxContent');
-		var infoboxTemplate = infoboxContent.html();
 		
 		$('#infobox .close').click(function () { infobox.hide() });
 		
