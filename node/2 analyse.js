@@ -32,10 +32,8 @@ for (var i in list) {
 	});
 }
 
-//entries.length = 1;
-
-if (downloadDetail) {
-	for (var i = 0; i < entries.length; i++) {
+for (var i = 0; i < entries.length; i++) {
+	if (downloadDetail) {
 		(function () {
 			var entry = entries[i];
 			queuedIn++;
@@ -101,11 +99,8 @@ if (downloadDetail) {
 			);
 		})();
 	}
-}
-
-
-if (downloadThumbs) {
-	for (var i = 0; i < entries.length; i++) {
+	
+	if (downloadThumbs) {
 		(function () {
 			var url = entries[i].image;
 			var id  = entries[i].id;
@@ -128,10 +123,8 @@ if (downloadThumbs) {
 			}
 		})();
 	}
-}
 
-if (downloadReason) {
-	for (var i = 0; i < entries.length; i++) {
+	if (downloadReason) {
 		(function () {
 			var entry = entries[i];
 			
@@ -140,25 +133,21 @@ if (downloadReason) {
 				entry.url,
 				function (html, ok) {
 					queuedOut++;
-					if (ok) {
-						html = html.replace(/[\r\n]/g, ' ');
-						text = html.match(/\<div\s*class\=\"content\"\>.*?\<\/h1\>/i);
-						if (text == null) {
-							text = html.match(/\<div\s*class\=\"yt\-alert\-message\"\>.*?\<\/div\>/i)[0];
-						} else {
-							text = text[0];
-						}
-						text = text.replace(/\<.*?>/g, ' ');
-						text = text.replace(/[ \s\t]*>/g, ' ');
-						text = trim(text);
-						//console.log(text);
-						entry.reason = text;
-					} else {
-						entry.use = false;
-					}
+					if (ok) { entry.reasonDE = extractReason(html); } else { entry.use = false; }
 					check();
 				},
 				true
+			);
+			
+			queuedIn++;
+			downloader.download(
+				entry.url,
+				function (html, ok) {
+					queuedOut++;
+					if (ok) { entry.reasonEN = extractReason(html); } else { entry.use = false; }
+					check();
+				},
+				false
 			);
 		})();
 	}
@@ -184,7 +173,11 @@ function check() {
 			if (entries[i].use) result.push(entries[i]);
 		}
 		
-		fs.writeFileSync('../data/top1000.json', JSON.stringify(result, null, '\t'), 'utf8');
+		var json = JSON.stringify(result, null, '\t');
+		fs.writeFileSync('../data/top1000.json', json, 'utf8');
+		var date = (new Date()).toISOString();
+		date = date.substr(0, 19).replace(/\:/g, '-');
+		fs.writeFileSync('../data/archive/top1000_'+date+'.json', json, 'utf8');
 		
 		var keys = [];
 		for (var key in result[0]) keys.push(key);
@@ -203,7 +196,23 @@ function check() {
 			lines.push(line.join('\t'));
 		}
 		fs.writeFileSync('../data/top1000.tsv', lines.join('\r'), 'utf8');
+		fs.writeFileSync('../html/viz/data/top1000.tsv', lines.join('\r'), 'utf8');
 	}
 }
+
+function extractReason(html) {
+	html = html.replace(/[\r\n]/g, ' ');
+	var text = html.match(/\<div\s*class\=\"content\"\>.*?\<\/h1\>/i);
+	if (text == null) {
+		text = html.match(/\<div\s*class\=\"yt\-alert\-message\"\>.*?\<\/div\>/i)[0];
+	} else {
+		text = text[0];
+	}
+	text = text.replace(/\<.*?>/g, ' ');
+	text = text.replace(/[ \s\t]*>/g, ' ');
+	text = trim(text);
+	return text;
+}
+
 
 /* Why is always this fucking */function/* missing to */trim/* a fucking */(text)/* ??? */ { return text.replace(/^\s*|\s*$/g, ''); }

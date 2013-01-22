@@ -1,4 +1,9 @@
 
 html/data/* -diff
+
+data/list.json -diff
 data/top1000.json -diff
 data/top1000.tsv -diff
+data/archive/*.json -diff
+data/archive/*.tsv -diff
+charts/*.json -diff

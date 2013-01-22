@@ -6,11 +6,20 @@ var minViewCount = 42000000;
 var modes = [
 	'',
 	'q=',
-	'q=rights', // für "... All rights reserved ..."
+	'q=rights',
 	'q=video',
 	'q=music',
 	'q=by',
 	'q=download',
+	'q=the',
+	'q=to',
+	'q=a',
+	'q=by',
+	'q=you',
+	'q=in',
+	'q=is',
+	'q=youtube',
+	'q=http',
 	'q=and',
 	'q=iTunes',
 	'q=cat',
@@ -31,7 +40,7 @@ var modes = [
 
 // Da einige Länder unterschiedlich sperren, einfach mal mehrere "freiheitliche" Länder durchprobieren
 var countries = [
-	'US', 'DE', 'ET', 'CH', 'LU', 'TV', 'ES', 'IL', 'LU', 'IE'
+	'US', 'DE', 'ET', 'CH', 'LU', 'TV', 'ES', 'IL', 'IE', 'UK', 'CN', 'FR', 'RU'
 ];
 
 var endless = (process.argv[2] !== undefined);
@@ -77,31 +86,33 @@ function download(pageId, country, mode) {
 	queued++;
 	
 	var url = getPageUrl(pageId, country, mode);
-	downloader.download(url, function (data) {
+	downloader.download(url, function (data, ok) {
 		finished++;
 		
-		data = JSON.parse(data);
-		data = data.feed.entry;
-		var nextPage = (pageId < 19);
-		
-		for (var i = 0; i < data.length; i++) {
-			var entry = data[i];
-			var viewCount;
+		if (ok) {
+			data = JSON.parse(data);
+			data = data.feed.entry;
+			var nextPage = (pageId < 19);
 			
-			try {
-				viewCount = parseInt(entry.yt$statistics.viewCount, 10);
-				if (viewCount > minViewCount) {
-					var id = entry.media$group.yt$videoid.$t;
-					results['_'+id] = viewCount;
-				} else {
-					nextPage = false;
+			for (var i = 0; i < data.length; i++) {
+				var entry = data[i];
+				var viewCount;
+				
+				try {
+					viewCount = parseInt(entry.yt$statistics.viewCount, 10);
+					if (viewCount > minViewCount) {
+						var id = entry.media$group.yt$videoid.$t;
+						results['_'+id] = viewCount;
+					} else {
+						nextPage = false;
+					}
+				} catch (e) {
 				}
-			} catch (e) {
 			}
-		}
-		
-		if (nextPage) {
-			download(pageId+1, country, mode); 
+			
+			if (nextPage) {
+				download(pageId+1, country, mode); 
+			}
 		}
 		
 		check();
@@ -110,7 +121,7 @@ function download(pageId, country, mode) {
 	
 
 function check() {
-	progress = Math.floor(30*finished/queued);
+	progress = Math.floor(50*finished/(queued+1));
 	if (progress > lastProgress) {
 		util.print('.');
 		lastProgress = progress;
