@@ -8,6 +8,7 @@
 		<link href="assets/style.css" rel="stylesheet">
 
 		<script src="libraries/jquery-1.8.3.min.js"></script>
+		<script src="script/helper.js"></script>
 		<script src="data/data.js"></script>
 		<script src="script/main.js"></script>
 		<script src="script/canvas.js"></script>
@@ -18,7 +19,7 @@
 			<h1>Die Top 1000 YouTube-Videos</h1>
 			<p class="lead">
 				Ein großer Teil der Top 1000 YouTube-Videos sind nicht überall zu sehen.<br />
-				Etwa 19% davon sind in einem der anderen Länder gesperrt.<br />
+				Etwa 19% davon sind in einem oder mehreren Ländern außerhalb Deutschlands gesperrt.<br />
 				In Deutschland jedoch sind knapp <strong>64%</strong> der 1000 beliebtesten Videos nicht verfügbar, fast alle auf Grund vermuteter Rechte der <strong>GEMA</strong>.
 			</p>
 			<div id="content">
@@ -89,8 +90,50 @@
 					</div>
 				</div>
 			</div>
+			<div id="activate">
+				<div id="" class="col">
+					<h2>Weitersagen!</h2>
+					<p>
+						Findest Du es auch ungerecht, dass Menschen in Deutschland weniger Videos sehen dürfen als irgendwo sonst auf der Welt? 
+					</p>
+					<p>
+						Mach andere darauf aufmerksam, indem Du diese Seite teilst:
+					</p>
+					<ul>
+						<li><a href="https://twitter.com/intent/tweet?url=http://opendatacloud.de/youtube&amp;text=64%25%20der%20Top%201000%20%23Youtube%20Videos%20sind%20in%20Deutschland%20gesperrt:&amp;via=OpenDataCity&amp;related=OpenDataCity&amp;original_referer=http://opendatacloud.de/youtube" id="share-twitter">Twitter</a></li>
+						<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://opendatacloud.de/youtube&amp;t=64%25%20der%20Top%201000%20%23Youtube%20Videos%20sind%20in%20Deutschland%20gesperrt:" id="share-facebook">Facebook</a></li>
+						<li><a href="https://plus.google.com/share?url=http://opendatacloud.de/youtube" id="share-google">Google+</a></li>
+					</ul>
+				</div>
+				<div id="" class="col">
+					<h2>Weitergeben!</h2>
+					<p>
+						Du kannst unsere Auswertung der gesperrten YouTube-Videos auf Deiner Webseite oder in Deinem Blog einbetten.
+					</p>
+					<p>
+						<a href="#!/blafasel" class="btn btn-primary">Code zum Einbetten</a>
+					</p>
+				</div>
+				<div id="" class="col">
+					<h2>Weitermachen!</h2>
+					<p>
+						Diese Webseite und die von uns gesammelten Rohdaten stehen unter einer Creative Commons Lizenz als Open Data zur Verfügung.
+					</p>
+					<p>
+						<a href="data/top1000.tsv" class="btn btn-primary">Download</a>
+					</p>
+				</div>
+				<div class="clear"></div>
+			</div>
 			<div id="branding">
-				Realisiert von <a href="http://www.opendatacity.de/">OpenDataCity</a> &middot; <a href="http://www.opendatacity.de/kontakt/">Impressum</a> &middot; <a href="data/top1000.tsv">Download</a>
+				<!-- <iframe width="110" scrolling="no" height="20" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" border="0" src="http://api.flattr.com/button/view/?url=http://opendatacloud.de/youtube&amp;uid={{flattr_id}}&amp;category=text&amp;tags={{tags}}&amp;button=compact" class="hide-nojs"></iframe> -->
+				<div id="creator">
+					Realisiert von <a href="http://www.opendatacity.de/" class="opendatacity">OpenDataCity</a> &middot; <a href="http://www.opendatacity.de/kontakt/">Impressum</a>
+				</div>
+				<div id="license">
+					Dieses Werk bzw. Inhalt steht unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nd/3.0/de/">Creative Commons Namensnennung-Keine Bearbeitung 3.0 Deutschland Lizenz</a>.
+				</div>
+				<div class="clear"></div>
 			</div>
 		</div>
 	</body>
