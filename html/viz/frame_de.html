@@ -5,7 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 		<link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="assets/style.css" rel="stylesheet">
+		<link href="style/frame.css" rel="stylesheet">
 
 		<script src="libraries/jquery-1.8.3.min.js"></script>
 		<script src="script/helper.js"></script>
@@ -15,125 +15,72 @@
 		<script src="libraries/bootstrap/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div id="container">
-			<h1>Die Top 1000 YouTube-Videos</h1>
-			<p class="lead">
-				Ein großer Teil der Top 1000 YouTube-Videos sind nicht überall zu sehen.<br />
-				Etwa 19% davon sind in einem oder mehreren Ländern außerhalb Deutschlands gesperrt.<br />
-				In Deutschland jedoch sind knapp <strong>64%</strong> der 1000 beliebtesten Videos nicht verfügbar, fast alle auf Grund vermuteter Rechte der <strong>GEMA</strong>.
-			</p>
-			<div id="content">
-				<div id="grid">
-					<img src="images/grid.jpg" id="gridImage" />
-					<canvas id="gridCanvas" width="500" height="600"></canvas>
-					<canvas id="gridCanvasOverlay" width="500" height="600" style="cursor:pointer"></canvas>
-					<div id="infobox">
-						<button class="close">&times;</button>
-						<div id="infoboxContent">
-							<table style="width:100%" border="0" style="padding:20px">
-								<tr>
-									<td colspan="2">
-										<p style="font-size: 16px; font-weight: bold">%title%</p>
-									</td>
-								</tr>
-								<tr>
-									<td style="width:150px;height:90px;background:url(%thumbnail%) no-repeat 10px center">									
-									</td>
-									<td style="padding-right:10px">
-										<p>Platz: %rank%</p>
-										<p>Aufrufe: %viewCount%</p>
-										<p>Nutzer: %author%</p>
-										<p>Veröffentlicht: %published%</p>
-										<p>Bewertung: %rating%</p>
-										<p>Kategorie: %category%</p>
-										<p><a href="%url%" target="_blank">Link zu YouTube</a></p>
-								
-									</td>
-								</tr>
-								<tr>
-									<td style="padding:10px 10px 10px 10px;" colspan="2">
-										<div class="scroll">
-										<p>gesperrt in: %restrictionCountries%</p>
-										<p>gesperrt in Deutschland: <b>%restriction%</b></p>
-										%de%<p>Sperrgrund in Deutschland: <b>&bdquo;%reason%&rdquo;</b></p>%/de%
-										</div>
-									</td>
-								</tr>
-							</table>
-							<button id="close" class="btn btn-danger btn-small" onclick="$('#infobox').fadeOut('fast');">Schließen</button>
-						</div>
-					</div>
-					<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none;">
-					<div id="tooltip"></div>
-				</div>
-				<div id="display-number">
-					<div class="well" id="display-number-content">
-						96,2%
+		<div id="content">
+			<div id="grid">
+				<img src="images/grid.jpg" id="gridImage" />
+				<canvas id="gridCanvas" width="500" height="600"></canvas>
+				<canvas id="gridCanvasOverlay" width="500" height="600" style="cursor:pointer"></canvas>
+				<div id="infobox">
+					<button class="close">&times;</button>
+					<div id="infoboxContent">
+						<table style="width:100%" border="0" style="padding:20px">
+							<tr>
+								<td colspan="2">
+									<p style="font-size: 16px; font-weight: bold">%title%</p>
+								</td>
+							</tr>
+							<tr>
+								<td style="width:150px;height:90px;background:url(%thumbnail%) no-repeat 10px center">									
+								</td>
+								<td style="padding-right:10px">
+									<p>Platz: %rank%</p>
+									<p>Aufrufe: %viewCount%</p>
+									<p>Nutzer: %author%</p>
+									<p>Veröffentlicht: %published%</p>
+									<p>Bewertung: %rating%</p>
+									<p>Kategorie: %category%</p>
+									<p><a href="%url%" target="_blank">Link zu YouTube</a></p>
+							
+								</td>
+							</tr>
+							<tr>
+								<td style="padding:10px 10px 10px 10px;" colspan="2">
+									<div class="scroll">
+									<p>gesperrt in: %restrictionCountries%</p>
+									<p>gesperrt in Deutschland: <b>%restriction%</b></p>
+									%de%<p>Sperrgrund in Deutschland: <b>&bdquo;%reason%&rdquo;</b></p>%/de%
+									</div>
+								</td>
+							</tr>
+						</table>
+						<button id="close" class="btn btn-danger btn-small" onclick="$('#infobox').fadeOut('fast');">Schließen</button>
 					</div>
 				</div>
-				<div id="controller-navigation">
-					<div data-toggle="buttons-radio" id="gridFlag">
-						<h3 style="margin-top:30px">Gesperrt in Deutschland</h3>
-						<div class="btn-group btn-group-vertical">
-							<button class="btn btn-large active" value="germany">Alle in Deutschland gesperrten Videos</button>
-							<button class="btn btn-large" value="other">konkrete Rechteprobleme</button>
-							<button class="btn btn-large" value="gema">möglicherweise Rechteprobleme</button>
-						</div>
-						<h3>In anderen Ländern</h3>
-						<button class="btn btn-large btn-full" value="foreign">In anderen Staaten gesperrt</button>
-					</div>
-					<h3 style="margin-top:60px">Sortieren nach</h3>
-					<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
-						<button class="btn btn-large active" value="rank">Klicks</button>
-						<button class="btn btn-large" value="rating">Bewertung</button>
-						<button class="btn btn-large" value="blocked">Sperrung</button>
-					</div>
+				<img id="marker" src="images/marker.png" style="display:none; position:absolute; pointer-events:none;">
+				<div id="tooltip"></div>
+			</div>
+			<div id="display-number">
+				<div class="well" id="display-number-content">
+					96,2%
 				</div>
 			</div>
-			<div id="activate">
-				<div id="" class="col">
-					<h2>Weitersagen!</h2>
-					<p>
-						Findest Du es auch ungerecht, dass Menschen in Deutschland weniger Videos sehen dürfen als irgendwo sonst auf der Welt? 
-					</p>
-					<p>
-						Mach andere darauf aufmerksam, indem Du diese Seite teilst:
-					</p>
-					<ul>
-						<li><a href="https://twitter.com/intent/tweet?url=http://opendatacloud.de/youtube&amp;text=64%25%20der%20Top%201000%20%23Youtube%20Videos%20sind%20in%20Deutschland%20gesperrt:&amp;via=OpenDataCity&amp;related=OpenDataCity&amp;original_referer=http://opendatacloud.de/youtube" id="share-twitter">Twitter</a></li>
-						<li><a href="https://www.facebook.com/sharer/sharer.php?u=http://opendatacloud.de/youtube&amp;t=64%25%20der%20Top%201000%20%23Youtube%20Videos%20sind%20in%20Deutschland%20gesperrt:" id="share-facebook">Facebook</a></li>
-						<li><a href="https://plus.google.com/share?url=http://opendatacloud.de/youtube" id="share-google">Google+</a></li>
-					</ul>
+			<div id="controller-navigation">
+				<div data-toggle="buttons-radio" id="gridFlag">
+					<h3 style="margin-top:30px">Gesperrt in Deutschland</h3>
+					<div class="btn-group btn-group-vertical">
+						<button class="btn btn-large active" value="germany">Alle in Deutschland gesperrten Videos</button>
+						<button class="btn btn-large" value="other">konkrete Rechteprobleme</button>
+						<button class="btn btn-large" value="gema">möglicherweise Rechteprobleme</button>
+					</div>
+					<h3>In anderen Ländern</h3>
+					<button class="btn btn-large btn-full" value="foreign">In anderen Staaten gesperrt</button>
 				</div>
-				<div id="" class="col">
-					<h2>Weitergeben!</h2>
-					<p>
-						Du kannst unsere Auswertung der gesperrten YouTube-Videos auf Deiner Webseite oder in Deinem Blog einbetten.
-					</p>
-					<p>
-						<a href="#!/blafasel" class="btn btn-primary">Code zum Einbetten</a>
-					</p>
+				<h3 style="margin-top:60px">Sortieren nach</h3>
+				<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
+					<button class="btn btn-large active" value="rank">Klicks</button>
+					<button class="btn btn-large" value="rating">Bewertung</button>
+					<button class="btn btn-large" value="blocked">Sperrung</button>
 				</div>
-				<div id="" class="col">
-					<h2>Weitermachen!</h2>
-					<p>
-						Diese Webseite und die von uns gesammelten Rohdaten stehen unter einer Creative Commons Lizenz als Open Data zur Verfügung.
-					</p>
-					<p>
-						<a href="data/top1000.tsv" class="btn btn-primary">Download</a>
-					</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div id="branding">
-				<!-- <iframe width="110" scrolling="no" height="20" frameborder="0" allowtransparency="true" marginwidth="0" marginheight="0" border="0" src="http://api.flattr.com/button/view/?url=http://opendatacloud.de/youtube&amp;uid={{flattr_id}}&amp;category=text&amp;tags={{tags}}&amp;button=compact" class="hide-nojs"></iframe> -->
-				<div id="creator">
-					Realisiert von <a href="http://www.opendatacity.de/" class="opendatacity">OpenDataCity</a> &middot; <a href="http://www.opendatacity.de/kontakt/">Impressum</a>
-				</div>
-				<div id="license">
-					Dieses Werk bzw. Inhalt steht unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nd/3.0/de/">Creative Commons Namensnennung-Keine Bearbeitung 3.0 Deutschland Lizenz</a>.
-				</div>
-				<div class="clear"></div>
 			</div>
 		</div>
 	</body>

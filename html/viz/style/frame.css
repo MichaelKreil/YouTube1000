@@ -1,0 +1,167 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	background: #FFF;
+}
+
+	#container {
+		
+		display: block;
+		position: relative;
+		margin: 0px auto;
+		box-shadow: 0px 0px 40px -20px rgba(0,0,0,0.4);
+		width: 860px; 
+		background: #fff;
+		padding: 50px;
+		
+	}
+	
+		#content {
+			
+			display: block;
+			position: relative;
+			width: 860px;
+			height: 600px;
+			
+		}
+			
+			#grid {
+				
+				display: block;
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				width: 520px;
+				height: 600px;
+				overflow: visible;
+				
+			}
+			
+				#infobox {
+					
+					display: none;
+					position: absolute;
+
+					background: #FFF;
+					top: 0px;
+					left: 520px;
+					width: 320px;
+					height: 580px;
+					border-radius: 5px;
+					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+					padding: 3px 10px 17px 10px;
+					z-index: 500;
+
+				}
+
+					#infobox p {
+						
+						line-height: 1.2em;
+						font-size: 12px;
+						margin: 5px 0;
+						
+					}
+					
+					#infobox .scroll {
+						
+						max-height: 340px;
+						overflow-y: auto;
+						
+					}
+				
+					#infobox #close {
+						
+						display: block;
+						position: absolute;
+						right: 10px;
+						bottom: 10px;
+						
+					}
+						
+				#tooltip {
+					
+					position: absolute;
+					display: none;
+					margin-right: -300px;
+					background: rgba(0,0,0,0.8);
+					padding: 5px 10px 5px 10px;
+					color: #FFF;
+					font-size: 12px;
+					line-height: 14px;
+					max-width: 220px;
+					pointer-events: none;
+					border-radius: 5px;
+					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+					z-index: 600;
+					
+				}
+			
+			#display-number {
+				
+				display: block;
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				width: 340px;
+				height: 110px;
+				
+			}
+			
+				#display-number-content {
+					
+					font-size: 70px;
+					line-height: 70px;
+					font-weight: bold;
+					text-align: center;
+					
+				}
+				
+			#controller-navigation {
+				
+				display: block;
+				position: absolute;
+				right: 0px;
+				top: 130px;
+				width: 340px;
+				height: 490px;
+				
+			}
+			
+				#controller-navigation .btn-full,
+				#controller-navigation .btn-group-vertical button {
+					
+					width: 340px;
+					text-align: left;
+					
+				}
+				
+		
+				
+#gridImage, #gridCanvas, #gridCanvasOverlay {
+	width: 500px;
+	height: 600px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.gridButton {
+	text-align:left;
+	margin: 0;
+}
+.gridDesc {
+	text-align: justify;
+	font-size: 12px;
+	color: #888;
+	margin-bottom: 20px;
+	margin-top: 0;
+}
+
+.clear {
+	clear: both;
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	width: 0;
+	height: 0;
+}
