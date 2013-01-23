@@ -1,0 +1,52 @@
+	#container {
+		width: 860px; 
+		padding: 50px;
+	}
+	
+		#content {
+			width: 860px;
+			height: 600px;
+		}
+			
+			#grid {
+				width: 520px;
+				height: 600px;
+			}
+				
+				#infobox {
+					left: 520px;
+					width: 320px;
+					height: 580px;
+				}
+					
+					#infobox .scroll {
+						max-height: 340px;
+					}
+						
+				#tooltip {
+					margin-right: -300px;
+					max-width: 220px;
+				}
+			
+			#display-number {
+				width: 340px;
+				height: 110px;
+			}
+			
+				#display-number-content {
+					font-size: 70px;
+					line-height: 70px;
+				}
+				
+			#controller-navigation {
+				right: 0px;
+				top: 130px;
+				width: 340px;
+				height: 490px;
+			}
+			
+				#controller-navigation .btn-full,
+				#controller-navigation .btn-group-vertical button {
+					width: 340px;
+				}
+				

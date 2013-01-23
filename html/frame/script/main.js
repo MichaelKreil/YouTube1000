@@ -1,13 +1,3 @@
-var canvas;
-
-var colorDarkRed = [158,  11,  15, 0.6]; // CMYK: 0.0 1.0 1.0 0.4
-var colorRed     = [237,  28,  36, 0.6]; // CMYK: 0.0 1.0 1.0 0.0
-var colorOrange  = [247, 148,  29, 0.6]; // CMYK: 0.0 0.5 1.0 0.0
-var colorYellow  = [255, 242,   0, 0.6]; // CMYK: 0.0 0.0 1.0 0.0
-var colorBlue    = [171, 199, 255, 0.8];
-var colorGreen   = [204, 255, 178, 0.8];
-var colorWhite   = [255, 255, 255, 0.8];
-var colorGrey    = [191, 191, 191, 0.8];
 
 var countryCodes = {
 	'AD':{de:'Andorra',en:'Andorra'},
@@ -261,6 +251,10 @@ var countryCodes = {
 	'ZW':{de:'Simbabwe',en:'Zimbabwe'},
 };
 
+var canvas;
+var sizeMode;
+var thumbWidth, thumbHeight, columns, rows, imageUrl;
+
 $(function () {
 	for (var i = 0; i < data.length; i++) {
 		var entry = data[i];
@@ -268,13 +262,29 @@ $(function () {
 		entry.updatedTS   = (new Date(entry.updated  )).getTime();
 	}
 	
+	var width = $(window).width();
+	if (width < 530) sizeMode = 0;
+	else if (width > 850) sizeMode = 2;
+	else sizeMode = 1;
+	
+	switch (sizeMode) {
+		case 0: thumbWidth = 12; thumbHeight =  9; columns = 25; rows:40; imageUrl = 'images/grid_520.jpg'; break;
+		case 1: thumbWidth = 16; thumbHeight = 12; columns = 25; rows:40; imageUrl = 'images/grid_640.jpg'; break;
+		case 2: thumbWidth = 20; thumbHeight = 15; columns = 25; rows:40; imageUrl = 'images/grid_860.jpg'; break;
+	}
+	
+	$('#gridImage').attr('src', imageUrl);
+	$('#gridImage').css({'width':thumbWidth*columns, 'height':thumbHeight*rows });
+	$('#gridCanvas').css({'width':thumbWidth*columns, 'height':thumbHeight*rows });
+	$('#gridCanvasOverlay').css({'width':thumbWidth*columns, 'height':thumbHeight*rows });
+	
 	canvas = new Canvas({
 		imageNode: $('#gridImage'),
 		node: $('#gridCanvas'),
 		nodeOverlay: $('#gridCanvasOverlay'),
-		thumbWidth: 20,
-		thumbHeight: 15,
-		columns: 25,
+		thumbWidth: thumbWidth,
+		thumbHeight: thumbHeight,
+		columns: columns,
 		data: data
 	});
 	

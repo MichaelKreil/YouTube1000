@@ -4,8 +4,11 @@
 		<title>YouTube 1000</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-		<link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="style/frame.css" rel="stylesheet">
+		<link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+		<link href="style/frame.css" rel="stylesheet" type="text/css">
+		<link href="style/frame_640.css" rel="stylesheet" type="text/css">
+		<link href="style/frame_520.css" rel="stylesheet" type="text/css" media="screen and (max-width: 530px)">
+		<link href="style/frame_860.css" rel="stylesheet" type="text/css" media="screen and (min-width: 850px)">
 
 		<script src="libraries/jquery-1.8.3.min.js"></script>
 		<script src="data/data.js"></script>
@@ -49,8 +52,8 @@
 		<div id="content">
 			<div id="grid">
 				<img id="gridImage" />
-				<canvas id="gridCanvas" width="500" height="600"></canvas>
-				<canvas id="gridCanvasOverlay" width="500" height="600" style="cursor:pointer"></canvas>
+				<canvas id="gridCanvas"></canvas>
+				<canvas id="gridCanvasOverlay" style="cursor:pointer"></canvas>
 				<div id="infobox">
 					<button class="close">&times;</button>
 					<div id="infoboxContent"></div>
@@ -60,9 +63,7 @@
 				<div id="tooltip"></div>
 			</div>
 			<div id="display-number">
-				<div class="well" id="display-number-content">
-					96,2%
-				</div>
+				<div class="well" id="display-number-content"></div>
 			</div>
 			<div id="controller-navigation">
 				<div data-toggle="buttons-radio" id="gridFlag">

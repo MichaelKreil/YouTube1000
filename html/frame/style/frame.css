@@ -10,9 +10,7 @@ body, html {
 		position: relative;
 		margin: 0px auto;
 		box-shadow: 0px 0px 40px -20px rgba(0,0,0,0.4);
-		width: 860px; 
 		background: #fff;
-		padding: 50px;
 		
 	}
 	
@@ -20,8 +18,6 @@ body, html {
 			
 			display: block;
 			position: relative;
-			width: 860px;
-			height: 600px;
 			
 		}
 			
@@ -31,19 +27,11 @@ body, html {
 				position: absolute;
 				left: 0px;
 				top: 0px;
-				width: 520px;
-				height: 600px;
 				overflow: visible;
 				
 			}
-			
-				#gridImage {
-					content:url(../images/grid_860.jpg);
-				}
 				
 				#gridImage, #gridCanvas, #gridCanvasOverlay {
-					width: 500px;
-					height: 600px;
 					position: absolute;
 					left: 0;
 					top: 0;
@@ -56,9 +44,6 @@ body, html {
 
 					background: #FFF;
 					top: 0px;
-					left: 520px;
-					width: 320px;
-					height: 580px;
 					border-radius: 5px;
 					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
 					padding: 3px 10px 17px 10px;
@@ -76,7 +61,6 @@ body, html {
 					
 					#infobox .scroll {
 						
-						max-height: 340px;
 						overflow-y: auto;
 						
 					}
@@ -94,13 +78,11 @@ body, html {
 					
 					position: absolute;
 					display: none;
-					margin-right: -300px;
 					background: rgba(0,0,0,0.8);
 					padding: 5px 10px 5px 10px;
 					color: #FFF;
 					font-size: 12px;
 					line-height: 14px;
-					max-width: 220px;
 					pointer-events: none;
 					border-radius: 5px;
 					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
@@ -114,15 +96,11 @@ body, html {
 				position: absolute;
 				right: 0px;
 				top: 0px;
-				width: 340px;
-				height: 110px;
 				
 			}
 			
 				#display-number-content {
 					
-					font-size: 70px;
-					line-height: 70px;
 					font-weight: bold;
 					text-align: center;
 					
@@ -132,17 +110,12 @@ body, html {
 				
 				display: block;
 				position: absolute;
-				right: 0px;
-				top: 130px;
-				width: 340px;
-				height: 490px;
 				
 			}
 			
 				#controller-navigation .btn-full,
 				#controller-navigation .btn-group-vertical button {
 					
-					width: 340px;
 					text-align: left;
 					
 				}
