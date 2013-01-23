@@ -251,6 +251,8 @@ var countryCodes = {
 	'ZW':{de:'Simbabwe',en:'Zimbabwe'},
 };
 
+var infoboxTemplate = '<table style="width:100%" border="0" style="padding:20px"><tr><td colspan="2"><p style="font-size: 16px; font-weight: bold">%title%</p></td></tr><tr><td style="width:150px;height:90px;background:url(%thumbnail%) no-repeat 10px center"></td><td style="padding-right:10px"><p>Platz: %rank%</p><p>Aufrufe: %viewCount%</p><p>Nutzer: %author%</p><p>Veröffentlicht: %published%</p><p>Bewertung: %rating%</p><p>Kategorie: %category%</p><p><a href="%url%" target="_blank">Link zu YouTube</a></p></td></tr><tr><td style="padding:10px 10px 10px 10px;" colspan="2"><div class="scroll"><p>gesperrt in: %restrictionCountries%</p><p>gesperrt in Deutschland: <b>%restriction%</b></p>%de%<p>Sperrgrund in Deutschland: <b>&bdquo;%reason%&rdquo;</b></p>%/de%</div></td></tr></table>';
+
 var canvas;
 var sizeMode;
 var thumbWidth, thumbHeight, columns, rows, imageUrl;
