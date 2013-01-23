@@ -8,9 +8,6 @@ body, html {
 		
 		display: block;
 		position: relative;
-		margin: 0px auto;
-		box-shadow: 0px 0px 40px -20px rgba(0,0,0,0.4);
-		background: #fff;
 		
 	}
 	
@@ -27,125 +24,686 @@ body, html {
 				position: absolute;
 				left: 0px;
 				top: 0px;
-				overflow: visible;
 				
 			}
+
+/* responsive design */
+
+@media screen and (min-width: 860px) {
+	
+	#container {
+		
+		display: block;
+		position: relative;
+		width: 860px;
+		height: 670px;
+		overflow: hidden;
+		margin: 0px auto;
+		padding: 0px;
+		
+	}
+	
+		#content {
+			
+			display: block;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 860px;
+			height: 600px
+			
+		}
+		
+			#grid {
 				
+				display: block;
+				position: absolute;
+				left: 5px;
+				top: 5px;
+				width: 500px;
+				height: 600px;
+				overflow: visible;
+				background-color: #000;
+				
+			}
+			
 				#gridImage, #gridCanvas, #gridCanvasOverlay {
+
+					display: block;
 					position: absolute;
+					width: 500px;
+					height: 600px;
 					left: 0;
 					top: 0;
+					cursor: pointer;
+
 				}
 				
-				#infobox {
+				#gridImage {
+					
+					background: url(../img/grid_860.jpg) top left no-repeat;
+				
+				}
+				
+				#marker {
 					
 					display: none;
 					position: absolute;
-
-					background: #FFF;
-					top: 0px;
-					border-radius: 5px;
-					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
-					padding: 3px 10px 17px 10px;
-					z-index: 500;
-
-				}
-
-					#infobox p {
-						
-						line-height: 1.2em;
-						font-size: 12px;
-						margin: 5px 0;
-						
-					}
+					pointer-events: none;
+					width: 26px;
+					height: 27px;
+					background-image: url(../img/marker.png)
 					
-					#infobox .scroll {
-						
-						overflow-y: auto;
-						
-					}
+				}
 				
-					#infobox #close {
-						
-						display: block;
-						position: absolute;
-						right: 10px;
-						bottom: 10px;
-						
-					}
-						
 				#tooltip {
 					
 					position: absolute;
 					display: none;
+					margin-right: -300px;
 					background: rgba(0,0,0,0.8);
 					padding: 5px 10px 5px 10px;
 					color: #FFF;
 					font-size: 12px;
 					line-height: 14px;
+					max-width: 220px;
 					pointer-events: none;
 					border-radius: 5px;
 					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
 					z-index: 600;
 					
 				}
-			
-			#display-number {
 				
+			#infobox {
+				
+				display: none;
+				position: absolute;
+
+				background: #FFF;
+				top: 5px;
+				right: 5px;
+				width: 320px;
+				height: 580px;
+				border-radius: 5px;
+				box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+				padding: 3px 10px 17px 10px;
+				z-index: 500;
+
+			}
+
+				#infobox p {
+					
+					line-height: 1.2em;
+					font-size: 12px;
+					margin: 5px 0;
+					
+				}
+				
+				#infobox .scroll {
+					
+					max-height: 340px;
+					overflow-y: auto;
+					
+				}
+			
+				#infobox #close {
+					
+					display: block;
+					position: absolute;
+					right: 10px;
+					bottom: 10px;
+					
+				}
+	
+			#display-number {
+
 				display: block;
 				position: absolute;
-				right: 0px;
-				top: 0px;
-				
+				right: 5px;
+				top: 5px;
+				width: 340px;
+				height: 110px;
+
 			}
-			
+
 				#display-number-content {
-					
+
+					font-size: 70px;
+					line-height: 70px;
 					font-weight: bold;
 					text-align: center;
-					
+
 				}
 				
 			#controller-navigation {
-				
+
 				display: block;
 				position: absolute;
-				
+				right: 5px;
+				top: 130px;
+				width: 340px;
+				height: 490px;
+
 			}
 			
-				#controller-navigation .btn-full,
-				#controller-navigation .btn-group-vertical button {
+				#gridFlag {
 					
-					text-align: left;
+					margin: 35px 0px 60px;
 					
 				}
-				
-	#footer {
-			
+
+				#controller-navigation .btn-full,
+				#controller-navigation .btn-group-vertical button {
+
+					width: 340px;
+					text-align: left;
+
+				}
+	
+		#footer {
+
 			display: block;
-			
+			position: absolute;
+			bottom: 0px;
+			left: 5px;
+			right: 5px;
+
 			margin: 10px 0px 0px 0px;
 			padding: 10px 10px 10px 10px;
 			text-align: center;
-			
+
 			line-height: 1.1em;
 			background-color: #f5f5f5;
 			border-radius: 4px;
 			border: 1px solid #E3E3E3;
 			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset
+
+		}
+				
+	#small-warning {
+	
+		display: none;
+	
+	}
+
+}
+
+@media screen and (min-width: 640px) and (max-width: 859px) {
+
+	#container {
+		
+		display: block;
+		position: relative;
+		width: 640px;
+		height: 550px;
+		overflow: hidden;
+		margin: 0px auto;
+		padding: 0px;
+		
+	}
+	
+		#content {
+			
+			display: block;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 640px;
+			height: 480px
+			
+		}
+		
+			#grid {
+				
+				display: block;
+				position: absolute;
+				left: 5px;
+				top: 5px;
+				width: 400px;
+				height: 480px;
+				overflow: visible;
+				background-color: #000;
+				
+			}
+			
+				#gridImage, #gridCanvas, #gridCanvasOverlay {
+
+					display: block;
+					position: absolute;
+					width: 400px;
+					height: 480px;
+					left: 0;
+					top: 0;
+					cursor: pointer;
+
+				}
+				
+				#gridImage {
+					
+					background: url(../img/grid_640.jpg) top left no-repeat;
+				
+				}
+				
+				#marker {
+					
+					display: none;
+					position: absolute;
+					pointer-events: none;
+					width: 26px;
+					height: 27px;
+					background-image: url(../img/marker.png)
+					
+				}
+				
+				#tooltip {
+					
+					position: absolute;
+					display: none;
+					margin-right: -300px;
+					background: rgba(0,0,0,0.8);
+					padding: 5px 10px 5px 10px;
+					color: #FFF;
+					font-size: 12px;
+					line-height: 14px;
+					max-width: 220px;
+					pointer-events: none;
+					border-radius: 5px;
+					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+					z-index: 600;
+					
+				}
+				
+			#infobox {
+				
+				display: none;
+				position: absolute;
+
+				background: #FFF;
+				top: 10px;
+				right: 10px;
+				width: 360px;
+				max-height: 420px;
+				border-radius: 5px;
+				box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+				padding: 3px 10px 17px 10px;
+				z-index: 500;
+
+			}
+
+				#infobox p {
+					
+					line-height: 1.2em;
+					font-size: 12px;
+					margin: 5px 0;
+					
+				}
+				
+				#infobox .scroll {
+					
+					max-height: 340px;
+					overflow-y: auto;
+					
+				}
+			
+				#infobox #close {
+					
+					display: block;
+					position: absolute;
+					right: 10px;
+					bottom: 10px;
+					
+				}
+	
+			#display-number {
+
+				display: block;
+				position: absolute;
+				right: 5px;
+				top: 5px;
+				width: 220px;
+				height: 50px;
+
+			}
+
+				#display-number-content {
+
+					font-size: 50px;
+					line-height: 50px;
+					font-weight: bold;
+					text-align: center;
+
+				}
+				
+			#controller-navigation {
+
+				display: block;
+				position: absolute;
+				right: 5px;
+				top: 100px;
+				width: 220px;
+				height: 385px;
+
+			}
+			
+				#gridFlag {
+				
+					margin: 40px 0px 40px;
+				
+				}
+
+				#controller-navigation h3 {
+					
+					font-size: 18px;
+					line-height: 20px;
+					
+				}
+			
+
+				#controller-navigation .btn-full,
+				#controller-navigation .btn-group-vertical button {
+
+					width: 220px;
+					text-align: left;
+					font-size: 12px;
+					overflow: hidden;
+					padding: 5px;
+
+				}
+				
+				#controller-navigation #gridSort button {
+
+					text-align: left;
+					font-size: 12px;
+					overflow: hidden;
+					padding: 5px 12px 5px 13px;
+
+				}
+	
+		#footer {
+
+			display: block;
+			position: absolute;
+			bottom: 0px;
+			left: 5px;
+			right: 5px;
+
+			margin: 10px 0px 0px 0px;
+			padding: 10px 10px 10px 10px;
+			text-align: center;
+
+			line-height: 1.1em;
+			background-color: #f5f5f5;
+			border-radius: 4px;
+			border: 1px solid #E3E3E3;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+			font-size: 0.8em;
+
+		}
+				
+	#small-warning {
+	
+		display: none;
+	
+	}
+
+}
+
+@media screen and (min-width: 520px) and (max-width: 639px) {
+	
+	#container {
+		
+		display: block;
+		position: relative;
+		width: 520px;
+		height: 420px;
+		overflow: hidden;
+		margin: 0px auto;
+		padding: 0px;
+		
+	}
+	
+		#content {
+			
+			display: block;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			width: 520px;
+			height: 360px
+			
+		}
+		
+			#grid {
+				
+				display: block;
+				position: absolute;
+				left: 5px;
+				top: 5px;
+				width: 300px;
+				height: 360px;
+				overflow: visible;
+				background-color: #000;
+				
+			}
+			
+				#gridImage, #gridCanvas, #gridCanvasOverlay {
+
+					display: block;
+					position: absolute;
+					width: 300px;
+					height: 360px;
+					left: 0;
+					top: 0;
+					cursor: pointer;
+
+				}
+				
+				#gridImage {
+					
+					background: url(../img/grid_520.jpg) top left no-repeat;
+				
+				}
+				
+				#marker {
+					
+					display: none;
+					position: absolute;
+					pointer-events: none;
+					width: 26px;
+					height: 27px;
+					background-image: url(../img/marker.png)
+					
+				}
+				
+				#tooltip {
+					
+					position: absolute;
+					display: none;
+					margin-right: -300px;
+					background: rgba(0,0,0,0.8);
+					padding: 5px 10px 5px 10px;
+					color: #FFF;
+					font-size: 12px;
+					line-height: 14px;
+					max-width: 220px;
+					pointer-events: none;
+					border-radius: 5px;
+					box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+					z-index: 600;
+					
+				}
+				
+			#infobox {
+				
+				display: none;
+				position: absolute;
+
+				background: #FFF;
+				left: 20px;
+				top: 20px;
+				right: 20px;
+				max-height: 400px;
+				border-radius: 5px;
+				box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
+				padding: 3px 10px 17px 10px;
+				z-index: 500;
+
+			}
+
+				#infobox p {
+					
+					line-height: 1.2em;
+					font-size: 12px;
+					margin: 5px 0;
+					
+				}
+				
+				#infobox .scroll {
+					
+					max-height: 340px;
+					overflow-y: auto;
+					
+				}
+			
+				#infobox #close {
+					
+					display: block;
+					position: absolute;
+					right: 10px;
+					bottom: 10px;
+					
+				}
+	
+			#display-number {
+
+				display: block;
+				position: absolute;
+				right: 5px;
+				top: 5px;
+				width: 200px;
+				height: 50px;
+				padding: 0px;
+
+			}
+
+				#display-number-content {
+
+					font-size: 30px;
+					line-height: 30px;
+					font-weight: bold;
+					text-align: center;
+					padding: 10px;
+
+				}
+				
+			#controller-navigation {
+
+				display: block;
+				position: absolute;
+				right: 5px;
+				top: 70px;
+				width: 200px;
+				height: 295px;
+
+			}
+			
+				#gridFlag {
+				
+					margin: 20px 0px 20px;
+				
+				}
+
+				#controller-navigation h3 {
+					
+					font-size: 16px;
+					line-height: 18px;
+					
+				}
+			
+
+				#controller-navigation .btn-full,
+				#controller-navigation .btn-group-vertical button {
+
+					width: 200px;
+					text-align: left;
+					font-size: 12px;
+					overflow: hidden;
+					padding: 5px;
+					letter-spacing: -0.04em;
+
+				}
+				
+				#controller-navigation #gridSort button {
+
+					text-align: left;
+					font-size: 12px;
+					overflow: hidden;
+					padding: 5px 11px 5px 11px;
+					letter-spacing: -0.04em;
+
+				}
+	
+		#footer {
+
+			display: block;
+			position: absolute;
+			bottom: 0px;
+			left: 5px;
+			right: 5px;
+
+			margin: 10px 0px 0px 0px;
+			padding: 10px 10px 10px 10px;
+			text-align: center;
+
+			line-height: 1.1em;
+			background-color: #f5f5f5;
+			border-radius: 4px;
+			border: 1px solid #E3E3E3;
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+			font-size: 0.8em;
+
+		}
+				
+	#small-warning {
+	
+		display: none;
+	
+	}
+	
+}
+
+@media screen and (max-width: 519px) {
+	
+	#container {
+		
+		margin: 0px;
+		padding: 0px;
+		min-width: 0px;
+		max-width: 100%;
+		width: 100%;
+		
+	}
+	
+		#content {
+			
+			display: none;
+			
+		}
+		
+		#footer {
+			
+			display: none;
+			
+		}
+	
+		#small-warning {
+			
+			display: block;
+			position: relative;
+			padding: 20px;
 			
 		}
 
-.gridButton {
-	text-align:left;
-	margin: 0;
-}
-.gridDesc {
-	text-align: justify;
-	font-size: 12px;
-	color: #888;
-	margin-bottom: 20px;
-	margin-top: 0;
 }
 
 .clear {
