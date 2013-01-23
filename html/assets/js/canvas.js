@@ -161,7 +161,7 @@ function Canvas(options) {
 			html = replace(html, /%author%/g,                  markedEntry.author);
 			html = replace(html, /%restriction%/g,            (markedEntry.restrictedInDE > 1) ? 'Ja' : 'Nein');
 			html = replace(html, /%restrictionCountries%/g,    countries);
-			html = replace(html, /%reason%/g,                  markedEntry.reason);
+			html = replace(html, /%reason%/g,                  markedEntry.reasonDE);
 			html = replace(html, /%rank%/g,      formatInteger(markedEntry.rank));
 			html = replace(html, /%thumbnail%/g,               markedEntry.thumbnail);
 			html = replace(html, /%rating%/g,     formatRating(markedEntry.rating));
@@ -170,7 +170,7 @@ function Canvas(options) {
 			
 			if (!markedEntry.restrictedInDE > 1) html = replace(html, /%de%.*?%\/de%/g, '');
 			
-			html = replace(html, /%.*?%/g, '');
+			html = replace(html, /%\/?de%/g, '');
 			
 			infoboxContent.html(html);
 			$('#infoboxContent span').tooltip();
