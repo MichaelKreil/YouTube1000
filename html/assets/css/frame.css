@@ -79,12 +79,6 @@ body, html {
 
 				}
 				
-				#gridImage {
-					
-					background: url(../img/grid_860.jpg) top left no-repeat;
-				
-				}
-				
 				#marker {
 					
 					display: none;
@@ -276,12 +270,6 @@ body, html {
 					top: 0;
 					cursor: pointer;
 
-				}
-				
-				#gridImage {
-					
-					background: url(../img/grid_640.jpg) top left no-repeat;
-				
 				}
 				
 				#marker {
@@ -496,12 +484,6 @@ body, html {
 					top: 0;
 					cursor: pointer;
 
-				}
-				
-				#gridImage {
-					
-					background: url(../img/grid_520.jpg) top left no-repeat;
-				
 				}
 				
 				#marker {
