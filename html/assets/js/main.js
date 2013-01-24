@@ -270,7 +270,7 @@ $(function () {
 	else sizeMode = 1;
 	
 	switch (sizeMode) {
-		case 0: thumbWidth = 12; thumbHeight =  9; columns = 25; rows = 40; imageUrl = 'assets/img/grid_520.jpg'; break;
+		case 0: thumbWidth = 11; thumbHeight =  9; columns = 25; rows = 40; imageUrl = 'assets/img/grid_520.jpg'; break;
 		case 1: thumbWidth = 16; thumbHeight = 12; columns = 25; rows = 40; imageUrl = 'assets/img/grid_640.jpg'; break;
 		case 2: thumbWidth = 20; thumbHeight = 15; columns = 25; rows = 40; imageUrl = 'assets/img/grid_860.jpg'; break;
 	}

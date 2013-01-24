@@ -86,7 +86,7 @@ body, html {
 					pointer-events: none;
 					width: 26px;
 					height: 27px;
-					background-image: url(../img/marker.png)
+					background-image: url(../img/marker_860.png)
 					
 				}
 				
@@ -277,9 +277,9 @@ body, html {
 					display: none;
 					position: absolute;
 					pointer-events: none;
-					width: 26px;
-					height: 27px;
-					background-image: url(../img/marker.png)
+					width: 22px;
+					height: 22px;
+					background-image: url(../img/marker_640.png)
 					
 				}
 				
@@ -467,7 +467,7 @@ body, html {
 				position: absolute;
 				left: 5px;
 				top: 5px;
-				width: 300px;
+				width: 275px;
 				height: 360px;
 				overflow: visible;
 				background-color: #000;
@@ -478,7 +478,7 @@ body, html {
 
 					display: block;
 					position: absolute;
-					width: 300px;
+					width: 275px;
 					height: 360px;
 					left: 0;
 					top: 0;
@@ -491,9 +491,9 @@ body, html {
 					display: none;
 					position: absolute;
 					pointer-events: none;
-					width: 26px;
-					height: 27px;
-					background-image: url(../img/marker.png)
+					width: 17px;
+					height: 19px;
+					background-image: url(../img/marker_520.png)
 					
 				}
 				
@@ -501,7 +501,7 @@ body, html {
 					
 					position: absolute;
 					display: none;
-					margin-right: -300px;
+					margin-right: -275px;
 					background: rgba(0,0,0,0.8);
 					padding: 5px 10px 5px 10px;
 					color: #FFF;
@@ -562,7 +562,7 @@ body, html {
 				position: absolute;
 				right: 5px;
 				top: 5px;
-				width: 200px;
+				width: 225px;
 				height: 50px;
 				padding: 0px;
 
@@ -584,7 +584,7 @@ body, html {
 				position: absolute;
 				right: 5px;
 				top: 70px;
-				width: 200px;
+				width: 225px;
 				height: 295px;
 
 			}
@@ -606,7 +606,7 @@ body, html {
 				#controller-navigation .btn-full,
 				#controller-navigation .btn-group-vertical button {
 
-					width: 200px;
+					width: 225px;
 					text-align: left;
 					font-size: 12px;
 					overflow: hidden;
