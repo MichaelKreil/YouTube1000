@@ -310,14 +310,14 @@ function updateCanvas(options) {
 	
 	switch (flagType) {
 		case 'germany':
-			flag = function (entry) { return [0,0,0.5,1,1][entry.restrictedInDE] };
+			flag = function (entry) { return [0,0,1.0,1.0,1.0][entry.restrictedInDE] };
 			hint
 		break;
 		case 'gema':
-			flag = function (entry) { return (entry.restrictedInDE == 2) ? 1 : 0 };
+			flag = function (entry) { return [0,0,1.0,0.2,0.2][entry.restrictedInDE] };
 		break;
 		case 'other':
-			flag = function (entry) { return (entry.restrictedInDE > 2) ? 1 : 0 };
+			flag = function (entry) { return [0,0,0.2,1.0,1.0][entry.restrictedInDE] };
 		break;
 		case 'foreign':
 			flag = function (entry) { return  (entry.restrictionsAll.length > ((entry.restrictedInDE > 1) ? 1 : 0)) ? 1 : 0 };
