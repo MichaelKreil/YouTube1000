@@ -158,7 +158,7 @@ if (generateJSON) {
 			rank: entry.rank
 		}
 	}
-	fs.writeFileSync('../html/viz/data/data.js', 'var data = '+JSON.stringify(data), 'utf8');
+	fs.writeFileSync('../html/data/data.js', 'var data = '+JSON.stringify(data), 'utf8');
 	fs.writeFileSync('../charts/data.json', JSON.stringify(data, null, '\t'), 'utf8');
 }
 
@@ -203,8 +203,8 @@ if (generateThumbs || generateHugeThumbs) {
 			var p = parameters[j];
 			child.stdin.write('echo "   generate grid image '+(j+1)+'/'+parameters.length+'"\n');
 			
-			child.stdin.write('montage -tile '+p.columns+'x'+p.rows+' -geometry '+p.width+'x'+p.height+'+0+0 \''+p.thumbList.join('\' \'')+'\' html/viz/images/grid_'+p.suffix+'.png\n');
-			child.stdin.write('convert html/viz/images/grid_'+p.suffix+'.png -quality 90 -interlace JPEG html/viz/images/grid_'+p.suffix+'.jpg\n');
+			child.stdin.write('montage -tile '+p.columns+'x'+p.rows+' -geometry '+p.width+'x'+p.height+'+0+0 \''+p.thumbList.join('\' \'')+'\' html/assets/img/grid_'+p.suffix+'.png\n');
+			child.stdin.write('convert html/assets/img/grid_'+p.suffix+'.png -quality 90 -interlace JPEG html/assets/img/grid_'+p.suffix+'.jpg\n');
 		}
 	}
 	
