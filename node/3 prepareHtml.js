@@ -79,6 +79,12 @@ var spawn = require('child_process').spawn;
 
 var list = JSON.parse(fs.readFileSync('../data/top1000.json', 'utf8'));
 
+var t = list;
+list = [];
+for (var i = 0; i < t.length; i++) {
+	if (t[i].use != false) list.push(t[i]);
+}
+
 list.sort(function (a,b) { return b.viewCount - a.viewCount});
 list.length = 1000;
 
