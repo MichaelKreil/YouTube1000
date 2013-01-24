@@ -8,7 +8,7 @@ var generateGridHTML = 'simple'; // false, 'info', 'simple'
 var parameters = [
 	{ width:20, height:15, f:1.4, columns:25, rows:40, suffix:'860' },
 	{ width:16, height:12, f:1.4, columns:25, rows:40, suffix:'640' },
-	{ width:12, height:09, f:1.4, columns:25, rows:40, suffix:'520' }
+	{ width:11, height:09, f:1.4, columns:25, rows:40, suffix:'520' }
 ];
 
 var widthHuge  = Math.round(Math.min(480, 360*parameters[0].width/parameters[0].height)/parameters[0].f);
