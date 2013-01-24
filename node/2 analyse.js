@@ -170,7 +170,7 @@ function check() {
 		
 		var result = [];
 		for (var i = 0; i < entries.length; i++) {
-			if (entries[i].use) result.push(entries[i]);
+			if (true) result.push(entries[i]);
 		}
 		
 		var json = JSON.stringify(result, null, '\t');
@@ -196,7 +196,7 @@ function check() {
 			lines.push(line.join('\t'));
 		}
 		fs.writeFileSync('../data/top1000.tsv', lines.join('\r'), 'utf8');
-		fs.writeFileSync('../html/data/top1000.tsv', lines.join('\r'), 'utf8');
+		//fs.writeFileSync('../html/data/top1000.tsv', lines.join('\r'), 'utf8');
 	}
 }
 
