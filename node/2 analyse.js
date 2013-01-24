@@ -187,7 +187,8 @@ function check() {
 			var line = [];
 			for (var j = 0; j < keys.length; j++) {
 				var key = keys[j];
-				var value = entry[key].toString();
+				var value = entry[key];
+				value = (value === undefined) ? 'undefined' : value.toString();
 				value = value.replace(/\t/g, '\\t');
 				value = value.replace(/\n/g, '\\n');
 				value = value.replace(/\r/g, '\\r');
