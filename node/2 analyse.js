@@ -24,7 +24,6 @@ for (var i in list) {
 	entries.push({
 		id:        id,
 		viewCount: list[i],
-		reason:    '',
 		thumbnail: 'http://i.ytimg.com/vi/'+id+'/default.jpg',
 		image:     'http://i.ytimg.com/vi/'+id+'/hqdefault.jpg',
 		url:       'http://www.youtube.com/watch?v='+id,
