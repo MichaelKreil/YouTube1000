@@ -43,7 +43,7 @@ fs.writeFileSync('../charts/countries.tsv', lines.join('\r'), 'utf8');
 var count = {};
 for (var i = 0; i < data.length; i++) {
 	var entry = data[i];
-	var reason = entry.reason;
+	var reason = entry.reasonDE;
 	if (count[reason] === undefined) count[reason] = 0;
 	count[reason]++;
 }
