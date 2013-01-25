@@ -68,7 +68,10 @@ var reason2info = {
 		code:4,
 		en:'This video is not available in your country.'
 	},
-	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":{code:4,en:''}
+	"Der betreffende Nutzer hat das Video in deinem Land nicht zur Verfügung gestellt.":{
+		code:4,
+		en:'The uploader has not made this video available in your country.'
+	}
 }
  
 
