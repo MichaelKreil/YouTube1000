@@ -137,6 +137,7 @@ function Canvas(options) {
 			for (var i = 0; i < c.length; i++) {
 				var countryName = countryCodes[c[i]];
 				if (countryName === undefined) console.error('Unbekannter Code: '+c[i]);
+				countryName = inEnglishPlease ? countryName.en : countryName.de;
 				
 				var style = 'color:#888';
 				switch (highlightCountries[c[i]]) {
@@ -159,9 +160,14 @@ function Canvas(options) {
 			html = replace(html, /%published%/g,    formatDate(markedEntry.published));
 			html = replace(html, /%url%/g,                     markedEntry.url);
 			html = replace(html, /%author%/g,                  markedEntry.author);
-			html = replace(html, /%restriction%/g,            (markedEntry.restrictedInDE > 1) ? 'Ja' : 'Nein');
+			if (inEnglishPlease) {
+				html = replace(html, /%restriction%/g,        (markedEntry.restrictedInDE > 1) ? 'Yes' : 'No');
+				html = replace(html, /%reason%/g,              markedEntry.reasonEN);
+			} else {
+				html = replace(html, /%restriction%/g,        (markedEntry.restrictedInDE > 1) ? 'Ja' : 'Nein');
+				html = replace(html, /%reason%/g,              markedEntry.reasonDE);
+			}
 			html = replace(html, /%restrictionCountries%/g,    countries);
-			html = replace(html, /%reason%/g,                  markedEntry.reasonDE);
 			html = replace(html, /%rank%/g,      formatInteger(markedEntry.rank));
 			html = replace(html, /%thumbnail%/g,               markedEntry.thumbnail);
 			html = replace(html, /%rating%/g,     formatRating(markedEntry.rating));

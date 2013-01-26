@@ -304,7 +304,12 @@ function updateCanvas(options) {
 	
 	var flag;
 	var sort = function (entry) { return -entry.restrictedInDE };
-	var hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reasonDE+'</i>' : '' };
+	var hint;
+	if (inEnglishPlease) {
+		hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reasonDE+'</i>' : '' };
+	} else {
+		hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Reason:<br><i>'+entry.reasonEN+'</i>' : '' };
+	}
 	
 	switch (flagType) {
 		case 'germany':
@@ -332,22 +337,48 @@ function updateCanvas(options) {
 				if (entry.restrictedInDE > 1) {
 					if (entry.restrictionsAll.length > 1) {
 						if (entry.restrictionsAll.length > 2) {
-							return 'gesperrt in '+(entry.restrictionsAll.length-1)+' Ländern,<br>zusätzlich auch in Deutschland';
+							if (inEnglishPlease) {
+								return 'blocked in '+(entry.restrictionsAll.length-1)+' countries<br>and in Germany';
+							} else {
+								return 'gesperrt in '+(entry.restrictionsAll.length-1)+' Ländern,<br>zusätzlich auch in Deutschland';
+							}
 						} else {
 							var id = (entry.restrictionsAll[0] == 'DE') ? 1 : 0; 
-							return 'gesperrt in einem Land ('+countryCodes[entry.restrictionsAll[id]]+'),<br>zusätzlich auch in Deutschland';
+							var code = countryCodes[entry.restrictionsAll[id]];
+							if (inEnglishPlease) {
+								return 'blocked in one country ('+code.en+')<br>and in Germany';
+							} else {
+								return 'gesperrt in einem Land ('+code.de+'),<br>zusätzlich auch in Deutschland';
+							}
 						}
 					} else {
-						return 'gesperrt nur in Deutschland';
+						if (inEnglishPlease) {
+							return 'blocked only in Germany';
+						} else {
+							return 'gesperrt nur in Deutschland';
+						}
 					}
 				} else {
 					if (entry.restrictionsAll.length > 1) {
-						return 'gesperrt in '+entry.restrictionsAll.length+' Ländern,<br>aber nicht in Deutschland';
+
+						if (inEnglishPlease) {
+							return 'blocked in '+entry.restrictionsAll.length+' countries,<br>but not in Germany';
+						} else {
+							return 'gesperrt in '+entry.restrictionsAll.length+' Ländern,<br>aber nicht in Deutschland';
+						}
 					} else if (entry.restrictionsAll.length > 0) {
-						return 'gesperrt in einem Land ('+countryCodes[entry.restrictionsAll[0]]+')';
-						
+							var code = countryCodes[entry.restrictionsAll[0]];
+							if (inEnglishPlease) {
+								return 'blocked only in '+code.en;
+							} else {
+								return 'gesperrt nur in '+code.de;
+							}
 					} else {
-						return 'nirgends gesperrt';
+						if (inEnglishPlease) {
+							return 'nowhere blocked';
+						} else {
+							return 'nirgends gesperrt';
+						}
 					}
 				}
 			}
