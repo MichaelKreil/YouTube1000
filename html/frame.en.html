@@ -21,43 +21,43 @@
 			<div id="content">
 				<div id="grid">
 					<img id="gridImage">
-					<canvas id="gridCanvas" width="500" height="600"></canvas>
-					<canvas id="gridCanvasOverlay" width="500" height="600"></canvas>
+					<canvas id="gridCanvas"></canvas>
+					<canvas id="gridCanvasOverlay"></canvas>
 					<div id="marker"></div>
 					<div id="tooltip"></div>
 				</div>
 				<div id="infobox">
 					<button class="close">&times;</button>
 					<div id="infoboxContent"></div>
-					<button id="close" class="btn btn-danger btn-small" onclick="$('#infobox').fadeOut('fast');">Schließen</button>
+					<button id="close" class="btn btn-danger btn-small" onclick="$('#infobox').fadeOut('fast');">Close</button>
 				</div>
 				<div id="display-number">
 					<div class="well" id="display-number-content"></div>
 				</div>
 				<div id="controller-navigation">
 					<div data-toggle="buttons-radio" id="gridFlag">
-						<h3>Gesperrt in Deutschland</h3>
+						<h3>Blocked in Germany</h3>
 						<div class="btn-group btn-group-vertical">
-							<button class="btn btn-large active" value="germany">Alle in Deutschland gesperrten Videos</button>
-							<button class="btn btn-large" value="other">konkrete Rechteprobleme</button>
-							<button class="btn btn-large" value="gema">möglicherweise Rechteprobleme</button>
+							<button class="btn btn-large active" value="germany">All videos blocked in Germany</button>
+							<button class="btn btn-large" value="other">Actual rights violations</button>
+							<button class="btn btn-large" value="gema">Potential rights violations</button>
 						</div>
-						<h3>In anderen Ländern</h3>
-						<button class="btn btn-large btn-full" value="foreign">In anderen Staaten gesperrt</button>
+						<h3>Other states</h3>
+						<button class="btn btn-large btn-full" value="foreign">blocked in other states</button>
 					</div>
-					<h3>Sortieren nach</h3>
+					<h3>Sort by</h3>
 					<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
-						<button class="btn btn-large active" value="rank">Klicks</button>
-						<button class="btn btn-large" value="rating">Bewertung</button>
-						<button class="btn btn-large" value="blocked">Sperrung</button>
+						<button class="btn btn-large active" value="rank">Views</button>
+						<button class="btn btn-large" value="rating">Rating</button>
+						<button class="btn btn-large" value="blocked">Blocking</button>
 					</div>
 				</div>
 			</div>
 			<div id="footer">
-				Realisiert von <a href="http://www.opendatacity.de/" class="opendatacity">OpenDataCity</a>. Die Anwendung steht unter einer <a rel="license" href="http://creativecommons.org/licenses/by-nd/3.0/de/">CC-BY 3.0</a>. Die Daten kann man <a href="data/top1000.tsv">hier runterladen</a>.
+				Made by <a href="http://www.opendatacity.de/" class="opendatacity">OpenDataCity</a>.  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/us/">CC-BY 3.0</a>. <a href="data/top1000.tsv">Download the data</a>.
 			</div>
 			<div id="small-warning">
-				<p>Hier ist nicht genug Platz um die Top 1000 YouTube-Videos darzustellen. <a href="{{url}}">Hier entlang.</a></p>
+				<p>Window is too small to show the Top 1000 YouTube videos. <a href="{{url}}">Follow me.</a></p>
 			</div>
 		</div>
 	</body>
