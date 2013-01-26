@@ -108,6 +108,7 @@ for (var i = 0; i < list.length; i++) {
 	reason = reason.replace(/ f[^a-z]{2}r /g, ' für ');
 	reason = reason.replace(/m[^a-z]{2}glicher/g, 'möglicher');
 	reason = reason.replace(/einger[^a-z]{2}umt/g, 'eingeräumt');
+	reason = reason.replace(/enth[^a-z]{2}lt/g, 'enthält');
 	entry.reasonDE = reason;
 }
 
