@@ -26,6 +26,39 @@ body, html {
 				top: 0px;
 				
 			}
+				#countries {
+					width: 100%;
+					height: 60px;
+					margin: 0;
+					padding-right: -2px;
+					position: relative;
+				}
+
+					#countries .btn-group {
+						position: absolute;
+						margin: 10px 0 0 0;
+						left: 0px;
+						right: -2px;
+					}
+						#countries .btn-group:nth-child(1) button {
+							border-bottom-left-radius: 0;
+							border-bottom-right-radius: 0;
+							border-bottom: none !important;
+						}
+
+						#countries .btn-group:nth-child(2) {
+							top:25px;
+						}
+							#countries .btn-group:nth-child(2) button {
+								border-top-left-radius: 0;
+								border-top-right-radius: 0;
+							}
+
+					#countries button {
+						text-align: center !important;
+						overflow: hidden;
+						padding: 3px 0px 3px 1px !important;
+					}
 
 				#gridSort {
 					width: 100%;
@@ -202,6 +235,15 @@ body, html {
 					text-align: left;
 
 				}
+
+				#countries {
+					height: 70px;
+				}
+
+					#countries .btn-group:nth-child(2) {
+						top:27px;
+					}
+
 	
 		#footer {
 
@@ -383,7 +425,7 @@ body, html {
 			
 				#gridFlag {
 				
-					margin: 40px 0px 40px;
+					margin: 40px 0px 25px;
 				
 				}
 
@@ -413,6 +455,14 @@ body, html {
 					overflow: hidden;
 					padding: 5px 12px 5px 13px;
 
+				}
+
+				#countries button {
+					text-align: center !important;
+					font-size: 12px;
+					overflow: hidden;
+					padding: 2px 0px 2px 1px !important;
+					letter-spacing: -0.04em;
 				}
 	
 		#footer {
@@ -627,6 +677,10 @@ body, html {
 					padding: 5px 11px 5px 11px;
 					letter-spacing: -0.04em;
 
+				}
+
+				#countries {
+					display: none;
 				}
 	
 		#footer {

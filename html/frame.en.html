@@ -42,18 +42,30 @@
 					<div data-toggle="buttons-radio" id="gridFlag">
 						<h3>Blocked in Germany</h3>
 						<div class="btn-group btn-group-vertical">
-							<button class="btn btn-large active" value="germany">All videos blocked in Germany</button>
-							<button class="btn btn-large" value="other">Actual rights violations</button>
-							<button class="btn btn-large" value="gema">Potential rights violations</button>
+							<button class="btn active" value="germany">All videos blocked in Germany</button>
+							<button class="btn" value="other">Actual rights violations</button>
+							<button class="btn" value="gema">Potential rights violations</button>
 						</div>
-						<h3>Other states</h3>
-						<button class="btn btn-large btn-full" value="foreign">Blocked in other states</button>
+						<h3>Blocked in other states</h3>
+						<button class="btn btn-full" value="foreign">In any country except Germany</button>
+						<div id="countries">
+							<div class="btn-group">
+								<button class="btn" value="country-SS" style="width:30%">S. Sudan</button>
+								<button class="btn" value="country-VA" style="width:30%">Vatican</button>
+								<button class="btn" value="country-AF" style="width:40%">Afghanistan</button>
+							</div>
+							<div class="btn-group">
+								<button class="btn" value="country-CH" style="width:40%">Switzerland</button>
+								<button class="btn" value="country-AT" style="width:30%">Austria</button>
+								<button class="btn" value="country-US" style="width:30%">USA</button>
+							</div>
+						</div>
 					</div>
 					<h3>Sort by</h3>
 					<div class="btn-group" data-toggle="buttons-radio" id="gridSort">
-						<button class="btn btn-large active" value="rank">Views</button>
-						<button class="btn btn-large" value="rating">Rating</button>
-						<button class="btn btn-large" value="blocked">Blocking</button>
+						<button class="btn active" value="rank">Views</button>
+						<button class="btn" value="rating">Rating</button>
+						<button class="btn" value="blocked">Blocking</button>
 					</div>
 				</div>
 			</div>
