@@ -124,19 +124,17 @@ body, html {
 				z-index: 500;
 
 			}
+				#infoboxContent {
+					margin: 10px;
+					max-height: 540px;
+					overflow: scroll;
+				}
 
 				#infobox p {
 					
 					line-height: 1.2em;
 					font-size: 12px;
 					margin: 5px 0;
-					
-				}
-				
-				#infobox .scroll {
-					
-					max-height: 340px;
-					overflow-y: auto;
 					
 				}
 			
@@ -310,7 +308,7 @@ body, html {
 				top: 10px;
 				right: 10px;
 				width: 360px;
-				max-height: 420px;
+				max-height: 450px;
 				border-radius: 5px;
 				box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
 				padding: 3px 10px 17px 10px;
@@ -318,18 +316,17 @@ body, html {
 
 			}
 
+				#infoboxContent {
+					margin: 10px 10px 40px 10px;
+					max-height: 400px;
+					overflow: scroll;
+				}
+
 				#infobox p {
 					
 					line-height: 1.2em;
 					font-size: 12px;
 					margin: 5px 0;
-					
-				}
-				
-				#infobox .scroll {
-					
-					max-height: 340px;
-					overflow-y: auto;
 					
 				}
 			
@@ -524,13 +521,18 @@ body, html {
 				left: 20px;
 				top: 20px;
 				right: 20px;
-				max-height: 400px;
+				max-height: 380px;
 				border-radius: 5px;
 				box-shadow: 0px 0px 15px -5px rgba(0,0,0,0.6);
-				padding: 3px 10px 17px 10px;
+				padding: 3px 10px 40px 10px;
 				z-index: 500;
 
 			}
+				#infoboxContent {
+					margin: 10px;
+					max-height: 320px;
+					overflow: scroll;
+				}
 
 				#infobox p {
 					
@@ -539,21 +541,12 @@ body, html {
 					margin: 5px 0;
 					
 				}
-				
-				#infobox .scroll {
-					
-					max-height: 340px;
-					overflow-y: auto;
-					
-				}
-			
+
 				#infobox #close {
-					
 					display: block;
 					position: absolute;
 					right: 10px;
 					bottom: 10px;
-					
 				}
 	
 			#display-number {
