@@ -27,6 +27,17 @@ body, html {
 				
 			}
 
+				#gridSort {
+					width: 100%;
+				}
+
+				#gridSort button {
+					width: 33.33%;
+					text-align: center !important;
+					padding-left: 1px !important;
+					padding-right: 0px !important;
+				}
+
 /* responsive design */
 
 @media screen and (min-width: 860px) {
@@ -391,7 +402,7 @@ body, html {
 					text-align: left;
 					font-size: 12px;
 					overflow: hidden;
-					padding: 5px;
+					padding: 5px 8px;
 
 				}
 				
@@ -603,7 +614,7 @@ body, html {
 					text-align: left;
 					font-size: 12px;
 					overflow: hidden;
-					padding: 5px;
+					padding: 5px 8px;
 					letter-spacing: -0.04em;
 
 				}
