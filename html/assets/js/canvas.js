@@ -242,7 +242,7 @@ function Canvas(options) {
 					}
 			}
 			
-			if (flagged > 0) count++;
+			if (flagged > 0.5) count++;
 			
 			entry.oldColor = entry.newColor;
 			entry.newColor = color;
