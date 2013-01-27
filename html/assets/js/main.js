@@ -258,8 +258,14 @@ var thumbWidth, thumbHeight, columns, rows, imageUrl;
 $(function () {
 	for (var i = 0; i < data.length; i++) {
 		var entry = data[i];
+
 		entry.publishedTS = (new Date(entry.published)).getTime();
 		entry.updatedTS   = (new Date(entry.updated  )).getTime();
+		
+		entry.restrictionCountries = {};
+		for (var j = 0; j < entry.restrictionsAll.length; j++) {
+			entry.restrictionCountries[entry.restrictionsAll[j]] = true;
+		}
 	}
 	
 	var width = $(window).width();
@@ -311,7 +317,7 @@ function updateCanvas(options) {
 		hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Reason:<br><i>'+entry.reasonEN+'</i>' : '' };
 	}
 	
-	switch (flagType) {
+	switch (flagType.split('-')[0]) {
 		case 'germany':
 			flag = function (entry) { return [0,0,1.0,1.0,1.0][entry.restrictedInDE] };
 			hint
@@ -380,6 +386,19 @@ function updateCanvas(options) {
 							return 'nirgends gesperrt';
 						}
 					}
+				}
+			}
+		break;
+		case 'country':
+			var country = flagType.split('-')[1];
+			var code = countryCodes[country];
+			flag = function (entry) { return  (entry.restrictionCountries[country] === true) ? 1 : 0 };
+			sort = function (entry) { return -((entry.restrictionCountries[country] === true) ? 1000 : 0); };
+			hint = function (entry) {
+				if (entry.restrictionCountries[country] === true) {
+					return inEnglishPlease ? 'blocked in '+code.en : 'gesperrt in &bdquo;'+code.de+'&rdquo;';
+				} else {
+					return '';
 				}
 			}
 		break;
