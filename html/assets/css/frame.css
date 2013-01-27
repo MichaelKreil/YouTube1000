@@ -76,6 +76,20 @@ body, html {
 					padding-right: 0px !important;
 				}
 
+			#footer {
+
+				display: block;
+				position: absolute;
+				text-align: right;
+				color: #AAA;
+			}
+
+			#footer a {
+				color: #AAA;
+				text-decoration: none;
+				border-bottom: 1px solid #CCC;
+			}
+
 /* responsive design */
 
 @media screen and (min-width: 860px) {
@@ -85,7 +99,7 @@ body, html {
 		display: block;
 		position: relative;
 		width: 860px;
-		height: 670px;
+		height: 610px;
 		overflow: hidden;
 		margin: 0px auto;
 		padding: 0px;
@@ -99,7 +113,7 @@ body, html {
 			left: 0px;
 			top: 0px;
 			width: 860px;
-			height: 600px
+			height: 610px
 			
 		}
 		
@@ -215,21 +229,29 @@ body, html {
 					text-align: center;
 
 				}
-				
+
+			#footer {
+				width: 340px;
+				height: 20px;
+				right: 5px;
+				top: 590px;
+				font-size: 10px;
+			}
+
 			#controller-navigation {
 
 				display: block;
 				position: absolute;
 				right: 5px;
-				top: 130px;
+				top: 140px;
 				width: 340px;
-				height: 490px;
+				height: 450px;
 
 			}
 			
 				#gridFlag {
 					
-					margin: 35px 0px 60px;
+					margin: 0px 0px 32px;
 					
 				}
 
@@ -242,7 +264,7 @@ body, html {
 				}
 
 				#countries {
-					height: 70px;
+					height: 95px;
 				}
 
 					#countries .btn-group:nth-child(2) {
@@ -259,26 +281,6 @@ body, html {
 						top:54px;
 					}
 
-	
-		#footer {
-
-			display: block;
-			position: absolute;
-			bottom: 0px;
-			left: 5px;
-			right: 5px;
-
-			margin: 10px 0px 0px 0px;
-			padding: 10px 10px 10px 10px;
-			text-align: center;
-
-			line-height: 1.1em;
-			background-color: #f5f5f5;
-			border-radius: 4px;
-			border: 1px solid #E3E3E3;
-			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset
-
-		}
 				
 	#small-warning {
 	
@@ -295,7 +297,7 @@ body, html {
 		display: block;
 		position: relative;
 		width: 640px;
-		height: 550px;
+		height: 490px;
 		overflow: hidden;
 		margin: 0px auto;
 		padding: 0px;
@@ -309,7 +311,7 @@ body, html {
 			left: 0px;
 			top: 0px;
 			width: 640px;
-			height: 480px
+			height: 490px
 			
 		}
 		
@@ -426,21 +428,30 @@ body, html {
 					text-align: center;
 
 				}
+
+
+			#footer {
+				width: 220px;
+				height: 20px;
+				right: 5px;
+				top: 470px;
+				font-size: 10px;
+			}
 				
 			#controller-navigation {
 
 				display: block;
 				position: absolute;
 				right: 5px;
-				top: 100px;
+				top: 110px;
 				width: 220px;
-				height: 385px;
+				height: 350px;
 
 			}
 			
 				#gridFlag {
 				
-					margin: 40px 0px 25px;
+					margin: 0px 0px 27px;
 				
 				}
 
@@ -479,27 +490,6 @@ body, html {
 					padding: 2px 0px 2px 1px !important;
 					letter-spacing: -0.04em;
 				}
-	
-		#footer {
-
-			display: block;
-			position: absolute;
-			bottom: 0px;
-			left: 5px;
-			right: 5px;
-
-			margin: 10px 0px 0px 0px;
-			padding: 10px 10px 10px 10px;
-			text-align: center;
-
-			line-height: 1.1em;
-			background-color: #f5f5f5;
-			border-radius: 4px;
-			border: 1px solid #E3E3E3;
-			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-			font-size: 0.8em;
-
-		}
 				
 	#small-warning {
 	
@@ -516,7 +506,7 @@ body, html {
 		display: block;
 		position: relative;
 		width: 520px;
-		height: 420px;
+		height: 370px;
 		overflow: hidden;
 		margin: 0px auto;
 		padding: 0px;
@@ -530,7 +520,7 @@ body, html {
 			left: 0px;
 			top: 0px;
 			width: 520px;
-			height: 360px
+			height: 370px
 			
 		}
 		
@@ -646,21 +636,29 @@ body, html {
 					padding: 10px;
 
 				}
+
+			#footer {
+				width: 225px;
+				height: 20px;
+				right: 5px;
+				top: 350px;
+				font-size: 10px;
+			}
 				
 			#controller-navigation {
 
 				display: block;
 				position: absolute;
 				right: 5px;
-				top: 70px;
+				top: 65px;
 				width: 225px;
-				height: 295px;
+				height: 290px;
 
 			}
 			
 				#gridFlag {
 				
-					margin: 20px 0px 20px;
+					margin: 0px 0px 23px;
 				
 				}
 
@@ -697,27 +695,6 @@ body, html {
 				#countries {
 					display: none;
 				}
-	
-		#footer {
-
-			display: block;
-			position: absolute;
-			bottom: 0px;
-			left: 5px;
-			right: 5px;
-
-			margin: 10px 0px 0px 0px;
-			padding: 10px 10px 10px 10px;
-			text-align: center;
-
-			line-height: 1.1em;
-			background-color: #f5f5f5;
-			border-radius: 4px;
-			border: 1px solid #E3E3E3;
-			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
-			font-size: 0.8em;
-
-		}
 				
 	#small-warning {
 	
