@@ -312,9 +312,9 @@ function updateCanvas(options) {
 	var sort = function (entry) { return -entry.restrictedInDE };
 	var hint;
 	if (inEnglishPlease) {
-		hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reasonDE+'</i>' : '' };
-	} else {
 		hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Reason:<br><i>'+entry.reasonEN+'</i>' : '' };
+	} else {
+		hint = function (entry) { return (entry.restrictedInDE > 1) ? 'Begründung:<br><i>'+entry.reasonDE+'</i>' : '' };
 	}
 	
 	switch (flagType.split('-')[0]) {
