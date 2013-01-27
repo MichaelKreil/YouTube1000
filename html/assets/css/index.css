@@ -15,28 +15,8 @@ body {
 		padding: 50px;
 		
 	}
-		#social {
-			margin-top: 20px;
-			position: relative;
-			height: 40px;
-		}
-
 		.social {
-			position: absolute;
-			width: 200px;
-			height: 40px;
-		}
-
-		#social-twitter {
-			right: 530px;
-		}
-
-		#social-google {
-			right: 330px;
-		}
-
-		#social-facebook {
-			right: 130px;
+			height: 30px;
 		}
 
 
