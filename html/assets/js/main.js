@@ -333,11 +333,7 @@ function updateCanvas(options) {
 			sort = function (entry) {
 				var inDE = (entry.restrictedInDE > 1) ? 1 : 0;
 				var onlyForeign = entry.restrictionsAll.length - inDE;
-				if (onlyForeign > 0) {
-					return -(onlyForeign+10);
-				} else {
-					return -entry.restrictedInDE
-				}
+				return -onlyForeign;
 			};
 			hint = function (entry) {
 				if (entry.restrictedInDE > 1) {

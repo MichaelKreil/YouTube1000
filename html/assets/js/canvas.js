@@ -186,10 +186,17 @@ function Canvas(options) {
 	me.sort = function (options) {
 		for (var i = 0; i < data.length; i++) {
 			indexes[i].sortBy = options.callback(indexes[i].entry);
+			indexes[i].oldIndex = i;
 			indexes[i].entry.hint = options.hint(indexes[i].entry);
 		}
 		
-		indexes.sort(function (a, b) { return (a.sortBy == b.sortBy) ? (b.entry.viewCount - a.entry.viewCount) : ((a.sortBy < b.sortBy) ? -1 :  1); });
+		indexes.sort(function (a, b) {
+			if (a.sortBy == b.sortBy) {
+				return a.oldIndex - b.oldIndex;
+			} else {
+				return a.sortBy - b.sortBy;
+			}
+		});
 		
 		for (var i = 0; i < indexes.length; i++) {
 			var entry = indexes[i].entry;
