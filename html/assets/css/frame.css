@@ -40,16 +40,21 @@ body, html {
 						left: 0px;
 						right: -2px;
 					}
-						#countries .btn-group:nth-child(1) button {
+						#countries .btn-group:first-child button {
 							border-bottom-left-radius: 0;
 							border-bottom-right-radius: 0;
 							border-bottom: none !important;
 						}
 
 						#countries .btn-group:nth-child(2) {
+							display: none;
+						}
+
+						#countries .btn-group:last-child {
 							top:25px;
 						}
-							#countries .btn-group:nth-child(2) button {
+
+							#countries .btn-group:last-child button {
 								border-top-left-radius: 0;
 								border-top-right-radius: 0;
 							}
@@ -242,6 +247,16 @@ body, html {
 
 					#countries .btn-group:nth-child(2) {
 						top:27px;
+						display: block;
+					}
+
+					#countries .btn-group:nth-child(2) button {
+						border-radius: 0px !important;
+						border-bottom: none !important;
+					}
+
+					#countries .btn-group:last-child {
+						top:54px;
 					}
 
 	
