@@ -70,17 +70,22 @@ function generateGridSVG(filename, sortCallback, flagCallback) {
 	var columns = 25;
 	var rows = 40;
 	
-	var scale = 1;
+	var scale = 5;
 	
 	for (var i = 0; i < data.length; i++) data[i].sortValue = sortCallback(data[i]);
 	data = data.sort(function (a, b) {
 		return (a.sortValue == b.sortValue) ? (b.viewCount - a.viewCount) : ((a.sortValue < b.sortValue) ? -1 :  1)
 	});
 	
+	var width = (thumbWidth*columns/scale);
+	var height = (thumbHeight*rows/scale);
+	
+	console.log(width+'x'+height);
+	
 	var svg = [];
 	svg.push('<?xml version="1.0" encoding="UTF-8"?>');
 	svg.push('<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">');
-	svg.push('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" version="1.1" baseProfile="full" width="'+(thumbWidth*columns/scale)+'px" height="'+(thumbHeight*rows/scale)+'px">');
+	svg.push('<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:ev="http://www.w3.org/2001/xml-events" version="1.1" baseProfile="full" width="'+width+'px" height="'+height+'px">');
 	
 	for (var i = 0; i < data.length; i++) {
 		var x = (i % columns)*thumbWidth;
