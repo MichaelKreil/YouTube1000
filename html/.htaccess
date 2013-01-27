@@ -1,8 +1,5 @@
-# Testing only — do not deploy.
-<IfModule mod_rewrite.c>
-	RewriteEngine On	
-	RewriteCond %{REQUEST_URI} !^/?(iframe)/
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteRule ^(.*) frame.html [L]
-</IfModule>
+AuthUserFile /home/opendatacity/.htpasswd
+AuthName "Please enter your ID and password"
+AuthType Basic
+Require valid-user 
+
