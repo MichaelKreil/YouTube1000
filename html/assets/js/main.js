@@ -267,9 +267,11 @@ $(function () {
 			entry.restrictionCountries[entry.restrictionsAll[j]] = true;
 		}
 	}
-	
+		
 	var width = $(window).width();
-	if (width < 530) sizeMode = 0;
+	
+	     if (width < 430) sizeMode = 1;
+	else if (width < 530) sizeMode = 0;
 	else if (width > 850) sizeMode = 2;
 	else sizeMode = 1;
 	
