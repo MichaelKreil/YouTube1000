@@ -147,9 +147,9 @@ body, html {
 					display: none;
 					position: absolute;
 					pointer-events: none;
-					width: 26px;
-					height: 27px;
-					background-image: url(../img/marker_860.png)
+					width: 20px;
+					height: 15px;
+					border: 3px solid #000;
 					
 				}
 				
@@ -345,9 +345,9 @@ body, html {
 					display: none;
 					position: absolute;
 					pointer-events: none;
-					width: 22px;
-					height: 22px;
-					background-image: url(../img/marker_640.png)
+					width: 16px;
+					height: 12px;
+					border: 3px solid #000;
 					
 				}
 				
@@ -554,9 +554,9 @@ body, html {
 					display: none;
 					position: absolute;
 					pointer-events: none;
-					width: 17px;
-					height: 19px;
-					background-image: url(../img/marker_520.png)
+					width: 11px;
+					height: 9px;
+					border: 3px solid #000;
 					
 				}
 				
