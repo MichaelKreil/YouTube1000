@@ -267,11 +267,13 @@ $(function () {
 			entry.restrictionCountries[entry.restrictionsAll[j]] = true;
 		}
 	}
-	
+		
 	var width = $(window).width();
-	if (width < 640) sizeMode = 0;
-	else if (width >= 860) sizeMode = 2;
-	else sizeMode = 1;
+
+	     if (width < 520) sizeMode = 1;
+	else if (width < 640) sizeMode = 0;
+	else if (width < 860) sizeMode = 1;
+	else sizeMode = 2;
 	
 	switch (sizeMode) {
 		case 0: thumbWidth = 11; thumbHeight =  9; columns = 25; rows = 40; imageUrl = 'assets/img/grid_520.jpg'; break;
