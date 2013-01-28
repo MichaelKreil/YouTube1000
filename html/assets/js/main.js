@@ -269,8 +269,8 @@ $(function () {
 	}
 	
 	var width = $(window).width();
-	if (width < 530) sizeMode = 0;
-	else if (width > 850) sizeMode = 2;
+	if (width < 640) sizeMode = 0;
+	else if (width >= 860) sizeMode = 2;
 	else sizeMode = 1;
 	
 	switch (sizeMode) {
