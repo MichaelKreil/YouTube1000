@@ -94,19 +94,28 @@ function Canvas(options) {
 				
 				var tx = xi*thumbWidth;
 				var ty = yi*thumbHeight;
-				
+
 				marker.css({
 					left: tx-3,
 					top:  ty-3
 				});
 				
 				tx += thumbWidth/2 - tooltip.outerWidth()/2;
-				ty += thumbHeight;
-				
-				tooltip.css({
-					left: Math.max(-10, tx),
-					top:  ty
-				});
+				if (tx < -5) tx = -5;
+
+				if (ty + thumbHeight + 120 < node.innerHeight()) {
+					tooltip.css({
+						left: tx,
+						top:  ty + thumbHeight + 3,
+						bottom: 'auto'
+					});
+				} else {
+					tooltip.css({
+						left: tx,
+						top:  'auto',
+						bottom: node.innerHeight() - (ty - 3)
+					});
+				}
 			}
 			
 			status.content = content;
