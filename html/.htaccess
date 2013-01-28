@@ -1,5 +1,0 @@
-AuthUserFile /home/opendatacity/.htpasswd
-AuthName "Please enter your ID and password"
-AuthType Basic
-Require valid-user 
-
