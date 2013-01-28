@@ -55,14 +55,7 @@ body {
 		}
 		
 			#license {
-				
-				display: block;
-				position: relative;
-				float: right;
-				
-				margin: 0px;
 				padding: 20px 10px 20px 100px;
-				width: 220px;
 				background: url(../img/cc-by.png) 10px center no-repeat;
 				font-size: 0.8em;
 				line-height: 1.1em;
@@ -87,7 +80,7 @@ body {
 				
 			}
 			
-				#creator a.opendatacity {
+				a#odclogo {
 					
 					display: inline-block;
 					position: relative;
@@ -97,6 +90,22 @@ body {
 					text-indent: -1000px;
 					color: transparent;
 					background: url(../img/opendatacity.png) center center no-repeat;
+					margin: 0px;
+					padding: 0px;
+					top: -5px;
+					
+				}
+
+				a#mvlogo {
+					
+					display: inline-block;
+					position: relative;
+					width: 200px;
+					height: 60px;
+					font-size: 0px;
+					text-indent: -1000px;
+					color: transparent;
+					background: url(../img/myvideo.png) center center no-repeat;
 					margin: 0px;
 					padding: 0px;
 					top: -5px;
