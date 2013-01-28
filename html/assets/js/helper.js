@@ -49,6 +49,7 @@ $(document).ready(function(){
 						case 'large':  var $wh = 'width="860" height="610"'; break;
 						case 'medium': var $wh = 'width="640" height="490"'; break;
 						case 'small':  var $wh = 'width="520" height="370"'; break;
+						case 'verysmall':  var $wh = 'width="420" height="740"'; break;
 					}
 					var $code = '<iframe src="'+$url+file+'" '+$wh+' scrolling="no" frameborder="0" style="margin:0"><a href="'+$url+'">'+text+'</a></iframe><br><small>'+suffix+'</small>';
 			$('#embed-code', $f).text($code);
