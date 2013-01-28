@@ -113,6 +113,8 @@ for (var i = 0; i < list.length; i++) {
 }
 
 if (generateJSON) {
+
+	require('child_process').exec('cp ../data/top1000.tsv ../html/data/top1000.tsv');
 	
 	console.log('generate JSON');
 	

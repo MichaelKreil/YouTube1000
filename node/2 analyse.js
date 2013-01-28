@@ -196,7 +196,6 @@ function check() {
 			lines.push(line.join('\t'));
 		}
 		fs.writeFileSync('../data/top1000.tsv', lines.join('\r'), 'utf8');
-		//fs.writeFileSync('../html/data/top1000.tsv', lines.join('\r'), 'utf8');
 	}
 }
 
