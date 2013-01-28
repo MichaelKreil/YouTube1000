@@ -10,12 +10,22 @@ if (generateGrid) {
 	generateGridSVG(
 		'grid_by_rank',
 		function (entry) { return entry.rank },
-		function (entry) { return (entry.restrictedInDE > 1) }
+		function (entry) { return [0,0,1.0,1.0,1.0][entry.restrictedInDE]  }
 	);
 	generateGridSVG(
 		'grid_by_reason',
 		function (entry) { return -entry.restrictedInDE },
-		function (entry) { return (entry.restrictedInDE > 1) }
+		function (entry) { return [0,0,1.0,1.0,1.0][entry.restrictedInDE] }
+	);
+	generateGridSVG(
+		'grid_by_reason_1',
+		function (entry) { return -entry.restrictedInDE },
+		function (entry) { return [0,0,1.0,0.2,0.2][entry.restrictedInDE] }
+	);
+	generateGridSVG(
+		'grid_by_reason_2',
+		function (entry) { return -entry.restrictedInDE },
+		function (entry) { return [0,0,0.2,1.0,1.0][entry.restrictedInDE] }
 	);
 }
 
@@ -65,6 +75,10 @@ if (generateChart) {
 */
 
 function generateGridSVG(filename, sortCallback, flagCallback) {
+	var cHigh   = [180,  28,  36, 0.6];
+	var cMiddle = [255, 142, 146, 0.6];
+	var cLow    = [255, 255, 255, 0.8];
+
 	var thumbWidth  = 343;
 	var thumbHeight = 257;
 	var columns = 25;
@@ -103,7 +117,34 @@ function generateGridSVG(filename, sortCallback, flagCallback) {
 		var x = Math.round((i % columns)*thumbWidth);
 		var y = Math.round(Math.floor(i / columns)*thumbHeight);
 		
-		var style = flagCallback(data[i]) ? 'fill:rgb(180,28,36);fill-opacity:0.6' : 'fill:rgb(255,255,255);fill-opacity:0.8';
+		var flagged = flagCallback(data[i])
+		var color;
+
+		switch (flagged) {
+			case 0.0: color = cLow;    break;
+			case 0.5: color = cMiddle; break;
+			case 1.0: color = cHigh;   break;
+			default:
+				var v = flagged*2;
+				if (v > 1) {
+					v -= 1;
+					color = [
+						cHigh[0]*v + (1-v)*cMiddle[0],
+						cHigh[1]*v + (1-v)*cMiddle[1],
+						cHigh[2]*v + (1-v)*cMiddle[2],
+						cHigh[3]*v + (1-v)*cMiddle[3]
+					]
+				} else {
+					color = [
+						cMiddle[0]*v + (1-v)*cLow[0],
+						cMiddle[1]*v + (1-v)*cLow[1],
+						cMiddle[2]*v + (1-v)*cLow[2],
+						cMiddle[3]*v + (1-v)*cLow[3]
+					]
+				}
+		}
+
+		var style = 'fill:rgb('+color[0]+','+color[1]+','+color[2]+');fill-opacity:'+color[3];
 		
 		svg.push('<rect x="'+x+'px" y="'+y+'px" width="'+(thumbWidth-1)+'px" height="'+(thumbHeight-1)+'px" style="'+style+';stroke:none"/>');
 	}
@@ -117,6 +158,8 @@ function generateGridSVG(filename, sortCallback, flagCallback) {
 
 // convert -antialias grid_by_reason.svg -depth 8 grid_by_reason.png
 // convert -antialias grid_by_rank.svg -depth 8 grid_by_rank.png
+
+// convert -antialias grid_by_rank.svg -depth 8 grid_by_rank.png && convert -antialias grid_by_reason.svg -depth 8 grid_by_reason.png && convert -antialias grid_by_reason_1.svg -depth 8 grid_by_reason_1.png && convert -antialias grid_by_reason_2.svg -depth 8 grid_by_reason_2.png
 
 
 
