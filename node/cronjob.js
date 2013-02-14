@@ -40,16 +40,16 @@ setInterval(check, 30*60*1000);
 
 function logDebug(msg) {
 	console.log('\033[32m' + msg + '\033[0m');
-	fs.appendFileSync('./log/debug.log', msg, 'utf8');
+	fs.appendFileSync('./log/debug.log', msg+'\r', 'utf8');
 }
 
 function logInfo(msg) {
 	console.log('\033[33m' + msg + '\033[0m');
-	fs.appendFileSync('./log/info.log', msg, 'utf8');
+	fs.appendFileSync('./log/info.log', msg+'\r', 'utf8');
 }
 
 function logError(msg) {
 	console.log('\033[31m' + msg + '\033[0m');
-	fs.appendFileSync('./log/error.log', msg, 'utf8');
+	fs.appendFileSync('./log/error.log', msg+'\r', 'utf8');
 }
 
