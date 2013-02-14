@@ -6,3 +6,7 @@ images/hugethumbs/
 charts/*.png
 
 *.xlsx
+
+results/*
+
+node/log/*
