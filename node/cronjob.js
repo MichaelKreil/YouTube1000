@@ -54,11 +54,11 @@ function logError(msg) {
 }
 
 function array2log(lines) {
-	lines = lines.split('\r');
+	lines = lines.split('\n');
 	var time = (new Date()).toString();
 	var result = '';
 	for (var i = 0; i < lines.length; i++) {
-		result += time + '\t' + lines[i] + '\r';
+		result += time + '\t' + lines[i] + '\n';
 	}
 	return result;
 }
