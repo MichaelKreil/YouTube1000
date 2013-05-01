@@ -1,5 +1,5 @@
 
-var minViewCount = 42000000;
+var minViewCount = 45000000;
 
 // Die YouTube-API ist ein bisschen wackelig. Z.B. kommt in der normalen mostviewd-Liste nicht "Gangnam Style" vor.
 // Deswegen mal systematisch zusätzliche Suchbegriffe und Kategorien ausprobieren:
@@ -91,23 +91,29 @@ function download(pageId, country, mode) {
 		
 		if (ok) {
 			data = JSON.parse(data);
-			data = data.feed.entry;
-			var nextPage = (pageId < 19);
-			
-			for (var i = 0; i < data.length; i++) {
-				var entry = data[i];
-				var viewCount;
+			var nextPage = false;
 				
-				try {
-					viewCount = parseInt(entry.yt$statistics.viewCount, 10);
-					if (viewCount > minViewCount) {
-						var id = entry.media$group.yt$videoid.$t;
-						results['_'+id] = viewCount;
-					} else {
-						nextPage = false;
+			if (data.feed.entry) {
+				data = data.feed.entry;
+				nextPage = (pageId < 19);
+			
+				for (var i = 0; i < data.length; i++) {
+					var entry = data[i];
+					var viewCount;
+				
+					try {
+						viewCount = parseInt(entry.yt$statistics.viewCount, 10);
+						if (viewCount > minViewCount) {
+							var id = entry.media$group.yt$videoid.$t;
+							results['_'+id] = viewCount;
+						} else {
+							nextPage = false;
+						}
+					} catch (e) {
 					}
-				} catch (e) {
 				}
+			} else {
+				//console.error(JSON.stringify(data, null, '\t'));
 			}
 			
 			if (nextPage) {
