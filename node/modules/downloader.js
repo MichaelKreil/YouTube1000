@@ -35,7 +35,9 @@ exports.download = function (url, callbackFunction, german, binary) {
 			var code = res.statusCode;
 			if (code != 200) {
 				console.error('ERROR: HTTP code = ' + code + ' (' + url + ')');
+				finished = true;
 				callback(undefined, false);
+				request.abort();
 				return;
 			}
 			
@@ -46,22 +48,29 @@ exports.download = function (url, callbackFunction, german, binary) {
 			res.on('data', function (chunk) { data += chunk });
 			
 			res.on('end', function () {
+				finished = true;
 				callback(data, true);
-			});
-
-			res.on('error', function (e) {
-				console.error('UNKOWN ERROR: '+e);
 			});
 		}
 	);
 	
-	request.setTimeout(10*1000, function (e) {
-		console.error('Timeout: '+e);
+	request.setTimeout(3*1000, function (e) {
+		console.error('request timeout: '+url);
 		callback(undefined, false);
 	});
 	
 	request.on('error', function(e) {
 		console.error('UNKOWN ERROR: '+e);
+	});
+	
+	request.on('socket', function(e) {
+		setTimeout(function () {
+			if (!finished) {
+				console.error('Verkackt!');
+				request.abort();
+				callback(undefined, false);
+			}
+		}, 10*1000);
 	});
 	
 	request.end();
