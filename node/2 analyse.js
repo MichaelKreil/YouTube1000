@@ -36,8 +36,9 @@ for (var i = 0; i < entries.length; i++) {
 		(function () {
 			var entry = entries[i];
 			queuedIn++;
+			var url = 'http://gdata.youtube.com/feeds/api/videos/'+entry.id+'?alt=json&key=AI39si6r5kwUQTFCnTgPIyn10GRX_L5LtaPW7Rs4HJUCSXmQmmeJJZ2g7L62NOhpWkF4H1p4AJCo51Q_R7TjQENATfasT7NkXA&v=2';
 			downloader.download(
-				'http://gdata.youtube.com/feeds/api/videos/'+entry.id+'?alt=json&key=AI39si6r5kwUQTFCnTgPIyn10GRX_L5LtaPW7Rs4HJUCSXmQmmeJJZ2g7L62NOhpWkF4H1p4AJCo51Q_R7TjQENATfasT7NkXA&v=2',
+				url,
 				function (data, ok) {
 					queuedOut++;
 					
