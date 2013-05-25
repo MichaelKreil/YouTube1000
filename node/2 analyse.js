@@ -89,6 +89,30 @@ for (var i = 0; i < entries.length; i++) {
 						entry.rating          = (data.gd$rating === undefined) ? -1 : parseFloat(data.gd$rating.average);
 						entry.viewCount       = parseInt(data.yt$statistics.viewCount, 10);
 						entry.category        = data.media$group.media$category[0].label;
+
+						if (downloadReason && restrictedInDE) {
+							queuedIn++;
+							downloader.download(
+								entry.url,
+								function (html, ok) {
+									queuedOut++;
+									if (ok) { entry.reasonDE = extractReason(html); } else { entry.use = false; }
+									check();
+								},
+								true
+							);
+							
+							queuedIn++;
+							downloader.download(
+								entry.url,
+								function (html, ok) {
+									queuedOut++;
+									if (ok) { entry.reasonEN = extractReason(html); } else { entry.use = false; }
+									check();
+								},
+								false
+							);
+						}
 					} else {
 						entry.use = false;
 					}
@@ -121,34 +145,6 @@ for (var i = 0; i < entries.length; i++) {
 					true
 				);
 			}
-		})();
-	}
-
-	if (downloadReason) {
-		(function () {
-			var entry = entries[i];
-			
-			queuedIn++;
-			downloader.download(
-				entry.url,
-				function (html, ok) {
-					queuedOut++;
-					if (ok) { entry.reasonDE = extractReason(html); } else { entry.use = false; }
-					check();
-				},
-				true
-			);
-			
-			queuedIn++;
-			downloader.download(
-				entry.url,
-				function (html, ok) {
-					queuedOut++;
-					if (ok) { entry.reasonEN = extractReason(html); } else { entry.use = false; }
-					check();
-				},
-				false
-			);
 		})();
 	}
 }
