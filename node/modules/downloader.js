@@ -3,12 +3,22 @@ var URL = require('url');
 var HTTP = require('http');
 HTTP.globalAgent.maxSockets = 2;
 
-exports.download = function (url, callback, german, binary) {
+exports.download = function (url, callbackFunction, german, binary) {
 	var opt = URL.parse(url);
 					
 	var protocol = HTTP;
 	
 	var language = german ? 'de-de;q=0.7,en;q=0.3' : 'en-us;q=0.7,en;q=0.3';
+
+	var calledback = false;
+	var finished = false;
+
+	var callback = function (data, error) {
+		if (!calledback) {
+			calledback = true;
+			callbackFunction(data, error);
+		}
+	}
 	
 	var request = protocol.request(
 		{
