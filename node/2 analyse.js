@@ -200,7 +200,9 @@ function extractReason(html) {
 	html = html.replace(/[\r\n]/g, ' ');
 	var text = html.match(/\<div\s*class\=\"content\"\>.*?\<\/h1\>/i);
 	if (text == null) {
-		text = html.match(/\<div\s*class\=\"yt\-alert\-message\"\>.*?\<\/div\>/i)[0];
+		text = html.match(/\<div\s*class\=\"yt\-alert\-message\"\>.*?\<\/div\>/i);
+		if (text == null) return '???';
+		text = text[0];
 	} else {
 		text = text[0];
 	}
